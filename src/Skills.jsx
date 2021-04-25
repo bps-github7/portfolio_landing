@@ -9,7 +9,39 @@ export default class Skills extends Component {
 
     return (
       <div class="app-skills">
-        What a terrible use of react!
+        
+        <section>
+          <div className="main-container">
+            <div class="heading-wrapper">
+              <h3>Skills:</h3>
+            </div>
+          </div>
+
+          <div className="intro-wrapper">
+            <div className="nav-wrapper">
+              Nav
+            </div>
+            <div className="left-column">
+              Programming skills
+            </div>
+
+            <div className="middle-column">
+              Software development skills
+            </div>
+          
+            <div className="right-column">
+              Tooling
+            </div>
+          </div>
+        </section>
+        
+        {/* this is the flex box */}
+        
+        <div></div>
+        <div></div>
+        <div></div>
+
+        {/* What a terrible use of react!
         <div class="view-box">
           <div>
             <h3>Technical Skills</h3>
@@ -58,7 +90,7 @@ export default class Skills extends Component {
         Software practices: Information System Design and management, UML (unified Modeling Language), Requirements engineering, documentation, Reliability Engineering, Project management
 
 
-
+ */}
 
       </div>
       );
