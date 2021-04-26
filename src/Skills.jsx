@@ -8,10 +8,10 @@ export default class Skills extends Component {
     this.state = {  }
   }
   render() {
-    const programmingSkills = [1,2,3,4,5];
-    const softwareSkills = [4,5,6,7,8];
+    const programmingSkills = ["Python","Typescript/Javascript","HtML5/CSS3","frameworks: AngularJS, ReactJS, Django, Spring, Ruby on Rails","general programming: C/C#/C++, Java, PHP","Scripting: Bash, Batch, AWK, perl", "Database: SQL,noSQL"];
+    const softwareSkills = ["Information Systems Design and management", "UML", "that other thing", "Requirements management", "Documentatiion", "Testing"];
     const generalSkills = [3,4,5,6,7];
-    const developmentTools = [8,9,0];
+    const developmentTools = ["dev environments: VSCode, Thonny, Eclipse, Vim","Testing: ","Postman","Docker", "Microsoft SQL Server Express", "Oracle RDBMS"];
 
 
     return (
