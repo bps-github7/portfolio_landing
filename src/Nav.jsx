@@ -6,6 +6,7 @@ import { ReactComponent as CaretIcon } from './icons/caret.svg';
 import { ReactComponent as MessengerIcon } from './icons/messenger.svg';
 import { ReactComponent as PlusIcon } from './icons/plus.svg';
 import { ReactComponent as ChevronIcon } from './icons/chevron.svg'
+import { ReactComponent as BoltIcon } from './icons/bolt.svg';
 import { CSSTransition } from 'react-transition-group';
 
 export default class Nav extends Component {
@@ -18,6 +19,7 @@ export default class Nav extends Component {
     return (
       <NavBar>
         <TitleItem url='/home' title="Ben Sehnert"/>
+        <NavItem icon={<BoltIcon />} url="/about"/>
         <NavItem icon={<CogIcon />} url="/skills"/>
         <NavItem icon={<MessengerIcon/>} url='/contact'/>
         <NavItem icon={<PlusIcon/>} url='/experience'/>

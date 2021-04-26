@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ContentBox from './ContentBox';
+
 
 export default class Skills extends Component {
   constructor(props) {
@@ -6,6 +8,11 @@ export default class Skills extends Component {
     this.state = {  }
   }
   render() {
+    const programmingSkills = [1,2,3,4,5];
+    const softwareSkills = [4,5,6,7,8];
+    const generalSkills = [3,4,5,6,7];
+    const developmentTools = [8,9,0];
+
 
     return (
       <div class="app-skills">
@@ -18,20 +25,14 @@ export default class Skills extends Component {
           </div>
 
           <div className="intro-wrapper">
-            <div className="nav-wrapper">
-              Nav
-            </div>
-            <div className="left-column">
-              Programming skills
-            </div>
+            {/* <div className="nav-wrapper">Nav</div> */}
+            
+            <ContentBox position="left-column" title="Progamming skills" body={programmingSkills}/>
 
-            <div className="middle-column">
-              Software development skills
-            </div>
-          
-            <div className="right-column">
-              Tooling
-            </div>
+            <ContentBox position="middle-column" title="Software skills" body={softwareSkills}/>
+
+            <ContentBox position="right-column" title="developer skills" body={developmentTools}/>
+
           </div>
         </section>
         
