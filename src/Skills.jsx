@@ -38,7 +38,9 @@ export default class Skills extends Component {
           </div>
         </section>
         
-  
+          <p>Would be cool to determine the padding-bottom of li inside the contentBox dynamically,
+            so that bottom ones line up (list with less items makes items more spaced out)
+          </p>
 
       </div>
       );

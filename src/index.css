@@ -45,6 +45,10 @@ html, body {
 
 }
 
+ul {
+  list-style: none;
+}
+
 h1, h2, h3, h4, h5, h6, strong {
   color: var(--mainText);
 }
@@ -129,7 +133,24 @@ a {
   font-size: 200%;
 }
 
+/* only display subheadings when scrolled over */
 
+.dd-trigger {
+  background-color: rgb(161, 161, 206);
+  border: 2px solid gold;
+}
+
+.dd-trigger+ul {
+  display: none;
+}
+
+/* this */
+
+.dd-trigger:hover+ul  {
+  display: inline-block; 
+}
+
+  
 
 
 

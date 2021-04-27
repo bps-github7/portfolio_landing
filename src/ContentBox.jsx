@@ -6,6 +6,10 @@ export default class ContentBox extends Component {
     this.state = {  }
   }
 
+  renderListBetter(objList) {
+    //for an improved version of below messy function 
+  }
+
   renderList(objList) {
     /**
      * @param objList <{title : string, content : string []} []>
@@ -26,11 +30,17 @@ export default class ContentBox extends Component {
 
     }
 
+/* you know it would be cooler + smarter to do this recursively:
+define a fn that takes a {title : string, content : string []} 
+and renders it, then call it from within itself, if the item being looped over has
+objects as its items, 
+ */
+
     if(complexObjects) {
       for (let subheading of complexObjects) {
         display.push(
           <li>
-            <h4>{subheading.title}</h4>
+            <h4 class="dd-trigger">{subheading.title}</h4>
             <ul>
               {subheading.content.map(item => <li>{item}</li>)}
             </ul>
@@ -46,8 +56,8 @@ export default class ContentBox extends Component {
   }
 
   render() {
-    const title = this.props.content.title;
-    const body = this.props.content.content;
+    const title = this.props.content.title?this.props.content.title: "title";
+    const body = this.props.content.content?this.props.content.content: "body";
 
     return (
       <div class={this.props.position}>

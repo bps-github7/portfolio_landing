@@ -8,30 +8,23 @@ export default class About extends Component {
   render() { 
     return (
       <div class="app-about">
-        <section className="s1">
-        <div className="main-container">
+   <section>
+          <div class="main-container">
             <div class="heading-wrapper">
               <h3>About:</h3>
             </div>
           </div>
 
-          <div className="intro-wrapper">
-            <div className="nav-wrapper">
-              Nav
-            </div>
-            <div className="left-column">
-              Interests
-            </div>
+          <div class="intro-wrapper">
+            <div class="left-column">Passions</div>
+            <div class="middle-column">Principles</div>
+            <div class="right-column">Goals</div>
 
-            <div className="middle-column">
-              Passions
-            </div>
-          
-            <div className="right-column">
-              Hunters of the waffle
-            </div>
-          </div>  
-        </section>        
+          </div>
+        </section>
+
+   
+               
       </div>
       );
   }
