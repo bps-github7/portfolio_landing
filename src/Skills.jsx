@@ -42,6 +42,11 @@ export default class Skills extends Component {
             so that bottom ones line up (list with less items makes items more spaced out)
           </p>
 
+          <p>Lets have 3 rows with centered button on page load, which will, when activated displaythe above content
+
+            <br/> They can have subject like : development, general, abstract (or learning, growing, mastered)
+            <br/> Perhaps a small statement about my approach to skill set building or something else to expound on , in gootter
+          </p>
       </div>
       );
   }

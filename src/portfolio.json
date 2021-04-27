@@ -31,9 +31,10 @@
           "content" : 
           [
             "HTML5 & CSS3",
-            "ECMAscript6 + Typescript",
+            "ECMAscript6, Typescript, JSX",
+            "Libraries: Jquery, Bootstrap",
+            "Advanced styling: Sass, Less",
             "Frontend Frameworks: AngularJS,ReactJS",
-            "Backend technologies: PHP, Node",
             "Backend-Fullstack frameworks: Rails, Django, Spring & .net",
             "Backend as a service: Firebase, Azure, AWS"
           ]

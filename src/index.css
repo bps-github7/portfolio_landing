@@ -49,6 +49,7 @@ ul {
   list-style: none;
 }
 
+
 h1, h2, h3, h4, h5, h6, strong {
   color: var(--mainText);
 }
@@ -86,10 +87,12 @@ a {
 }
 
 .heading-wrapper {
+  font-size: 250%;
+  font-stretch: extra-expanded;
   display: grid;
   text-align: center;
   align-content: center;
-  border: 2px dashed lightcoral;
+  border: 20px groove lightcoral;
   min-height: 5em;
 }
 
@@ -136,7 +139,7 @@ a {
 /* only display subheadings when scrolled over */
 
 .dd-trigger {
-  background-color: rgb(161, 161, 206);
+  background-color: rgb(132, 132, 153);
   border: 2px solid gold;
 }
 
