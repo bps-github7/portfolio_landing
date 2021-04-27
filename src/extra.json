@@ -1,0 +1,47 @@
+
+{
+  "web" : 
+    {
+      "foundations" : 
+        [
+          "HTML5",
+          "CSS3",
+          "JavaScript/TypesScript"
+        ],
+      "styling" : 
+      [
+        "Bootstrap",
+        "Sass",
+        "Less",
+        "Tailwind"
+      ],
+      "Back end as a service" : 
+      [
+        "Firebase",
+        "AWS",
+        "Azure"
+      ],
+      "Database Tech" :
+      [
+        "SQL",
+        "NoSQL"
+      ],
+      "Frontend frameworks & Libraries" : 
+      [
+        "ReactJS",
+        "AngularJS",
+        "VueJS",
+        "jQuery"
+      ],
+      "Backend + fullstack frameworks & technologies" :
+      [
+        "Django",
+        "Rails",
+        "Spring",
+        "ASP.net",
+        "Nodejs",
+        "ExpressJS",
+        "PHP"
+      ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+  "skills" : 
+  [
+    {"title" : "Programming",
+    "content" :
+      [
+        {
+          "title" : "general", 
+          "content" : 
+          [
+            "Java",
+            "C",
+            "C++",
+            "C#"
+          ]
+        },
+        {
+          "title" : "scripting",
+          "content" : 
+        [
+            "Python",
+            "Ruby",
+            "Perl",
+            "Bash",
+            "Batch",
+            "Awk"
+          ]
+        },
+        {
+          "title" : "web",
+          "content" : 
+          [
+            "HTML",
+            "CSS",
+            "Javascript/Typescript",
+            "AngularJS,ReactJS"
+          ]
+        }
+      ]
+    },
+    {
+      "title" : "Software Development",
+      "content" : 
+      [
+        "UML",
+        "Requirements analysis",
+        "Design and testing",
+        "Safety critical systems",
+        "Project management"
+      ]
+    },
+    {
+      "title" : "Tooling",
+      "content" : 
+      [
+        "VS code",
+        "Vim",
+        "Docker",
+        "Postman",
+        "Microsoft SQL Server Express",
+        "Oracle RDBMS"
+      ]
+    }
+
+    
+  ],
+  "Experience" : 
+    [
+      "?"
+    ],
+  "Projects" :
+    [
+      "!"
+    ]
+}  
