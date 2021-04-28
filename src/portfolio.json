@@ -1,97 +1,108 @@
 {
-  "skills" : 
-  [
-    {"title" : "Programming",
-    "content" :
-      [
-        {
-          "title" : "general", 
-          "content" : 
-          [
-            "Java",
-            "C",
-            "C++",
-            "C#"
-          ]
-        },
-        {
-          "title" : "scripting",
-          "content" : 
+  "skills" :
+  {
+    "development" :
+    [
+      {
+        "title" : "Programming",
+        "content" :
         [
-            "Python",
-            "Ruby",
-            "Perl",
-            "Bash",
-            "Batch",
-            "Awk"
-          ]
-        },
-        {
-          "title" : "web",
-          "content" : 
-          [
-            "HTML5 & CSS3",
-            "ECMAscript6, Typescript, JSX",
-            "Libraries: Jquery, Bootstrap",
-            "Advanced styling: Sass, Less",
-            "Frontend Frameworks: AngularJS,ReactJS",
-            "Backend-Fullstack frameworks: Rails, Django, Spring & .net",
-            "Backend as a service: Firebase, Azure, AWS"
-          ]
-        },
-        {
-          "title" : "database",
-          "content" :
-          [
-            "SQL",
-            "NoSQL"
-          ]
-        }
-      ]
-    },
-    {
-      "title" : "Software Development",
-      "content" : 
-      [
+          {
+            "title" : "general", 
+            "content" : 
+            [
+              "Java",
+              "C",
+              "C++",
+              "C#"
+            ]
+          },
+          {
+            "title" : "scripting",
+            "content" : 
+            [
+                "Python",
+              "Ruby",
+              "Perl",
+              "Bash",
+              "Batch",
+              "Awk"
+            ]
+          },
+          {
+            "title" : "web",
+            "content" : 
+            [
+              "HTML5 & CSS3",
+              "ECMAscript6, Typescript, JSX",
+              "Libraries: Jquery, Bootstrap",
+              "Advanced styling: Sass, Less",
+              "Frontend Frameworks: AngularJS,ReactJS",
+              "Backend-Fullstack frameworks: Rails, Django, Spring & .net",
+              "Backend as a service: Firebase, Azure, AWS"
+            ]
+          },
+          {
+            "title" : "database",
+            "content" :
+            [
+              "SQL",
+              "NoSQL"
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Software Development",
+        "content" : 
+        [
 
-        {
-          "title" : "Design",
-          "content" : 
-          [
-            "Unified Modeling Language",
-            "Design patterns",
-            "Requirements Analysis",
-            "Safety Critical Systems Design"
-          ] 
-        },
-        {
-          "title" : "Implementation",
-          "content" : 
-          [
-            "Test Driven Development",
-            "Documentation",
-            "Type safety",
-            "Project Management"
-          ]
-        },
-        {
-          "title" : "Lifecycle/methodology",
-          "content" : 
-          [
-            "Agile",
-            "Scrum",
-            "traditional (waterfall) Software Development Lifecycle"   
-          ]
-        }
-      ]
-    },
-    {
-      "title" : "Tooling",
-      "content" : 
-      [
-        {
-          "title" : "Workspaces",
-          "content" : 
+          {
+            "title" : "Design",
+            "content" : 
+            [
+              "Unified Modeling Language",
+              "Design patterns",
+              "Requirements Analysis",
+              "Safety Critical Systems Design"
+            ] 
+          },
+          {
+            "title" : "Implementation",
+            "content" : 
+            [
+              "Test Driven Development",
+              "Documentation",
+              "Type safety",
+              "Project Management"
+            ]
+          },
+          {
+            "title" : "Lifecycle/methodology",
+            "content" : 
+            [
+              "Agile",
+              "Scrum",
+              "traditional (waterfall) Software Development Lifecycle"   
+            ]
+          },
+          {
+            "title" : "deployment",
+            "content" : 
+            [
+              "A list of things Ive deployed using",
+              "Currently nill.."
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Tooling",
+        "content" : 
+        [
+          {
+            "title" : "Workspaces",
+            "content" : 
             [
               "VsCode",
               "Vim",
@@ -99,23 +110,43 @@
               "Eclipse",
               "Thonny"
             ]
-        },
-        {
-          "title" : "Developer Tooling",
-          "content" : 
-          [
-            "Docker",
-            "Postman",
-            "Draw.io",
-            "Microsoft SQL Server Express",
-            "Oracle RDBMS"
-          ]
-        }
-      ]
-    }
-
-    
-  ],
+          },
+          {
+            "title" : "development tools",
+            "content" : 
+            [
+              "Docker",
+              "Postman",
+              "Draw.io"
+            ]
+          },
+          {
+            "title" : "testing frameworks",
+            "content" : 
+            [
+              "Pytest",
+              "unittest",
+              "N-unit",
+              "J-unit",
+              "MS-Test",
+              "Karma",
+              "Jest"
+            ]
+          },
+          {
+            "title" : "Relational Database Management Systems",
+            "content" : 
+            [
+              "Microsoft SQL Server Express",
+              "Oracle SQL Developer"
+            ] 
+          }
+        ]
+      }
+    ],
+    "General" : [],
+    "Conceptual inqueries" : [] 
+  , 
   "Experience" : 
     [
       "?"
@@ -124,4 +155,5 @@
     [
       "!"
     ]
+  }
 }  

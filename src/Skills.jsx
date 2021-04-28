@@ -12,9 +12,10 @@ export default class Skills extends Component {
     
 
     
-    const programmingSkills = data["skills"][0];
-    const softwareSkills = data["skills"][1]; 
-    const developmentTools = data["skills"][2]; 
+    const devSkills = data["skills"]["development"]
+    const programmingSkills = devSkills[0];
+    const softwareSkills = devSkills[1]; 
+    const developmentTools = devSkills[2]; 
 
 
     return (

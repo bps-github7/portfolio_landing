@@ -149,7 +149,7 @@ a {
 
 /* this */
 
-.dd-trigger:hover+ul  {
+.dd-trigger:hover+ul, .dd-trigger+ul:hover  {
   display: inline-block; 
 }
 
