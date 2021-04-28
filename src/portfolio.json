@@ -8,7 +8,7 @@
         "content" :
         [
           {
-            "title" : "general", 
+            "title" : "General", 
             "content" : 
             [
               "Java",
@@ -18,10 +18,10 @@
             ]
           },
           {
-            "title" : "scripting",
+            "title" : "Scripting",
             "content" : 
-            [
-                "Python",
+          [
+              "Python",
               "Ruby",
               "Perl",
               "Bash",
@@ -30,7 +30,7 @@
             ]
           },
           {
-            "title" : "web",
+            "title" : "Web",
             "content" : 
             [
               "HTML5 & CSS3",
@@ -43,7 +43,7 @@
             ]
           },
           {
-            "title" : "database",
+            "title" : "Database",
             "content" :
             [
               "SQL",
@@ -64,7 +64,7 @@
               "Unified Modeling Language",
               "Design patterns",
               "Requirements Analysis",
-              "Safety Critical Systems Design"
+              "Safety Critical System Design"
             ] 
           },
           {
@@ -78,7 +78,7 @@
             ]
           },
           {
-            "title" : "Lifecycle/methodology",
+            "title" : "Lifecycle/Methodology",
             "content" : 
             [
               "Agile",
@@ -87,7 +87,7 @@
             ]
           },
           {
-            "title" : "deployment",
+            "title" : "Deployment",
             "content" : 
             [
               "A list of things Ive deployed using",
@@ -112,7 +112,7 @@
             ]
           },
           {
-            "title" : "development tools",
+            "title" : "Development Tools",
             "content" : 
             [
               "Docker",
@@ -121,7 +121,7 @@
             ]
           },
           {
-            "title" : "testing frameworks",
+            "title" : "Testing Frameworks",
             "content" : 
             [
               "Pytest",
