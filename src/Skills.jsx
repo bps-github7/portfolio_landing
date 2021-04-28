@@ -1,23 +1,51 @@
 import React, { Component } from 'react';
-import ContentBox from './ContentBox';
 import data from './portfolio.json';
+import ThreePaneInfoPanel from './ThreePaneInfoPanel';
 
 export default class Skills extends Component {
+  show=true;
+  topic="";
+  currentSelected;
+
   constructor(props) {
     super(props);
-    this.state = {  }
+    this.state = { 
+      defaultOrganization: true,
+    }
   }
 
+  switchOrganization = () => {
+    this.setState({
+      defaultOrganization : !this.state.defaultOrganization
+    })
+  }
+
+  showInfoPanel(toShow) {
+      if (toShow === "development") {
+        this.topic = "development";
+        this.currentSelected = data["skills"]["development"]
+        this.setState({
+          defaultOrganization : false
+        })
+      }
+      else if (toShow === "general") {
+        this.topic = "general";
+        this.currentSelected = data["skills"]["general"]
+        this.setState({
+          defaultOrganization : false 
+        })
+      }
+      else if (toShow === "conceptual") {
+        this.topic = "conceptual";
+        this.currentSelected = data["skills"]["conceptual"];
+        this.setState({
+          defaultOrganization : false
+        })
+ 
+      }
+    }
+
   render() {
-    
-
-    
-    const devSkills = data["skills"]["development"]
-    const programmingSkills = devSkills[0];
-    const softwareSkills = devSkills[1]; 
-    const developmentTools = devSkills[2]; 
-
-
     return (
       <div className="app-skills">
         
@@ -28,15 +56,35 @@ export default class Skills extends Component {
             </div>
           </div>
 
-          <div class="intro-wrapper">
-            
-            <ContentBox position="left-column" content={programmingSkills}/>
+          { this.state.defaultOrganization ?
+          <div class="intro-wrapper-rows">
 
-            <ContentBox position="middle-column" content={softwareSkills}/>
+            <div class="top-row">
+              <span>Development Skills</span>
+              <button 
+              onClick={() => this.showInfoPanel("development")}>
+                Show
+              </button>
+            </div>
 
-            <ContentBox position="right-column" content={developmentTools}/>
+            <div class="middle-row">
+                <span>General Skills</span>
+                <button
+                  onClick={() => this.showInfoPanel("general")}>
+                  Show
+                </button>
+            </div>
 
+            <div class="bottom-row">
+                <span>Conceptual Skills</span>           
+                <button
+                onClick={()=>this.showInfoPanel("conceptual")}>
+                  Show
+                </button>
+            </div>
           </div>
+        // : <div>Bisk</div>}
+        : <ThreePaneInfoPanel info={this.currentSelected} orientation={this.switchOrganization}/>} 
         </section>
         
           <p>Would be cool to determine the padding-bottom of li inside the contentBox dynamically,

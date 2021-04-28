@@ -144,8 +144,113 @@
         ]
       }
     ],
-    "General" : [],
-    "Conceptual inqueries" : [] 
+    "general" : 
+    [
+      {
+        "title" : "general skill 1",
+        "content" : 
+        [
+          {
+            "title" : "Expound 1",
+            "content" : 
+            [
+              "123",
+              "abc"
+            ]
+          },
+          {
+            "title" : "Expound 2",
+            "content" : 
+            [
+              "Meow",
+              "woof"
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "general skill 2",
+        "content" : 
+        [
+          {
+            "title" : "expound 1",
+            "content" : 
+            [
+              "abc ",
+              "123"
+            ]
+          },
+          {
+            "title" : "Mexican floor cheese",
+            "content" : 
+            [
+              "wet",
+              "rabbit",
+              "attack"
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "salsa",
+        "content" : 
+        [
+          {
+            "title" : "something",
+            "content" : 
+            [
+              "a",
+              "b",
+              "c"
+            ]
+          }
+        ]
+      }
+
+    ],
+    "conceptual" : [
+      {
+        "title" : "Education",
+        "content" : 
+        [
+          {
+            "title" : "Computer Science",
+            "content" : 
+            [
+              "a",
+              "jelly fish",
+              "sandwhich"
+            ]
+          }
+        ]
+      },
+      {
+        "title" : "Cyber Security",
+        "content" : 
+        [
+          {"title" : "unknown slug",
+          "content" : 
+          [
+            "ferocious",
+            "mall people"
+          ]}
+        ]
+      },
+      {
+        "title" : "Artificial Intelligence",
+        "content" : 
+        [
+          {
+            "title" : "maple hoop",
+            "content" : 
+            [
+              "wonder",
+              "wood"
+            ]
+          }
+        ]
+      }
+    ] 
   , 
   "Experience" : 
     [
