@@ -147,11 +147,11 @@
     "general" : 
     [
       {
-        "title" : "general skill 1",
+        "title" : "Interpersonal",
         "content" : 
         [
           {
-            "title" : "Expound 1",
+            "title" : "Teamwork",
             "content" : 
             [
               "123",
@@ -159,7 +159,15 @@
             ]
           },
           {
-            "title" : "Expound 2",
+            "title" : "Communication",
+            "content" : 
+            [
+              "Meow",
+              "woof"
+            ]
+          },
+          {
+            "title" : "Responsiblity",
             "content" : 
             [
               "Meow",
@@ -169,11 +177,11 @@
         ]
       },
       {
-        "title" : "general skill 2",
+        "title" : "Research",
         "content" : 
         [
           {
-            "title" : "expound 1",
+            "title" : "Competency",
             "content" : 
             [
               "abc ",
@@ -181,7 +189,16 @@
             ]
           },
           {
-            "title" : "Mexican floor cheese",
+            "title" : "analysis",
+            "content" : 
+            [
+              "wet",
+              "rabbit",
+              "attack"
+            ]
+          },
+          {
+            "title" : "Reporting",
             "content" : 
             [
               "wet",
@@ -189,10 +206,11 @@
               "attack"
             ]
           }
+
         ]
       },
       {
-        "title" : "salsa",
+        "title" : "Reliability",
         "content" : 
         [
           {
@@ -208,7 +226,7 @@
       }
 
     ],
-    "conceptual" : [
+    "concept domains" : [
       {
         "title" : "Education",
         "content" : 
@@ -228,7 +246,7 @@
         "title" : "Cyber Security",
         "content" : 
         [
-          {"title" : "unknown slug",
+          {"title" : "Wombat grease manuever",
           "content" : 
           [
             "ferocious",
