@@ -370,19 +370,271 @@
         ]
       }
     ] 
-  , 
+  },
   "Experience" : 
-    [
-      { "title" : "2012-2014", "content" : [] },
-      { "title" : "2015-2018", "content" : [] },
-      { "title" : "2019-2021", "content" : [] }
+  { 
+    "Vector Marketing/ Cutco" : 
+    {
+      "position" : "Sales Representative",
+      "employed" : "June 2014-july 2014",
+      "location" : "Fort Washington, PA",
+      "duties" : 
+      [
+        "Attended salesmanship training and leadership development conference",
+        "Used cold calling to schedule appointments for Cutco knife demonstrations",
+        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
+        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
+        "Independently traveled to appointments and communicated with customers regarding order details"
+      ],
+      "direct supervisor" : "Elijah Cheecks",
+      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+    },
+    "Drexel Recreational Athletics" : {
+      "position" : "Coordinator of Student staff, Rock Climbing Associate",
+      "employed" : "September 2015 - September 2016",
+      "location" : "University City Philadelphia, PA",
+      "duties" : 
+      [
+        {
+          "title" : "Coordinator of Student staff",
+          "content" : 
+          [
+            "Responsible for overseeing the recruitment and hiring of new staff",
+            "Maintained the schedule, contact info and employee demographics of 300+ staff members",
+            "Completed Electronic Personal Action Forms for all new employees",
+            "Tracked scheduled, worked and submitted hours for all student staff",
+            "Built rapport with student and department staff on a daily basis",
+            "In charge of the planning and execution of student staff events",
+            "Organized and lead a professional development program for interested student staff" 
+          ]
+        },
+        {
+          "title" :"Climbing Wall Attendent",
+          "content" : 
+          [
+            "Manned the front desk by greeting attendees and offering information about the facilities",
+            "Aided in the completion of waivers",
+            "Certified Belayer- helped climbers who did not have someone to belay them",
+            "Background in first aid and outdoor skills" 
+          ]
+        }
+      ],
+      "direct supervisor" : "Andrew Demming",
+      "reason for leaving" : "end of co-op/ start of next co-op"
+    },
+    "Rock to the Future" : 
+    {
+      
+      "position" : "Sales Representative",
+      "employed" : "June 2014-july 2014",
+      "location" : "Fort Washington, PA",
+      "duties" : 
+      [
+        "Attended salesmanship training and leadership development conference",
+        "Used cold calling to schedule appointments for Cutco knife demonstrations",
+        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
+        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
+        "Independently traveled to appointments and communicated with customers regarding order details"
+      ],
+      "direct supervisor" : "Elijah Cheecks",
+      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+    },
+    "Olive Garden" : 
+    {
 
-    ],
+      "position" : "Sales Representative",
+      "employed" : "June 2014-july 2014",
+      "location" : "Fort Washington, PA",
+      "duties" : 
+      [
+        "Attended salesmanship training and leadership development conference",
+        "Used cold calling to schedule appointments for Cutco knife demonstrations",
+        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
+        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
+        "Independently traveled to appointments and communicated with customers regarding order details"
+      ],
+      "direct supervisor" : "Elijah Cheecks",
+      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+    },
+    "Insomnia Cookies" : 
+    {
+
+      "position" : "Sales Representative",
+      "employed" : "June 2014-july 2014",
+      "location" : "Fort Washington, PA",
+      "duties" : 
+      [
+        "Attended salesmanship training and leadership development conference",
+        "Used cold calling to schedule appointments for Cutco knife demonstrations",
+        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
+        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
+        "Independently traveled to appointments and communicated with customers regarding order details"
+      ],
+      "direct supervisor" : "Elijah Cheecks",
+      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+    },
+    "City Year Philadelphia" : 
+    {
+
+      "position" : "Learning and developement Operations Associate",
+      "employed" : "",
+      "location" : "Center City Philadelphia, PA",
+      "duties" : 
+      [
+
+      ],
+      "direct supervisor" : "Elise Beyeler",
+      "reason for leaving" : "end of co-op"
+    },
+    "Allied Universal" : 
+    {
+      "position" : "Security Professional",
+      "employed" : "",
+      "location" : "Wistar Institute in West Philadelphia, PA",
+      "duties" : 
+      [
+       
+      ],
+      "direct supervisor" : "Fleta Howell",
+      "reason for leaving" : "Ask me"
+    },
+    "GoPuff" : 
+    {
+      "position" : "Delivery Driver",
+      "employed" : "Per diem: April 2020-present",
+      "location" : "Summerton, Manayaunk",
+      "duties" : 
+      [
+        "Attended salesmanship training and leadership development conference",
+        "Used cold calling to schedule appointments for Cutco knife demonstrations",
+        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
+        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
+        "Independently traveled to appointments and communicated with customers regarding order details"
+      ],
+      "direct supervisor" : "Elijah Cheecks",
+      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+    }
+  },
   "Projects" :
+  [
+    {
+      "front end" : 
+      [
+        {"title" : "The Internet Videogame Database",
+         "content" : "http://something/something"
+        },
+        {
+          "title" :"ORal History Blog",
+          "content" : "http://something/something"
+        }
+      ],
+      "back end" : 
+      [
+
+      ],
+      "testing" : 
+      [
+
+      ],
+      "general" : 
+      [
+
+      ]
+    }
+  ],
+  "About" : 
+  {
+    "intro" : "Some stuff about me",
+    "content" : 
     [
-      { "title" : "Front-end", "content" : [] },
-      { "title" : "Back-end", "content" : [] },
-      { "title" : "Testing", "content" : [] }
+      { "title" : "Music", "content" : [
+        {
+          "intro" : "I taught myself to play most of the instruments I play, But have taken lessons for a few including the drums, upright bass and tabla. I live much in the improvisational domain, enjoy jazz and hip hop and play drums in a semi-experimental band",
+          "drums" : [],
+          "keys" : [],
+          "bass": [],
+          "misc" : []
+        }
+      ]},
+      { "title" : "Excersise", "content" : 
+        [
+          { "title" : "pre movement routine",
+            "content" : 
+            [
+              "6 twist lunge (alternate legs, twist both ways)",
+              "6 15 second back bridge",
+              "20 elbow pushups",
+              "5 5 second bird dog (both sides)",
+              "25 frog squats",
+              "5 'worlds best stretch' (alternate sides)",
+              "8 inch worms",
+              "12 meters: knee hug",
+              "12 meters: high knee run",
+              "12 meters: quad pull",
+              "12 meters: butt kick run",
+              "12 meters: foot cradel",
+              "12 meters: straight leg march",
+              "12 meters: quad extension",
+              "36 meters: heel toe walk"
+            ]
+          },
+          {
+            "Movement" : 
+            [
+              { "title" : "sunday", "content": "rest" },
+              {"title" : "monday", "content" : []},
+              {"title" : "tuesday", "content" : []},
+              { "title" : "wednesday", "content" : "rest" },
+              { "title" : "thursday", "content" : []},
+              { "title" : "friday", "content" : [] },
+              { "title" : "saturday", "content": []}
+            ] 
+          },
+          {
+            "post workout movement" : 
+            [
+              { "title" : "excersise band", "content" : []},
+              { "title" : "roller", "content" : []}
+            ]
+          }
+        ]
+      },
+      { "title" : "Cooking", "content" :
+        {
+          "intro" : "I taught myself to cook, but around a year or two ago, I started taking cooking much more serious. It changed from something I enjoyed to something I am very passionate and energetic. I try to prepare most meals I eat myself, and spend a significant amount of time day to day reading cookbooks, cooking shows, instrutional and informational videos on the internet, and probably try a new recipe once every week or two.",
+          "content" : 
+          {  
+            "recipes" : 
+            [
+              { "title" : "rice / pasta / grains", "content" : [] },
+              { "title" : "vegtables & sides", "content" : []},
+              { "title" : "meat & entrees", "content" : []},
+              { "treats" : "Sweets", "content" : []}
+            ],
+            "something else" : 
+            [
+              {"title" : "one two three", "content" : ["heres", "the", "thing"]},
+              {"title" : "two three four", "content" : ["heres", "the", "thing"]}
+            ]
+          } 
+        }
+      }
     ]
+  },
+  "contact" : 
+  {
+    "cell" : "215-837-2319",
+    "email" : "bps53@protonmail.com",
+    "msg" : 
+    {
+      "linkedin" : "https://www.linkedin.com/in/ben-sehnert/",
+      "github" : "https://github.com/bps-github7",
+      "slack" : "Ben P Sehnert"
+    },
+    "bestWay" : "email me",
+    "bestTime" : "Monday-Friday, during normal business hours",
+    "concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally",
+    "vacationing" : false,
+    "employed" : true
   }
 }  

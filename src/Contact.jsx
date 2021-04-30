@@ -1,40 +1,65 @@
 import React, { Component } from 'react';
+import data from './portfolio.json';
+
 
 export default class Contact extends Component {
   constructor(props) {
     super(props);
-    this.state = {  }
+    this.state = { 'contact' : data.contact  }
+
+
+    
+
+
   }
-  render() { 
+  render() {
+    const contact = this.state.contact;
+    const msg = Object.entries(this.state.contact.msg)
     return (
-      <div className="app-contact">
-        <h1>Contact me:</h1>
+      <div className="app-contact four-panel" style={{ display : 'grid', gridTemplateColumns : '1fr 1fr', gridTemplateRows : '1fr 1fr 1fr 1fr' }}>
+        <div>
+          <h3>Cell phone:</h3>
+          { contact.cell }
+        </div>
+        
+        <div class="top-right">
+          <h3>Email:</h3>
+          { contact.email }          
+        </div>
+        
+        <div className="bottom-left">
+          <h3>Private Message:</h3>
+          <ul>
+            { msg.map(([key,value]) => <li><strong>{key} :</strong>{value}</li> ) } 
+          </ul>
+        </div>
+
+        <div>
+          <h3>Best way to contact me: </h3>
+          { contact.bestWay }
+        </div>
+
+        <div>
+          <h3>Best time to contact me: </h3>
+          { contact.bestTime }
+        </div>
+
+        <div>
+          <h3>Concerns: </h3>
+          { contact.concerns }
+        </div>
+
+        <div>
+          <h3>Am i on Vacaction?</h3>
+          { this.state.contact.vacationing ? <span class="vacationing">Yes</span>:<span>No</span> }
+        </div>
+        
+        <div>
+          <h3>Am i Looking for a job?</h3>
+          { this.state.contact.employed ? <span class="vacationing">Yes</span>:<span>No</span> }
+        </div>
 
 
-        <p>I can be reached by the following means:</p>
-        <ol>
-          <li><strong>Email:</strong>bps53@protonmail.com</li>
-          <li><strong>Call:</strong>215-837-2319</li>
-          <li><strong>Private Message:</strong>Linkdin, github</li>
-        </ol>
-        <p>I'm happy to discuss the following: </p>
-        <ol>
-          <li>Paid and pro-bono work opprotunities</li>
-          <li>Constructive critisim</li>
-          <li>Friendly and/or instructive career advice</li>
-        </ol>
-
-
-        <p><strong>Note: </strong> I am currently using Robo-call to screen scam calls, as I am frequently harrased with these on my mobile phone. <br/>
-        For this reason, If you try my cell and are unable to get through, please select an alternate means from the above list <br/>
-        I am attentitive to my cell-phone at most times of the day, and personally have not been made aware of recruiters or hiring manager being unable to get through <br/>
-        However, I would not rule it out as a possibility.</p>
-        <br/>
-        <p><strong>Best times to contact me:</strong> Normal business hours Monday-Friday</p>
-
-
-        <h3>On Vacation? not currently.</h3>
-        <p>Feel free to reach out at your earliest desired convenience.</p>
       </div>
     );
   }
