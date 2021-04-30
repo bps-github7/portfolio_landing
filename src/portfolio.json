@@ -83,7 +83,7 @@
             [
               "Agile",
               "Scrum",
-              "Traditional (iterative/waterfall) Software Development Lifecycle"   
+              "Waterfall/iterative"   
             ]
           },
           {
@@ -115,6 +115,7 @@
             "title" : "Development Tools",
             "content" : 
             [
+              "Git",
               "Docker",
               "Postman",
               "Draw.io"
@@ -147,11 +148,11 @@
     "general" : 
     [
       {
-        "title" : "Interpersonal",
+        "title" : "Creativity",
         "content" : 
         [
           {
-            "title" : "Teamwork",
+            "title" : "willingness to try new things",
             "content" : 
             [
               "123",
@@ -159,7 +160,7 @@
             ]
           },
           {
-            "title" : "Communication",
+            "title" : "knowing the unknown",
             "content" : 
             [
               "Meow",
@@ -167,7 +168,7 @@
             ]
           },
           {
-            "title" : "Responsiblity",
+            "title" : "Responsibility and ethnics ",
             "content" : 
             [
               "Meow",
@@ -177,7 +178,7 @@
         ]
       },
       {
-        "title" : "Research",
+        "title" : "Problem Solving",
         "content" : 
         [
           {
@@ -210,34 +211,82 @@
         ]
       },
       {
-        "title" : "Reliability",
+        "title" : "Interpersonal",
         "content" : 
         [
           {
-            "title" : "something",
+            "title" : "Responsiblity",
             "content" : 
             [
               "a",
               "b",
               "c"
             ]
+          },
+          {
+            "title" : "Teamwork",
+            "content" : 
+            [
+              "a","b","c"  
+            ]
+          },
+          {
+            "title" : "Leadership",
+            "content" :
+            [
+              "a",
+              "b",
+              "c",
+              "d"
+            ]
+          },
+          {
+            "title" : "Hardworking nature",
+            "content" : 
+            [
+              "I love getting things done",
+              "relentless when mind is set",
+              "always learning how to do this better and faster"
+            ]
           }
+
         ]
       }
 
     ],
-    "concept domains" : [
+    "concepts" : 
+    [
       {
         "title" : "Education",
         "content" : 
         [
+          {"title" : "Music",
+          "content" : 
+          [
+            
+          ]
+          },
+          {
+           "title" : "General",
+           "content" : 
+           [
+
+           ] 
+          },
           {
             "title" : "Computer Science",
             "content" : 
             [
-              "a",
-              "jelly fish",
-              "sandwhich"
+              "I think teaching the youth this subject is essential.",
+              "Technology is the medium of the future."
+            ]
+          },
+          {
+            "title": "Math",
+            "content" : 
+            [
+              "I once feared math",
+              "math is SUPER COOL"
             ]
           }
         ]
@@ -246,12 +295,39 @@
         "title" : "Cyber Security",
         "content" : 
         [
-          {"title" : "Wombat grease manuever",
-          "content" : 
-          [
-            "ferocious",
-            "mall people"
-          ]}
+          {
+            "title" : "Philosophy",
+            "content" : 
+            [
+              "some",
+              "stuff",
+              "in",
+              "here"
+            ]
+          },
+          {
+            "title" :"Theory",
+            "content" : 
+            [
+              "some",
+              "stuff",
+              "in",
+              "here"
+            ]
+          },
+          {
+            "title" : "Practical Applications",
+            "content" : 
+            [
+              "have",
+              "",
+              "some",
+              "fun",
+              "in",
+              "this",
+              "one"
+            ]
+          }
         ]
       },
       {
@@ -259,11 +335,36 @@
         "content" : 
         [
           {
-            "title" : "maple hoop",
+            "title" : "Philosophy",
             "content" : 
             [
-              "wonder",
-              "wood"
+              "some",
+              "stuff",
+              "in",
+              "here"
+            ]
+          },
+          {
+            "title" :"Theory",
+            "content" : 
+            [
+              "some",
+              "stuff",
+              "in",
+              "here"
+            ]
+          },
+          {
+            "title" : "Practical Applications",
+            "content" : 
+            [
+              "have",
+              "",
+              "some",
+              "fun",
+              "in",
+              "this",
+              "one"
             ]
           }
         ]
@@ -272,11 +373,16 @@
   , 
   "Experience" : 
     [
-      "?"
+      { "title" : "2012-2014", "content" : [] },
+      { "title" : "2015-2018", "content" : [] },
+      { "title" : "2019-2021", "content" : [] }
+
     ],
   "Projects" :
     [
-      "!"
+      { "title" : "Front-end", "content" : [] },
+      { "title" : "Back-end", "content" : [] },
+      { "title" : "Testing", "content" : [] }
     ]
   }
 }  

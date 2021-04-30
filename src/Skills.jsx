@@ -37,7 +37,7 @@ export default class Skills extends Component {
       }
       else if (toShow === "conceptual") {
         this.topic = "conceptual";
-        this.currentSelected = data["skills"]["conceptual"];
+        this.currentSelected = data["skills"]["concepts"];
         this.setState({
           defaultOrganization : false
         })
@@ -87,7 +87,7 @@ export default class Skills extends Component {
         : <ThreePaneInfoPanel info={this.currentSelected} orientation={this.switchOrganization}/>} 
         </section>
         
-          <p>Would be cool to determine the padding-bottom of li inside the contentBox dynamically,
+          {/* <p>Would be cool to determine the padding-bottom of li inside the contentBox dynamically,
             so that bottom ones line up (list with less items makes items more spaced out)
           </p>
 
@@ -95,7 +95,7 @@ export default class Skills extends Component {
 
             <br/> They can have subject like : development, general, abstract (or learning, growing, mastered)
             <br/> Perhaps a small statement about my approach to skill set building or something else to expound on , in gootter
-          </p>
+          </p> */}
       </div>
       );
   }
