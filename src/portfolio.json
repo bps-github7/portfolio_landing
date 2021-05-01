@@ -39,7 +39,7 @@
               "Advanced styling: Sass, Less",
               "Frontend Frameworks: AngularJS,ReactJS",
               "Backend-Fullstack frameworks: Rails, Django, Spring & .net",
-              "Backend as a service: Firebase, Azure, AWS"
+              "Backend as a service: Firebase"
             ]
           },
           {
@@ -152,27 +152,35 @@
         "content" : 
         [
           {
-            "title" : "willingness to try new things",
+            "title" : "Willingness to try new things",
             "content" : 
             [
-              "123",
-              "abc"
+              "This is the only way",
+              "I will learn",
+              "All the things",
+              "I need to learn."
             ]
           },
           {
-            "title" : "knowing the unknown",
+            "title" : "Have a foot in every stew",
             "content" : 
             [
-              "Meow",
-              "woof"
+              "is it a good thing",
+              "to learn everything a little",
+              "or be a master in one area",
+              "?"
             ]
           },
           {
-            "title" : "Responsibility and ethnics ",
+            "title" : "Inspiration",
             "content" : 
             [
-              "Meow",
-              "woof"
+              "Dr. John",
+              "MF Doom",
+              "Orion Sun",
+              "Nujabes",
+              "BadBadNotGood",
+              "Thunder cat"
             ]
           }
         ]
@@ -185,8 +193,7 @@
             "title" : "Competency",
             "content" : 
             [
-              "abc ",
-              "123"
+              ""
             ]
           },
           {
@@ -263,14 +270,15 @@
           {"title" : "Music",
           "content" : 
           [
-            
+            "music is not hard to learn!",
+            "All it requires is that you apply yourself"  
           ]
           },
           {
            "title" : "General",
            "content" : 
            [
-
+            "The people I listen to the most are "
            ] 
           },
           {
@@ -542,7 +550,7 @@
       ]
     }
   ],
-  "About" : 
+  "about" : 
   {
     "intro" : "Some stuff about me",
     "content" : 
