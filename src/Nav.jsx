@@ -144,30 +144,32 @@ function DropdownMenu() {
         <div className="menu" >
           <DropdownItem
             leftIcon={ <ChevronIcon/> }
-            goToMenu="main"/>
-            <DropdownItem
-              leftIcon={ <CogIcon/> }
-              rightIcon={ <ChevronIcon/> }>
-              Complex number calculator 
-            </DropdownItem>
-            <DropdownItem
-              leftIcon={ <BoltIcon/> }>
-              Binary Conversion Calculator
-            </DropdownItem>
-            <DropdownItem
-              leftIcon={ <BoltIcon/> }>
-              Chess Move Generator 
-            </DropdownItem>
-            <DropdownItem
-              leftIcon={ <BoltIcon/> }>
-              MS-test example unit tests 
-            </DropdownItem>
-            <DropdownItem
-              leftIcon={ <BoltIcon/> }>
-              N-unit example unit tests 
-            </DropdownItem>
-          </div>
-        </CSSTransition> 
+            goToMenu="main">
+            Go back
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={ <CogIcon/> }
+            rightIcon={ <ChevronIcon/> }>
+            Complex number calculator 
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={ <BoltIcon/> }>
+            Binary Conversion Calculator
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={ <BoltIcon/> }>
+            Chess Move Generator 
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={ <BoltIcon/> }>
+            MS-test example unit tests 
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={ <BoltIcon/> }>
+            N-unit example unit tests 
+          </DropdownItem>
+        </div>
+      </CSSTransition> 
      </div>
     );
 }

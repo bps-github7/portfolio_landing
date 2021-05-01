@@ -371,10 +371,10 @@
       }
     ] 
   },
-  "Experience" : 
-  { 
-    "Vector Marketing/ Cutco" : 
+  "experience" : 
+  [
     {
+      "company" : "Vector Marketing / Cutco",
       "position" : "Sales Representative",
       "employed" : "June 2014-july 2014",
       "location" : "Fort Washington, PA",
@@ -386,10 +386,11 @@
         "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
         "Independently traveled to appointments and communicated with customers regarding order details"
       ],
-      "direct supervisor" : "Elijah Cheecks",
-      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Elijah Cheecks",
+      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
     },
-    "Drexel Recreational Athletics" : {
+    {
+      "company" : "Drexel Recreational Athletics",
       "position" : "Coordinator of Student staff, Rock Climbing Associate",
       "employed" : "September 2015 - September 2016",
       "location" : "University City Philadelphia, PA",
@@ -419,12 +420,11 @@
           ]
         }
       ],
-      "direct supervisor" : "Andrew Demming",
-      "reason for leaving" : "end of co-op/ start of next co-op"
+      "supervisor" : "Andrew Demming",
+      "rfl" : "end of co-op/ start of next co-op"
     },
-    "Rock to the Future" : 
     {
-      
+      "company" : "Rock to the Future",
       "position" : "Sales Representative",
       "employed" : "June 2014-july 2014",
       "location" : "Fort Washington, PA",
@@ -436,12 +436,11 @@
         "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
         "Independently traveled to appointments and communicated with customers regarding order details"
       ],
-      "direct supervisor" : "Elijah Cheecks",
-      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Elijah Cheecks",
+      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
     },
-    "Olive Garden" : 
     {
-
+      "company" : "Darden Resturaunts / Olive Garden", 
       "position" : "Sales Representative",
       "employed" : "June 2014-july 2014",
       "location" : "Fort Washington, PA",
@@ -453,12 +452,11 @@
         "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
         "Independently traveled to appointments and communicated with customers regarding order details"
       ],
-      "direct supervisor" : "Elijah Cheecks",
-      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Elijah Cheecks",
+      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
     },
-    "Insomnia Cookies" : 
     {
-
+      "company" : "Insomnia Cookies", 
       "position" : "Sales Representative",
       "employed" : "June 2014-july 2014",
       "location" : "Fort Washington, PA",
@@ -470,36 +468,38 @@
         "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
         "Independently traveled to appointments and communicated with customers regarding order details"
       ],
-      "direct supervisor" : "Elijah Cheecks",
-      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Elijah Cheecks",
+      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
     },
-    "City Year Philadelphia" : 
     {
-
+      "company" : "City Year Philadelphia", 
       "position" : "Learning and developement Operations Associate",
       "employed" : "",
       "location" : "Center City Philadelphia, PA",
       "duties" : 
       [
-
+        "got the poades",
+        "and the cones o cones"
       ],
-      "direct supervisor" : "Elise Beyeler",
-      "reason for leaving" : "end of co-op"
+      "supervisor" : "Elise Beyeler",
+      "rfl" : "end of co-op"
     },
-    "Allied Universal" : 
     {
+      "company" : "Allied Universal", 
       "position" : "Security Professional",
       "employed" : "",
       "location" : "Wistar Institute in West Philadelphia, PA",
       "duties" : 
       [
-       
+        "I like",
+        "big booties",
+        "and i can not lie"
       ],
-      "direct supervisor" : "Fleta Howell",
-      "reason for leaving" : "Ask me"
+      "supervisor" : "Fleta Howell",
+      "rfl" : "Ask me"
     },
-    "GoPuff" : 
     {
+      "company" : "GoPuff", 
       "position" : "Delivery Driver",
       "employed" : "Per diem: April 2020-present",
       "location" : "Summerton, Manayaunk",
@@ -511,10 +511,10 @@
         "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
         "Independently traveled to appointments and communicated with customers regarding order details"
       ],
-      "direct supervisor" : "Elijah Cheecks",
-      "reason for leaving" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Elijah Cheecks",
+      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
     }
-  },
+  ],
   "Projects" :
   [
     {
@@ -633,7 +633,7 @@
     },
     "bestWay" : "email me",
     "bestTime" : "Monday-Friday, during normal business hours",
-    "concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally",
+    "concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
     "vacationing" : false,
     "employed" : true
   }
