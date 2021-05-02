@@ -8,24 +8,27 @@ export default class ThreePaneInfoPanel extends Component {
     this.state = {  }
   }
   render() {
-
-    //this needs to be more dynamic obbiously. but how? pass in string from props, then define these in conditional based on stirng value.
-    const skills = this.props.info; 
-    // console.log(skills);
+    //d0 we really need to pass in the whole object, why not a string of the tittle (about) and let this component load that object dynamicalluy
+    const about = this.props.info.about; 
+    // // console.log(skills);
     
-    const skillArea1 = skills[0];
-    const skillArea2 = skills[1]; 
-    const skillArea3 = skills[2]; 
+    const area1 = about[0];
+    const area2 = about[1]; 
+    const area3 = about[2]; 
 
-
+    console.log(this.props.info)
     
     return (
       <div className="intro-wrapper">
-        <ContentBox position="left-column" content={skillArea1}/>
+         hee some stuff
+          { area1.title }
+        
+
+        {/* <ContentBox position="left-column" content={skillArea1}/>
 
         <ContentBox position="middle-column" content={skillArea2}/>
 
-        <ContentBox position="right-column" content={skillArea3}/>
+        <ContentBox position="right-column" content={skillArea3}/> */}
 
 
         {/* Need to send a signal to parent component should this button be pressed */}

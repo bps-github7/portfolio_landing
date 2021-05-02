@@ -10,6 +10,7 @@ export default class Experience extends Component {
   render() { 
     const [ vector, drexel, rtf, darden, insomnia, cityYear, allied, goPuff  ] = data.experience; 
     return (
+      //  TODO please implement an info panel component so that you can get rid of all this horrible redundancy
       <div className="app-contact four-panel" style={{ display : 'grid', gridTemplateColumns : '1fr', gridTemplateRows : '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr' }}>
         <div>
           <div>
@@ -35,12 +36,8 @@ export default class Experience extends Component {
           <strong>Supervisor:</strong>
           { vector.supervisor }
         </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { vector.rfl }
-        </div>
       </div>
-    
+    <br/><br/>      
       <div>
         <div>
           <h3>{ drexel.company }:</h3>
@@ -65,10 +62,6 @@ export default class Experience extends Component {
         <div>
           <strong>Supervisor:</strong>
           { drexel.supervisor }
-        </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { drexel.rfl }
         </div>
       </div>
       <div>
@@ -95,10 +88,6 @@ export default class Experience extends Component {
           <strong>Supervisor:</strong>
           { rtf.supervisor }
         </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { rtf.rfl }
-        </div>
       </div>
 
     
@@ -154,10 +143,6 @@ export default class Experience extends Component {
         <div>
           <strong>Supervisor:</strong>
           { darden.supervisor }
-        </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { darden.rfl }
         </div>
       </div>
 
@@ -185,10 +170,6 @@ export default class Experience extends Component {
           <strong>Supervisor:</strong>
           { insomnia.supervisor }
         </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { insomnia.rfl }
-        </div>
       </div>
  
       <div>
@@ -215,10 +196,6 @@ export default class Experience extends Component {
           <strong>Supervisor:</strong>
           { cityYear.supervisor }
         </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { cityYear.rfl }
-        </div>
       </div>
       <div>
         <div>
@@ -243,10 +220,6 @@ export default class Experience extends Component {
         <div>
           <strong>Supervisor:</strong>
           { allied.supervisor }
-        </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { allied.rfl }
         </div>
       </div>
       
@@ -274,13 +247,7 @@ export default class Experience extends Component {
           <strong>Supervisor:</strong>
           { goPuff.supervisor }
         </div>
-        <div>
-          <strong>Reason for leaving:</strong>
-          { goPuff.rfl }
-        </div>
       </div>
- 
-
     </div>
 
     );
