@@ -90,8 +90,6 @@
             "title" : "Deployment",
             "content" : 
             [
-              "A list of things Ive deployed using",
-              "Currently nill.."
             ]
           }
         ]
@@ -193,25 +191,26 @@
             "title" : "Competency",
             "content" : 
             [
-              ""
+              "Writing",
+              "Asking the right questions",
+              "Always willing to listen to others suggestions"
             ]
           },
           {
             "title" : "analysis",
             "content" : 
             [
-              "wet",
-              "rabbit",
-              "attack"
+              "Whats the most efficient way to solve the problem at hand?",
+              "these are "
             ]
           },
           {
             "title" : "Reporting",
             "content" : 
             [
-              "wet",
-              "rabbit",
-              "attack"
+              "",
+              "",
+              ""
             ]
           }
 
@@ -438,45 +437,38 @@
       "location" : "Fort Washington, PA",
       "duties" : 
       [
-        "Attended salesmanship training and leadership development conference",
-        "Used cold calling to schedule appointments for Cutco knife demonstrations",
-        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
-        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
-        "Independently traveled to appointments and communicated with customers regarding order details"
+        
       ],
       "supervisor" : "Elijah Cheecks",
       "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
     },
     {
-      "company" : "Darden Resturaunts / Olive Garden", 
-      "position" : "Sales Representative",
+      "company" : "Olive Garden", 
+      "position" : "Line Cook",
       "employed" : "June 2014-july 2014",
       "location" : "Fort Washington, PA",
       "duties" : 
       [
-        "Attended salesmanship training and leadership development conference",
-        "Used cold calling to schedule appointments for Cutco knife demonstrations",
-        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
-        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
-        "Independently traveled to appointments and communicated with customers regarding order details"
+        "Responsible for the prep of appetizers and side dishes during evening meal time.",
+        "Proficient in use of fryer, grill, steamer and pizza oven during high tension situations.",
+        "Maintained a well stocked and hygienic work station.",
+        "Communicated with kitchen staff regarding refills during evening rushes.",
+        "Worked as a team with culinary crew to ensure the kitchen was absolutely clean at the end of night."
       ],
-      "supervisor" : "Elijah Cheecks",
-      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Matt",
+      "rfl" : ""
     },
     {
       "company" : "Insomnia Cookies", 
       "position" : "Sales Representative",
       "employed" : "June 2014-july 2014",
-      "location" : "Fort Washington, PA",
+      "location" : "3401 Lancaster ave",
       "duties" : 
       [
-        "Attended salesmanship training and leadership development conference",
-        "Used cold calling to schedule appointments for Cutco knife demonstrations",
-        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
-        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
-        "Independently traveled to appointments and communicated with customers regarding order details"
+        "deliver warm cookies and milk",
+        "helped break down boxes at end of the night",
+        "count the money in the register" 
       ],
-      "supervisor" : "Elijah Cheecks",
       "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
     },
     {
@@ -486,8 +478,6 @@
       "location" : "Center City Philadelphia, PA",
       "duties" : 
       [
-        "got the poades",
-        "and the cones o cones"
       ],
       "supervisor" : "Elise Beyeler",
       "rfl" : "end of co-op"
@@ -495,13 +485,16 @@
     {
       "company" : "Allied Universal", 
       "position" : "Security Professional",
-      "employed" : "",
+      "employed" : "11/17-3/19 1 year 6 months",
       "location" : "Wistar Institute in West Philadelphia, PA",
       "duties" : 
       [
-        "I like",
-        "big booties",
-        "and i can not lie"
+        "Monitor Security Operations Center and front desk",
+        "Tour building to detect lab hazards and report alarms",
+        "Submit work orders to address building problems",
+        "Sign visitors and contractors into the building",
+        "Accept and deliver packages locally when necessary",
+        "File shift summaries and incident reports daily"
       ],
       "supervisor" : "Fleta Howell",
       "rfl" : "Ask me"
@@ -511,19 +504,15 @@
       "position" : "Delivery Driver",
       "employed" : "Per diem: April 2020-present",
       "location" : "Summerton, Manayaunk",
-      "duties" : 
+      "duties" :  
       [
-        "Attended salesmanship training and leadership development conference",
-        "Used cold calling to schedule appointments for Cutco knife demonstrations",
-        "Developed mastery of demonstration skills and fluency of Cutco product catalogue",
-        "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
-        "Independently traveled to appointments and communicated with customers regarding order details"
+        
       ],
       "supervisor" : "Elijah Cheecks",
-      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "rfl" : ""
     }
   ],
-  "Projects" :
+  "projects" :
   [
     {
       "front end" : 
