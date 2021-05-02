@@ -191,7 +191,8 @@
             "title" : "Competency",
             "content" : 
             [
-              "Writing",
+              "writing",
+              "reading",
               "Asking the right questions",
               "Always willing to listen to others suggestions"
             ]
@@ -201,7 +202,7 @@
             "content" : 
             [
               "Whats the most efficient way to solve the problem at hand?",
-              "these are "
+              "The answer to that question is how we find the best algorithms"
             ]
           },
           {
@@ -224,9 +225,7 @@
             "title" : "Responsiblity",
             "content" : 
             [
-              "a",
-              "b",
-              "c"
+              ""
             ]
           },
           {
@@ -306,10 +305,8 @@
             "title" : "Philosophy",
             "content" : 
             [
-              "some",
-              "stuff",
-              "in",
-              "here"
+              "Its extermely important we focus on this issue",
+              "given the current threat environment"  
             ]
           },
           {
@@ -393,8 +390,8 @@
         "Learned about developing rapport with customers, making sales and filling out order requests and receipts",
         "Independently traveled to appointments and communicated with customers regarding order details"
       ],
-      "supervisor" : "Elijah Cheecks",
-      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Elijah Cheecks"
+   
     },
     {
       "company" : "Drexel Recreational Athletics",
@@ -427,26 +424,27 @@
           ]
         }
       ],
-      "supervisor" : "Andrew Demming",
-      "rfl" : "end of co-op/ start of next co-op"
+      "supervisor" : "Andrew Demming"
     },
     {
       "company" : "Rock to the Future",
-      "position" : "Sales Representative",
-      "employed" : "June 2014-july 2014",
-      "location" : "Fort Washington, PA",
+      "position" : "Vollunteer Program Coordinator",
+      "employed" : "9/16 - 11/16",
+      "location" : "Kensington, PA",
       "duties" : 
       [
-        
+        "Assisted with the operation of an after school music program",
+        "Helped lead band practice for middle and high school age students",
+        "Mentored and assisted students in completion of homework",
+        "Established trust and rapport with students"
       ],
-      "supervisor" : "Elijah Cheecks",
-      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Josh"
     },
     {
       "company" : "Olive Garden", 
       "position" : "Line Cook",
-      "employed" : "June 2014-july 2014",
-      "location" : "Fort Washington, PA",
+      "employed" : "5/17 - 8/17",
+      "location" : "Bala Cnywd PA",
       "duties" : 
       [
         "Responsible for the prep of appetizers and side dishes during evening meal time.",
@@ -455,29 +453,33 @@
         "Communicated with kitchen staff regarding refills during evening rushes.",
         "Worked as a team with culinary crew to ensure the kitchen was absolutely clean at the end of night."
       ],
-      "supervisor" : "Matt",
-      "rfl" : ""
+      "supervisor" : "Jason"
     },
     {
       "company" : "Insomnia Cookies", 
-      "position" : "Sales Representative",
-      "employed" : "June 2014-july 2014",
+      "position" : "Delivery Driver",
+      "employed" : "9/16 - 6/17",
       "location" : "3401 Lancaster ave",
       "duties" : 
       [
         "deliver warm cookies and milk",
-        "helped break down boxes at end of the night",
-        "count the money in the register" 
+        "helped break down boxes at end of the night"
       ],
-      "rfl" : "Felt like I was (unintentionally- due to 'cold-call' bus. model) harrassing family and friends to make sales"
+      "supervisor" : "Matt"
     },
     {
       "company" : "City Year Philadelphia", 
       "position" : "Learning and developement Operations Associate",
-      "employed" : "",
+      "employed" : "9/17 - 3/18",
       "location" : "Center City Philadelphia, PA",
       "duties" : 
       [
+        "Supported lower tier leadership within the organization.",
+        "Worked with learning and development team to prepare for Corps wide events.",
+        "Toured sites to review implementation of intervention strategies and team cohesiveness.",
+        "Maintain weekly input of intervention data.",
+        "Assisted with organization and inventoried office supplies.",
+        "Independently organized and lead a workshop on professional development."
       ],
       "supervisor" : "Elise Beyeler",
       "rfl" : "end of co-op"
@@ -496,8 +498,7 @@
         "Accept and deliver packages locally when necessary",
         "File shift summaries and incident reports daily"
       ],
-      "supervisor" : "Fleta Howell",
-      "rfl" : "Ask me"
+      "supervisor" : "Fleta Howell"
     },
     {
       "company" : "GoPuff", 
@@ -506,10 +507,11 @@
       "location" : "Summerton, Manayaunk",
       "duties" :  
       [
-        
+        "Deliver customers orders",
+        "communicate with them if there is a problem in transit",
+        "worked nightshifts which means I may be the only driver for extended periods"
       ],
-      "supervisor" : "Elijah Cheecks",
-      "rfl" : ""
+      "supervisor" : "Kaitlyn Campuzano"
     }
   ],
   "projects" :
@@ -547,15 +549,17 @@
       { "title" : "Music", "content" : [
         {
           "intro" : "I taught myself to play most of the instruments I play, But have taken lessons for a few including the drums, upright bass and tabla. I live much in the improvisational domain, enjoy jazz and hip hop and play drums in a semi-experimental band",
-          "drums" : [],
-          "keys" : [],
-          "bass": [],
-          "misc" : []
+          "drums" : ["xxxx"],
+          "keys" : ["xxx"],
+          "bass": ["xxx"],
+          "guitar" : ["x"],
+          "misc" : ["xxxx"]
         }
       ]},
       { "title" : "Excersise", "content" : 
         [
-          { "title" : "pre movement routine",
+          { 
+            "title" : "pre movement routine",
             "content" : 
             [
               "6 twist lunge (alternate legs, twist both ways)",
@@ -579,7 +583,9 @@
             "Movement" : 
             [
               { "title" : "sunday", "content": "rest" },
-              {"title" : "monday", "content" : []},
+              {"title" : "monday", "content" : [
+                "4 mile run at around 30-40% of max effort"
+              ]},
               {"title" : "tuesday", "content" : []},
               { "title" : "wednesday", "content" : "rest" },
               { "title" : "thursday", "content" : []},

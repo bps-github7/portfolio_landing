@@ -26,13 +26,14 @@ export default class About extends Component {
       if (toShow === "music") {
         this.topic = "music";
         this.currentSelected = data["about"]["music"]
+        //such a jenky way of doing this! why not just do it once ?
         this.setState({
           defaultOrganization : false
         })
       }
       else if (toShow === "excersise") {
-        this.topic = "excersis";
-        this.currentSelected = data["about"]["general"]
+        this.topic = "excersise";
+        this.currentSelected = data["about"]["excersise"]
         this.setState({
           defaultOrganization : false 
         })
@@ -57,6 +58,11 @@ export default class About extends Component {
               <h3>About</h3>
             </div>
           </div>
+          <div className="header">
+            Some stuff about me:
+          </div>
+
+
 
           { this.state.defaultOrganization ?
           <div class="intro-wrapper-rows">
