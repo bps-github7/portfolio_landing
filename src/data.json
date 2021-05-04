@@ -143,7 +143,42 @@
     }
   },
   "experience" : { 
-    "drexel" : {},
+    "drexel" : {
+      //not right...
+      {
+      "company" : "Drexel Recreational Athletics",
+      "position" : "Coordinator of Student staff, Rock Climbing Associate",
+      "employed" : "September 2015 - September 2016",
+      "location" : "University City Philadelphia, PA",
+      "duties" : 
+      [
+        {
+          "title" : "Coordinator of Student staff",
+          "content" : 
+          [
+            "Responsible for overseeing the recruitment and hiring of new staff",
+            "Maintained the schedule, contact info and employee demographics of 300+ staff members",
+            "Completed Electronic Personal Action Forms for all new employees",
+            "Tracked scheduled, worked and submitted hours for all student staff",
+            "Built rapport with student and department staff on a daily basis",
+            "In charge of the planning and execution of student staff events",
+            "Organized and lead a professional development program for interested student staff" 
+          ]
+        },
+        {
+          "title" :"Climbing Wall Attendent",
+          "content" : 
+          [
+            "Manned the front desk by greeting attendees and offering information about the facilities",
+            "Aided in the completion of waivers",
+            "Certified Belayer- helped climbers who did not have someone to belay them",
+            "Background in first aid and outdoor skills" 
+          ]
+        }
+      ],
+      "supervisor" : "Andrew Demming"
+    },
+    },
     "insomniaCookies" : {},
     "cityYear" : {},
     "alliedUniversal" : {},
@@ -160,8 +195,17 @@
       "cooking" : {},
       "music" : {}
     },
-    "excersise" : {},
-    "sustainability" : {}
+    "excersise" : {
+      "premovement" : {},
+      "movement" : {},
+      "postmovement" : {}
+    },
+    "sustainability" : {
+      "compost" : {},
+      "recycling": {},
+      "gardening" : {}
+
+    }
   },
   "contact" : 
   {
