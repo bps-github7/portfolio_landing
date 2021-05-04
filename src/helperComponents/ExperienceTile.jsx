@@ -3,18 +3,32 @@ import React from 'react';
 const ExperienceTile = (props) => {
   // let classes = "badge-primary";
   // classes += this.props.experience.currentPosition  
+  const position = props.position;
+  // console.log(position)
   return (
     // maybe want to conditionally render a class if job is current position
     <div>
-      <h3>{ props.company }</h3>
-      <h4>{ props.position }</h4>
-      <p> 
-
+      
+      <h3>{ position.company }</h3>
+      {/* <h4>{ position.position }</h4> */}
+      <p>
+       <div>
+        <strong>Employed:</strong> {position.employed}
+       </div>
+       <div>
+        <strong>Supervisor:</strong> {position.supervisor}
+       </div>
+        <div>
+          <strong>Location:</strong> {position.location}
+        </div>
 
       { 
-        props.experience.length > 1 
-        ? <SingleListRender responsibilities={props.experience}/> 
-        : <MultiListRender responsibilities={props.experience}/> 
+        Object.keys(position.duties).length === 1 
+        ? <div>Wil render a single thing!</div>
+        : <div>Will render a multi thing!</div>
+
+        // ? <SingleListRender responsibilities={props.experience}/> 
+        // : <MultiListRender responsibilities={props.experience}/> 
       }
       </p>
     </div>
