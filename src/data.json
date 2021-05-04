@@ -1,0 +1,182 @@
+{
+  "skills" : {
+    "development" : {
+      "programming" : {
+        "general" : {
+          "java" : {
+            "proficiency" : 3,
+            "about" : "I took multiple classes in grad school which used Java as the main language",
+            "estimatedLinesRead" : 500,
+            "notes" : ""
+          },
+          "C" : {
+            "proficiency" : 2, 
+            "about" : "Read the C Programming Book, completed most of the assigned problems, I understand (most) the concepts but have applied them sparingly in my career as a developer",
+            "estimatedLinesRead" : 700,
+            "notes" : ""
+          },
+          "C++" : {
+            "proficiency" : 1,
+            "about" : "Completed the Solo learn C++ course, read and understood a good bit of source code, have implemented some basic algorithms and programs using C++. However, like C, I have written minimal code using C++",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "C#" : {
+            "proficiency" : 3,
+            "about" : "Parallel with my knowledge of Java, I have created a REST API using the .net framework, and read a book about C# fundementals",
+            "estimatedLinesRead" : 400,
+            "notes" : ""
+          }
+        },
+        "scripting" : {
+          "python" : {
+            "proficiency" : 4,
+            "about" : "",
+            "estimatedLinesRead" : 1300,
+            "notes" : "I know most of the standard library, and have a good undertstanding of Python language internals (how it works)"
+          },
+          "bash" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "awk" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }, 
+          "ruby" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }
+        },
+        "web" : {
+          "html" : {
+            "proficiency" : 5,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "css" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "Javascript/Typescript" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "Angular" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "React" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }
+        },
+        "database" : {
+          "SQL" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "NoSQL" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }
+        }
+      }, 
+      "softwareDevelopement" : {
+        "design" : {
+
+        },
+        "implementation" : {
+
+        },
+        "lifecycle" : {
+
+        },
+        "deployment" : {
+          
+        }
+      }, 
+      "tooling" : {
+        "workspaces" : {
+
+        },
+        "development" : {
+
+        },
+        "testing" : {
+
+        },
+        "rdbms" : {
+          "Microsoft SQL Server Express" : "",
+          "Oracle RDBMS" : "" 
+        }
+      }
+    },
+    "general" : {
+      "creativity" : {},
+      "a" : {},
+      "b" : {} 
+    },
+    "concepts" : {
+      "education" : {},
+      "cyberSecurity" : {},
+      "artificialIntelligence": {}
+    }
+  },
+  "experience" : { 
+    "drexel" : {},
+    "insomniaCookies" : {},
+    "cityYear" : {},
+    "alliedUniversal" : {},
+    "goPuff" : {}
+  },
+  "projects" : {
+    "frontEnd" : {},
+    "backEnd" : {},
+    "testing" : {}
+  },
+  "about" : {
+    "expression" : {
+      "art" : {},
+      "cooking" : {},
+      "music" : {}
+    },
+    "excersise" : {},
+    "sustainability" : {}
+  },
+  "contact" : 
+  {
+    "cell" : "215-837-2319",
+    "email" : "bps53@protonmail.com",
+    "msg" : 
+    {
+      "linkedin" : "https://www.linkedin.com/in/ben-sehnert/",
+      "github" : "https://github.com/bps-github7",
+      "slack" : "Ben P Sehnert"
+    },
+    "bestWay" : "email me",
+    "bestTime" : "Monday-Friday, during normal business hours",
+    "concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
+    "vacationing" : false,
+    "employed" : true
+  }
+}  
