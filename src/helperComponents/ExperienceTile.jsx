@@ -24,36 +24,52 @@ const ExperienceTile = (props) => {
 
       { 
         Object.keys(position.duties).length === 1 
-        ? <div>Wil render a single thing!</div>
-        : <div>Will render a multi thing!</div>
+        // ? <div>Wil render a single thing!</div>
+        // : <div>Will render a multi thing!</div>
 
-        // ? <SingleListRender responsibilities={props.experience}/> 
-        // : <MultiListRender responsibilities={props.experience}/> 
+        ? <SingleListRender duties={position.duties}/> 
+        : <MultiListRender duties={position.duties}/> 
       }
       </p>
     </div>
   );
 }
 
-const SingleListRender = (responsibilities) => {
+const SingleListRender = (props) => {
 /* for displaying a list where I worked only a single
   position with company */
+  const position = Object.keys(props.duties)[0]
   return(
+    <div>
+      <h3>
+        { position }
+      </h3>
     <ul>
-      { responsibilities.map((item) => <li>{item}</li>) } 
-    </ul>  
+      {(props.duties[position]).map((item, i) => <li key={i}>{item}</li>)}
+    </ul>   
+    </div>
+    
   )
 
 }
 
-const MultiListRender = (responsibilities) => {
-  /* for displaying responsibilities when I worked 
+// Note, its better to keep the argument named props then treat it like a complex object
+// rather than giving it a name other than props. this led to something like:
+// ```<SingleListRender duties={"simple" : "object"} 
+// --> responsiblities = { "responsiblities" : {"simple" : "object"}}   ```
+
+const MultiListRender = (props) => {
+  /* for displaying duties when I wor ked 
     multiple positions with one company */
-  for (let item of Object.keys(responsibilities)) {
-   console.log(item)
-   //need to display the title of position, then the responsiblities.  
-  }
-  return(<div>JSX created from appending each list rendered from the responsibilities object</div>)
+    return(
+    <div>
+      
+      {/* { props.duties.map((position) => (<SingleListRender duties={position}/>)) } */}
+      {/* { Object.keys(props.duties).map((key) => (<SingleListRender duties={props.duties[key]}/>)) } */}
+      { Object.keys(props.duties).map((key) => ) }
+
+    </div>
+  )
 }
 
 export default ExperienceTile;

@@ -8,7 +8,6 @@ export default class Experience extends Component {
     this.state = { experience : data.experience }; 
   }
   render() { 
-    console.log(this.state.experience);
     return (
       //  TODO please implement an info panel component so that you can get rid of all this horrible redundancy
       <div className="app-contact four-panel" style={{ display : 'grid', gridTemplateColumns : '1fr', gridTemplateRows : '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr' }}>
