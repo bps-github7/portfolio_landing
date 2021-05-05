@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import data from '../data.json';
+import RowDropdown from '../helperComponents/RowDropdown';
 
 export default class Skills extends Component {
 
@@ -11,11 +12,15 @@ export default class Skills extends Component {
   }
 
   render() {
-    console.log("skills here:")
-    console.log(this.state.skills)
     return (
       <div className="app-skills">
-        Here go the skills
+        {
+          Object.keys(this.state.skills)
+          .map((area) =>  
+            <RowDropdown skillArea={area} />
+          )
+        }
+
       </div>
       );
   }
