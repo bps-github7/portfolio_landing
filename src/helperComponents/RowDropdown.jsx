@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ColumnDropdown from './ColumnDropdown';
+
 
 export default class RowDropdown extends Component {
   constructor(props) {
@@ -19,8 +21,9 @@ export default class RowDropdown extends Component {
       <div className="app-row-dropdown">
         {
           this.state.open ?
-          <OpenRow toggleOpen={this.toggleOpen()}/>:         
-          <ClosedRow toggleOpen={this.toggleOpen()}/>
+          // <span>Open</span> : <span>Closed <button onClick={this.toggleOpen}>open?</button></span>
+          <OpenRow topic={this.props.topic} toggleOpen={this.toggleOpen}/>:         
+          <ClosedRow topic={this.props.topic} toggleOpen={this.toggleOpen}/>
         }
       </div>
     
@@ -28,20 +31,27 @@ export default class RowDropdown extends Component {
   }
 }
 
+const getTitle = (title) => {
+  return (Object.keys(title)[0])
+}
+
 const ClosedRow = (props) => {
   return(
     <div className="app-closed-row">
-      Row name goes here
-      <button onClick={() => this.props.toggleOpen()}>Open it?</button>
+      <h4>
+        { props.topic }
+      </h4>
+       
+      <button onClick={props.toggleOpen}>Examine</button>
     </div>
   )
 }
 
 const OpenRow = (props) => {
   return (
-    <div className="app-open-row">
-      the row is open.
-      <button onClick={() => props.toggleOpen()}>Close it?</button> 
+    <div className="app-open-row" style={{display: "grid", "gridTemplateRows" : "1fr 1fr 1fr" }}>
+      <ColumnDropdown topic={props.topic}/>
+      <button onClick={props.toggleOpen}>Hide</button> 
     </div>
   )
 }

@@ -230,8 +230,7 @@
      }
    }
   },
-  "contact" : 
-  {
+  "contact" : {
     "cell" : "215-837-2319",
     "email" : "bps53@protonmail.com",
     "msg" : 
@@ -245,5 +244,10 @@
     "concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
     "vacationing" : false,
     "employed" : true
+  },
+  "about" : {
+    "excersise" : {},
+    "creativity" : {},
+    "sustainability" : {}
   }
 }  

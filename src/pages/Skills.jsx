@@ -3,7 +3,6 @@ import data from '../data.json';
 import RowDropdown from '../helperComponents/RowDropdown';
 
 export default class Skills extends Component {
-
   constructor(props) {
     super(props);
     this.state = { 
@@ -17,7 +16,7 @@ export default class Skills extends Component {
         {
           Object.keys(this.state.skills)
           .map((area) =>  
-            <RowDropdown skillArea={area} />
+            <RowDropdown topic={area}/>
           )
         }
 
