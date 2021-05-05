@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import data from './portfolio.json';
+import data from '../portfolio.json';
 
-
+/* make sure you update this with all the other components. this json data should be loaded dynamically when needed only*/
 export default class Contact extends Component {
   constructor(props) {
     super(props);

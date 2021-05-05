@@ -1,0 +1,249 @@
+{
+  "skills" : {
+    "development" : {
+      "programming" : {
+        "general" : {
+          "java" : {
+            "proficiency" : 3,
+            "about" : "I took multiple classes in grad school which used Java as the main language",
+            "estimatedLinesRead" : 500,
+            "notes" : ""
+          },
+          "C" : {
+            "proficiency" : 2, 
+            "about" : "Read the C Programming Book, completed most of the assigned problems, I understand (most) the concepts but have applied them sparingly in my career as a developer",
+            "estimatedLinesRead" : 700,
+            "notes" : ""
+          },
+          "C++" : {
+            "proficiency" : 1,
+            "about" : "Completed the Solo learn C++ course, read and understood a good bit of source code, have implemented some basic algorithms and programs using C++. However, like C, I have written minimal code using C++",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "C#" : {
+            "proficiency" : 3,
+            "about" : "Parallel with my knowledge of Java, I have created a REST API using the .net framework, and read a book about C# fundementals",
+            "estimatedLinesRead" : 400,
+            "notes" : ""
+          }
+        },
+        "scripting" : {
+          "python" : {
+            "proficiency" : 4,
+            "about" : "",
+            "estimatedLinesRead" : 1300,
+            "notes" : "I know most of the standard library, and have a good undertstanding of Python language internals (how it works)"
+          },
+          "bash" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "awk" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }, 
+          "ruby" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }
+        },
+        "web" : {
+          "html" : {
+            "proficiency" : 5,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "css" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "Javascript/Typescript" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "Angular" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "React" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }
+        },
+        "database" : {
+          "SQL" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          },
+          "NoSQL" : {
+            "proficiency" : 3,
+            "about" : "",
+            "estimatedLinesRead" : 200,
+            "notes" : ""
+          }
+        }
+      }, 
+      "softwareDevelopement" : {
+        "design" : {
+
+        },
+        "implementation" : {
+
+        },
+        "lifecycle" : {
+
+        },
+        "deployment" : {
+          
+        }
+      }, 
+      "tooling" : {
+        "workspaces" : {
+
+        },
+        "development" : {
+
+        },
+        "testing" : {
+
+        },
+        "rdbms" : {
+          "Microsoft SQL Server Express" : "",
+          "Oracle RDBMS" : "" 
+        }
+      }
+    },
+    "general" : {
+      "creativity" : {},
+      "a" : {},
+      "b" : {} 
+    },
+    "concepts" : {
+      "education" : {},
+      "cyberSecurity" : {},
+      "artificialIntelligence": {}
+    }
+  },
+  "experience" : { 
+    "drexel" : {
+      "company" : "Drexel Recreational Athletics",
+      "employed" : "September 2015 - September 2016",
+      "location" : "University City Philadelphia, PA",
+      "supervisor" : "Andrew Demming",
+      "duties" : {
+        "Coordinator of Student staff" : [
+          "Responsible for overseeing the recruitment and hiring of new staff",
+          "Maintained the schedule, contact info and employee demographics of 300+ staff members",
+          "Completed Electronic Personal Action Forms for all new employees",
+          "Tracked scheduled, worked and submitted hours for all student staff",
+          "Built rapport with student and department staff on a daily basis",
+          "In charge of the planning and execution of student staff events",
+          "Organized and lead a professional development program for interested student staff" 
+        ],
+        "Climbing Wall Attendent":
+        [
+          "Manned the front desk by greeting attendees and offering information about the facilities",
+          "Aided in the completion of waivers",
+          "Certified Belayer- helped climbers who did not have someone to belay them",
+          "Background in first aid and outdoor skills" 
+        ]
+      }
+    },
+    "insomniaCookies" : {
+      "company" : "Insomnia Cookies", 
+      "employed" : "9/16 - 6/17",
+      "location" : "3401 Lancaster ave",
+      "supervisor" : "Matt",
+      "duties" : 
+      {
+        "Delivery Driver" : [
+          "Deliver warm cookies and milk",
+          "Helped break down boxes at end of the night"
+        ]
+      }
+      
+    },
+   "cityYear" : {
+     "company" : "City Year",
+     "employed" : "9/17 -3/18",
+     "location" : "Philadelphia, PA",
+     "supervisor" : "Elise Beyeler",
+     "duties" : {
+       "Learning and Developement Operations Associate" : [
+        "Supported lower tier leadership within the organization.",
+        "Worked with learning and development team to prepare for Corps wide events.",
+        "Toured sites to review implementation of intervention strategies and team cohesiveness.",
+        "Maintain weekly input of intervention data.",
+        "Assisted with organization and inventoried office supplies.",
+        "Independently organized and lead a workshop on professional development."
+       ]
+     }
+   },
+   "AlliedUniversal"  : {
+     "company" : "Allied Universal Security Services",
+     "employed" : "",
+     "location" : "3601 Spruce Street, Philadelphia PA",
+     "supervisor" : "Fleta Howell",
+     "duties" : {
+      "Security Professional" : [
+        "Monitor Security Operations Center and front desk",
+        "Tour building to detect lab hazards and report alarms",
+        "Submit work orders to address building problems",
+        "Sign visitors and contractors into the building",
+        "Accept and deliver packages locally when necessary",
+        "File shift summaries and incident reports daily"
+      ]
+     }
+   },
+   "GoPuff" : {
+     "company" : "GoPuff",
+     "employed" : "4/2020 - present (per diem)",
+     "location" : "Sommerton, Manayank",
+     "supervisor" : "Kaitlyn Campuzano",
+     "duties" : {
+       "Delivery Driver" : [
+          "Deliver Customer Orders",
+          "Follow all Coronavirus safety procedures",
+          "Confirm the age and identity of customers purchasing tobacco or alcohol",
+          "Communicate with customers about problems in transit",
+          "Redirect non-delivery related customer concerns to appropriate party",
+          "Worked weekday nightshifts, responsible for completing all deliveries past from 2am-6am"
+        ]
+     }
+   }
+  },
+  "contact" : 
+  {
+    "cell" : "215-837-2319",
+    "email" : "bps53@protonmail.com",
+    "msg" : 
+    {
+      "linkedin" : "https://www.linkedin.com/in/ben-sehnert/",
+      "github" : "https://github.com/bps-github7",
+      "slack" : "Ben P Sehnert"
+    },
+    "bestWay" : "email me",
+    "bestTime" : "Monday-Friday, during normal business hours",
+    "concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
+    "vacationing" : false,
+    "employed" : true
+  }
+}  
