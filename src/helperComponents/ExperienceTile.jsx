@@ -38,36 +38,36 @@ const ExperienceTile = (props) => {
 const SingleListRender = (props) => {
 /* for displaying a list where I worked only a single
   position with company */
+
   const position = Object.keys(props.duties)[0]
+  const duties = props.duties[position];
   return(
     <div>
       <h3>
         { position }
       </h3>
-    <ul>
-      {(props.duties[position]).map((item, i) => <li key={i}>{item}</li>)}
-    </ul>   
+      <ul>
+        {duties.map((item, i) => <li key={i}>{item}</li>)}
+      </ul>   
     </div>
     
   )
 
 }
 
-// Note, its better to keep the argument named props then treat it like a complex object
-// rather than giving it a name other than props. this led to something like:
-// ```<SingleListRender duties={"simple" : "object"} 
-// --> responsiblities = { "responsiblities" : {"simple" : "object"}}   ```
-
 const MultiListRender = (props) => {
   /* for displaying duties when I wor ked 
-    multiple positions with one company */
-    return(
-    <div>
-      
-      {/* { props.duties.map((position) => (<SingleListRender duties={position}/>)) } */}
-      {/* { Object.keys(props.duties).map((key) => (<SingleListRender duties={props.duties[key]}/>)) } */}
-      { Object.keys(props.duties).map((key) => ) }
-
+  multiple positions with one company
+  Right now were just gonna make it support 2 positions.
+  This is trickier than I first imagined. update if u have
+  worked for a company in the future with more than 2 positions
+  */
+  var items = [];
+  for (let item in props.duties)
+    items.push({[item] :props.duties[item]});
+  return(
+    <div style={{display: "grid", gridTemplateColumns: " 1fr 1fr"}}>
+      { items.map((object) => <SingleListRender duties={object}/>) }
     </div>
   )
 }
