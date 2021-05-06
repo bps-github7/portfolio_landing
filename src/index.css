@@ -315,7 +315,7 @@ a {
     transition: all var(--speed) ease;
 }
 
-/* Second menu - frontend projects
+
 .menu-second-enter {
     position: absolute;
     transform: translateX(-110%);
@@ -354,7 +354,7 @@ a {
     transform: translateX(110%);
     transition: all var(--speed) ease;
 }
-
+/*
 .menu-third-enter {
     position: absolute;
     transform: translateX(-110%);

@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import data from '../data.json';
-import RowDropdown from '../helperComponents/RowDropdown';
+import InfoPanelSlider from '../helperComponents/InfoPanelSlider';
 
 export default class About extends Component {
   constructor(props) {
@@ -13,12 +13,7 @@ export default class About extends Component {
   render() { 
     return (
       <div class="app-about">
-        {
-          Object.keys(this.state.about)
-          .map((area) =>  
-            <RowDropdown topic={area} />
-          )
-        }
+        <InfoPanelSlider info={this.state.about} />
       </div>
       );
   }
