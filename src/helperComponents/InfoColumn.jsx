@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import ColumnDropdown from './ColumnDropdown';
 
 export default class InfoColumn extends Component {

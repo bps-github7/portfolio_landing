@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { useState } from 'react';
 import { ReactComponent as CogIcon } from './icons/cog.svg';
 import { ReactComponent as CaretIcon } from './icons/caret.svg';

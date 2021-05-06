@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import InfoColumn from './InfoColumn';
-
+import { CSSTransition } from 'react-transition-group';
 
 export default class RowDropdown extends Component {
   constructor(props) {
@@ -29,10 +29,6 @@ export default class RowDropdown extends Component {
     
     );
   }
-}
-
-const getTitle = (title) => {
-  return (Object.keys(title)[0])
 }
 
 const ClosedRow = (props) => {

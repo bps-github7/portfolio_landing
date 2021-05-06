@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import data from '../portfolio.json';
 
 /* make sure you update this with all the other components. this json data should be loaded dynamically when needed only*/

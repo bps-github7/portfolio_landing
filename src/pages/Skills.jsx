@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import data from '../data.json';
 import RowDropdown from '../helperComponents/RowDropdown';
 

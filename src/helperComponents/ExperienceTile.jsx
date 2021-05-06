@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ExperienceTile = (props) => {
   // let classes = "badge-primary";
   // classes += this.props.experience.currentPosition  

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 export default class ColumnDropdown extends Component {
   constructor(props) {
