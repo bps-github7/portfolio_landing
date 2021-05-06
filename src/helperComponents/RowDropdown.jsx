@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ColumnDropdown from './ColumnDropdown';
+import InfoColumn from './InfoColumn';
 
 
 export default class RowDropdown extends Component {
@@ -22,8 +22,8 @@ export default class RowDropdown extends Component {
         {
           this.state.open ?
           // <span>Open</span> : <span>Closed <button onClick={this.toggleOpen}>open?</button></span>
-          <OpenRow topic={this.props.topic} toggleOpen={this.toggleOpen}/>:         
-          <ClosedRow topic={this.props.topic} toggleOpen={this.toggleOpen}/>
+          <OpenRow title={this.props.title} contents={this.props.contents} toggleOpen={this.toggleOpen}/>:         
+          <ClosedRow title={this.props.title} toggleOpen={this.toggleOpen}/>
         }
       </div>
     
@@ -39,7 +39,7 @@ const ClosedRow = (props) => {
   return(
     <div className="app-closed-row">
       <h4>
-        { props.topic }
+        { props.title }
       </h4>
        
       <button onClick={props.toggleOpen}>Examine</button>
@@ -49,8 +49,10 @@ const ClosedRow = (props) => {
 
 const OpenRow = (props) => {
   return (
-    <div className="app-open-row" style={{display: "grid", "gridTemplateRows" : "1fr 1fr 1fr" }}>
-      <ColumnDropdown topic={props.topic}/>
+    <div className="app-open-row" style={{display: "grid", "gridTemplateColumns" : "1fr 1fr 1fr" }}>
+      { Object.keys(props.contents).map((title, i) => (
+        <InfoColumn key={i} title={title} contents={props.contents[title]}/>
+      )) }
       <button onClick={props.toggleOpen}>Hide</button> 
     </div>
   )

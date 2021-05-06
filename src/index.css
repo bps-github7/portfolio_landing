@@ -162,13 +162,13 @@ a {
   border: 2px solid gold;
 }
 
-.dd-trigger+ul {
+.dd-trigger+.dd-col {
   display: none;
 }
 
 /* this */
 
-.dd-trigger:hover+ul, .dd-trigger+ul:hover  {
+.dd-trigger:hover+.dd-col, .dd-trigger+.dd-col:hover  {
   display: inline-block; 
 }
 

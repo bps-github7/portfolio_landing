@@ -16,7 +16,7 @@ export default class Skills extends Component {
         {
           Object.keys(this.state.skills)
           .map((area) =>  
-            <RowDropdown topic={area}/>
+            <RowDropdown title={area} contents={this.state.skills[area]}/>
           )
         }
 
