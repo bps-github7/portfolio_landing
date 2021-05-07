@@ -246,8 +246,22 @@
     "employed" : true
   },
   "about" : {
-    "excersise" : {},
-    "creativity" : {},
-    "sustainability" : {}
+    "excersise" : {
+      "preMovement" : {
+        
+      },
+      "movement" : {},
+      "postMovement" : {}
+    },
+    "creativity" : {
+      "music" : {},
+      "art" : {},
+      "cooking" : {}
+    },
+    "sustainability" : {
+      "gardening" : {},
+      "recyecling" : {},
+      "composting" : {}
+    }
   }
 }  

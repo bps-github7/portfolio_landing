@@ -338,7 +338,7 @@ a {
 
 .menu-second-enter {
     position: absolute;
-    transform: translateX(110%);
+    transform: translateX(-110%);
 }
 
 .menu-second-enter-active {

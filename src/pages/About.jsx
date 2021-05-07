@@ -13,7 +13,7 @@ export default class About extends Component {
   render() { 
     return (
       <div class="app-about">
-        <InfoPanelSlider info={this.state.about} />
+        <InfoPanelSlider contents={this.state.about} />
       </div>
       );
   }

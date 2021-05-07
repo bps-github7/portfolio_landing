@@ -9,7 +9,7 @@ export default class InfoPanelSlider extends Component {
       selected : 'intro'
       }
   }
-  render() { 
+  render() {
     return (
       <div>
       <CSSTransition 
@@ -19,7 +19,6 @@ export default class InfoPanelSlider extends Component {
         classNames="menu-primary">
         <div className="menu" >
           A skonilione pinecone but a pone it a bone so a host is a phone <br /> use your child as a waffle cone machine in a dog fight          
-          {/* <InfoColumn title={}  /> */}
         </div>
       </CSSTransition>
 
@@ -29,8 +28,7 @@ export default class InfoPanelSlider extends Component {
         timeout={100}
         classNames="menu-second">
         <div className="menu" >
-          excersise
-          {/* <InfoColumn/> */}
+          <InfoColumn title={this.state.selected} contents={this.props.contents[this.state.selected]} />
         </div>
       </CSSTransition>
 
@@ -40,8 +38,7 @@ export default class InfoPanelSlider extends Component {
         timeout={100}
         classNames="menu-second">
         <div className="menu" >
-          Creativity
-          {/* <InfoColumn/> */}
+          <InfoColumn title={this.state.selected} contents={this.props.contents[this.state.selected]} />
         </div>
       </CSSTransition>
  
@@ -51,14 +48,13 @@ export default class InfoPanelSlider extends Component {
         timeout={100}
         classNames="menu-second">
         <div className="menu" >
-          Sustainability
-          {/* <InfoColumn /> */}
+          <InfoColumn title={this.state.selected} contents={this.props.contents[this.state.selected]} />
         </div>
       </CSSTransition> 
 
 
         <div class="button-panel">
-          { Object.keys(this.props.info).map((item) => (
+          { Object.keys(this.props.contents).map((item) => (
             <button onClick={() => this.setState({selected : item})}>{item}</button>
           )) }                  
         </div>
