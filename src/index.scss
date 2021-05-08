@@ -16,22 +16,20 @@
   display: inline;
 } */
 
-:root {
-  --mainColor: #eaeaea;
-  --secondaryColor: #fff;
-  --borderColor: #c1c1c1;
-  --mainText: black;
-  --secondaryText: #4b5156;
 
-  --bg: #242526;
-  --bg-accent: #484a4d;
-  --text-color: #dadce1;
-  --nav-size: 60px;
-  --border: 1px solid #474a4d;
-  --border-radius: 8px;
-  --speed: 500ms;
-
-}
+$mainColor: #eaeaea;
+$secondaryColor: #fff;
+$borderColor: #c1c1c1;
+$mainText: black;
+$secondaryText: #4b5156;
+$bg: #242526;
+$bg-accent: #484a4d;
+$text-color: #dadce1;
+$nav-size: 60px;
+$border: 1px solid #474a4d;
+$border-radius: 8px;
+$speed: 500ms;
+$button-size: 3rem;
 
 html, body {
   margin: 0;
@@ -53,11 +51,11 @@ ul {
 
 
 h1, h2, h3, h4, h5, h6, strong {
-  color: var(--mainText);
+  color: $mainText;
 }
 
 li, span, p, label, input, textarea {
-  color: var(--secondaryText)
+  color: $secondaryText;
 }
 
 code {
@@ -66,14 +64,14 @@ code {
 }
 
 .s1 {
-  background-color: var(--mainColor);
-  border-bottom: 2px solid var(--borderColor);
+  background-color: $mainColor;
+  border-bottom: 2px solid $borderColor;
   overflow: auto;
 }
 
 .s2 {
-  background-color: var(--secondaryColor);
-  border-bottom: 1px solid var(--borderColor);
+  background-color: $secondaryColor;
+  border-bottom: 1px solid $borderColor;
   overflow: auto;
 }
 
@@ -99,8 +97,8 @@ a {
 }
 
 .intro-wrapper{
-	background-color: var(--secondaryColor);
-	border:1px solid var(--borderColor);
+	background-color: $secondaryColor;
+	border:1px solid $borderColor;
 	border-radius:5px 5px 0 0;
 
 
@@ -116,8 +114,8 @@ a {
 }
 
 .intro-wrapper-rows {
-	background-color: var(--secondaryColor);
-	border:1px solid var(--borderColor);
+	background-color:$secondaryColor;
+	border:1px solid $borderColor;
 	border-radius:5px 5px 0 0;
 
 
@@ -137,11 +135,11 @@ a {
 .nav-wrapper{
 	border-radius:5px 5px 0 0;
 	grid-area:nav-wrapper;
-	border-bottom: 1px solid var(--borderColor);
+	border-bottom: 1px solid borderColor;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--mainColor);
+	background-color: $mainColor;
 }
 
 @media screen and (max-width: 1200px) {
@@ -188,15 +186,15 @@ nav ul {
 }
 
 a {
-    color: var(--text-color);
+    color: $text-color;
     text-decoration: none;
 }
 
 .navbar {
-    height: var(--nav-size);
-    background-color: var(--bg);
+    height: $nav-size;
+    background-color: $bg;
     padding: 0 1rem;
-    border-bottom: var(--border);
+    border-bottom: $border;
 }
 
 .navbar-nav {
@@ -207,13 +205,13 @@ a {
 }
 
 .nav-item {
-    width: calc(var(--nav-size) * 0.8);
+    width: calc($nav-size * 0.8);
 }
 
 .icon-button {
-    --button-size: calc(var(--nav-size) * 0.5);
-    width: var(--button-size);
-    height: var(--button-size);
+    --button-size: calc($nav-size * 0.5);
+    width: $button-size;
+    height: $button-size;
     background-color: #484a4d;
     border-radius: 50%;
     padding: 5px;
@@ -229,13 +227,13 @@ a {
 }
 
 .icon-button svg {
-    fill: var(--text-color);
+    fill: $text-color;
     width: 20px;
     height: 20px;
 }
 
 .icon-right svg {
-    fill: var(--text-color);
+    fill: $text-color;
     width: 20px;
     height: 20px;
 }
@@ -245,9 +243,9 @@ a {
     top: 58px;
     width: 300px;
     transform: translateX(-45%);
-    background-color: var(--bg);
-    border: var(--border);
-    border-radius: var(--border-radius);
+    background-color: $bg;
+    border: $border;
+    border-radius: $border-radius;
     padding: 1rem;
     overflow: hidden;
 }
@@ -256,8 +254,8 @@ a {
     height: 50px;
     display: flex;
     align-items: center;
-    border-radius: var(--border-radius);
-    transition: background var(--speed);
+    border-radius: $border-radius;
+    transition: background $speed;
     padding: 0.5rem;
 }
 
@@ -280,7 +278,7 @@ a {
 
 .menu-primary-enter-active {
     transform: translateX(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-primary-exit {
@@ -289,7 +287,7 @@ a {
 
 .menu-primary-exit-active {
     transform: translateX(-110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .four-panel div {
@@ -303,7 +301,7 @@ a {
 
 .menu-primary-enter-active {
     transform: translateX(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-primary-exit {
@@ -312,7 +310,7 @@ a {
 
 .menu-primary-exit-active {
     transform: translateX(110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 
@@ -323,7 +321,7 @@ a {
 
 .menu-second-enter-active {
     transform: translateX(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-second-exit {
@@ -332,7 +330,7 @@ a {
 
 .menu-second-exit-active {
     transform: translateX(-110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 
@@ -343,7 +341,7 @@ a {
 
 .menu-second-enter-active {
     transform: translateX(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-second-exit {
@@ -352,7 +350,7 @@ a {
 
 .menu-second-exit-active {
     transform: translateX(110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 /*
 .menu-third-enter {
@@ -362,7 +360,7 @@ a {
 
 .menu-third-enter-active {
     transform: translateX(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-primary-exit {
@@ -371,7 +369,7 @@ a {
 
 .menu-primary-exit-active {
     transform: translateX(-110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 
@@ -382,7 +380,7 @@ a {
 
 .menu-third-enter-active {
     transform: translateX(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-third-exit {
@@ -391,7 +389,7 @@ a {
 
 .menu-third-exit-active {
     transform: translateX(110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-fourth-enter {
@@ -401,7 +399,7 @@ a {
 
 .menu-fourth-enter-active {
     transform: translateY(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-fourth-exit {
@@ -410,7 +408,7 @@ a {
 
 .menu-fourth-exit-active {
     transform: translateY(-110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 
@@ -421,7 +419,7 @@ a {
 
 .menu-fourth-enter-active {
     transform: translateY(0%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 }
 
 .menu-fourth-exit {
@@ -430,5 +428,5 @@ a {
 
 .menu-primary-exit-active {
     transform: translateY(-110%);
-    transition: all var(--speed) ease;
+    transition: all $speed ease;
 } */
