@@ -1,0 +1,24 @@
+/* 
+Programmer: Ben Sehnert
+Date: 5/10/2021
+About: Styles for interactive menus throughout the site
+such as those seen on 'about' and 'skills' components
+*/
+.dd-trigger {
+  background-color: rgb(0, 236, 204);
+  border: 2px solid rgb(190, 186, 158);
+}
+
+.dd-trigger+.dd-col {
+  display: none;
+}
+
+
+.dd-trigger:hover+.dd-col, .dd-trigger+.dd-col:hover  {
+  display: inline-block; 
+}
+
+  
+
+
+
