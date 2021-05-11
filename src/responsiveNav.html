@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      //get the <button> element
+      const ddButton = document.querySelector("#dd-trigger");
+
+      //add the listener
+      ddButton.addEventListener("click", showDropdown);
+
+      //callback for the 'click' event
+      function showDropdown(){
+        const ddMenu = document.querySelector("#dd-menu")
+        ddMenu.style.display = 'block';
+      }    
+    </script>
+
+    <!-- <link rel="stylesheet" href="resonsiveNav.scss"> -->
+
+    <style>
+      @media only screen and (max-width: 600px) {
+
+        /* by default, make dropdown not visible */
+        #dd-menu {
+          display: none;
+        } 
+
+      
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+
+      }
+      
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        #dd-trigger {
+          display: none;
+        }
+
+        nav {
+          background-color: lightblue; 
+        }
+
+        #dd-menu {
+          display: inline;
+          list-style-type: none;
+        }
+
+        .dd-item {
+          display: inline;
+          padding: 20px;
+        }
+
+
+      }
+
+      
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 class="title">Welcome to the site!</h1>  
+      
+
+      <button id="dd-trigger">Show the thing</button>
+      <ul id="dd-menu">
+        <li class="dd-item">
+        <a href="http://" target="_blank" rel="noopener noreferrer">Some</a>
+        </li>
+        <li class="dd-item">
+          <a href="http://" target="_blank" rel="noopener noreferrer">stuff</a> 
+        </li>
+        <li class="dd-item">
+          <a href="http://" target="_blank" rel="noopener noreferrer">INCh-GA</a>
+        </li>
+        <li class="dd-item">
+          <a href="http://" target="_blank" rel="noopener noreferrer">Here</a>
+        </li>
+      </ul>
+
+
+    </nav>
+    <script src="" async defer></script>
+  </body>
+</html>

@@ -1,32 +1,19 @@
-/* body {
-  background-color: aquamarine;
-  color: black;
-  margin: 400px;
-}
-
-.app-title {
-  background-color:antiquewhite;
-  max-width: 200vh;
-  color: blueviolet;
-  border: 9px groove white;
-}
-
-.app-nav ul {
-  list-style: none;
-  display: inline;
-} */
 @import './styles/nav.scss';
 
 @import './styles/home.scss';
 
 @import './styles/panel.scss';
 
- /* Extra small devices (phones, 600px and down) */
+
+ /* 
+ Keeping this here as a template for how to format
+ media query breakpoints. the actual code will be in scss modules.
+ Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
-    nav ul {
-      background-color: antiquewhite;
-      display: block;
-    }
+    // nav ul {
+    //   background-color: antiquewhite;
+    //   display: block;
+    // }
   }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
