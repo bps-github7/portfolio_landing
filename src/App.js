@@ -1,13 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './helperComponents/Nav';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Experience from './pages/Experience';
-import Home from './pages/Home';
-import Skills from './pages/Skills';
-import Contact from './pages/Contact';
+import Nav from './components/Nav';
+import About from './components/About';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Home from './components/Home';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 
 

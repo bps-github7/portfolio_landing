@@ -1,145 +1,162 @@
 {
   "skills" : {
+    "intro" : "Experienced programmer with a high level of general competence in Software Engineering methodologies and practice.",
     "development" : {
       "programming" : {
         "general" : {
-          "java" : {
-            "proficiency" : 3,
-            "about" : "I took multiple classes in grad school which used Java as the main language",
-            "estimatedLinesRead" : 500,
-            "notes" : ""
-          },
-          "C" : {
-            "proficiency" : 2, 
-            "about" : "Read the C Programming Book, completed most of the assigned problems, I understand (most) the concepts but have applied them sparingly in my career as a developer",
-            "estimatedLinesRead" : 700,
-            "notes" : ""
-          },
-          "C++" : {
-            "proficiency" : 1,
-            "about" : "Completed the Solo learn C++ course, read and understood a good bit of source code, have implemented some basic algorithms and programs using C++. However, like C, I have written minimal code using C++",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          },
-          "C#" : {
-            "proficiency" : 3,
-            "about" : "Parallel with my knowledge of Java, I have created a REST API using the .net framework, and read a book about C# fundementals",
-            "estimatedLinesRead" : 400,
-            "notes" : ""
-          }
+          "java" : 3,
+          "C" : 2,
+          "C++" : 1,
+          "C#" : 3
         },
         "scripting" : {
-          "python" : {
-            "proficiency" : 4,
-            "about" : "",
-            "estimatedLinesRead" : 1300,
-            "notes" : "I know most of the standard library, and have a good undertstanding of Python language internals (how it works)"
-          },
-          "bash" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          },
-          "awk" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          }, 
-          "ruby" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          }
+          "python" : 4,
+          "bash" : 3,
+          "awk" : 2, 
+          "ruby" : 2
         },
         "web" : {
-          "html" : {
-            "proficiency" : 5,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          },
-          "css" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          },
-          "Javascript/Typescript" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          },
-          "Angular" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          },
-          "React" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          }
+          "html" : 5,
+          "css" : 3,
+          "Javascript": 4,
+          "Typescript" : 5,
+          "Angular" : 4,
+          "React" : 3,
+          "rails" : 2,
+          "spring" : 2,
+          ".net" : 2,
+          "django" : 2
         },
         "database" : {
-          "SQL" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          },
-          "NoSQL" : {
-            "proficiency" : 3,
-            "about" : "",
-            "estimatedLinesRead" : 200,
-            "notes" : ""
-          }
+          "SQL" : 3,
+          "NoSQL" : 3
         }
       }, 
-      "softwareDevelopement" : {
+      "Software Developement" : {
         "design" : {
-
+          "Unified Modeling Language": 4,
+          "Design patterns": 3,
+          "Requirements Analysis": 3,
+          "Safety Critical System Design":4
         },
         "implementation" : {
-
+          "Test Driven Development": 2,
+          "Documentation": 4,
+          "Type safety": 3,
+          "Project Management": 3
         },
         "lifecycle" : {
-
+          "Agile": 3,
+          "Scrum": 3,
+          "Waterfall/iterative":4
         },
         "deployment" : {
-          
+         
         }
       }, 
       "tooling" : {
         "workspaces" : {
-
+          "VsCode":5,
+          "Vim":4,
+          "Putty/SSh (Remote cmd line)":3,
+          "Eclipse":2,
+          "Thonny":3
         },
         "development" : {
-
+          "Git": 4,
+          "Docker":2,
+          "Postman":2,
+          "Draw.io":3
         },
         "testing" : {
-
+          "Pytest":3,
+          "unittest":3,
+          "N-unit":1,
+          "J-unit":1,
+          "MS-Test":1,
+          "Karma":2,
+          "Jest":1
         },
         "rdbms" : {
-          "Microsoft SQL Server Express" : "",
-          "Oracle RDBMS" : "" 
+          "Microsoft SQL Server Express" : 2,
+          "Oracle RDBMS" : 3 
         }
       }
     },
     "general" : {
-      "creativity" : {},
-      "a" : {},
-      "b" : {} 
+      "Problem Solving" : {
+        "competencies" : {
+          "Data structures" : 3,
+          "algorithms" : 4,
+          "Growth mindset" : 5,
+          "creative approach" : 4
+        },
+        "research" : {
+          "Social Sciences" : 3,
+          "CS education" : 4,
+          "Clean room engineering" : 3
+        },
+        "reporting" : {
+          "Spreadsheets" : 3,
+          "written reports" : 4,
+          "oral/ direct reports" : 3,
+          "presentations" : 4 
+        }
+      }, 
+      "interpersonal skills" : {
+        "teamwork" : {
+          "completes full share of work" : 4,
+          "familiar with git collab features" : 3,
+          "Attend and contribute to all team meetings" : 4,
+          "probes any weaknesses discovers solutions all partners are happy with" : 5
+        },
+        "communication" : {
+          "written" : 3,
+          "oral" : 4,
+          "phone": 3,
+          "text message" : 3,
+          "email" : 4,
+          "experimental means" : 3,
+          "smoke signals":3
+        },
+        "leadership" : {
+          "2 years as Senior patrol leader of troop 177 wyndmoor" : 4,
+          "3 years as Assistant senior patrol leader": 3,
+          "planned and executed 2 stage Eagle scout project":5,
+          "official leader of 2 succesful () group projects in softwaree engineering classes, grad school" : 4,
+          "read various books on the matter, including leadership philosophy, software project management, developing strong people skills":4
+        }
+       },
+      "Personal qualities" : {
+        "standards" : {
+          "responsibility" : 5,
+          "honor" : 4,
+          "trustworthyness" : 5
+        },
+        "work ethic" : {
+          "determination" : 4,
+          "flow state" : 3,
+          "multi tasking" : 4,
+          "work life balance" : 3
+        },
+        "miscellaneous" : {
+          "arabic language" : 3,
+          "spanish language" : 3,
+          "Eagle Scout" : 5,
+          "Good cook who will satiate hungry coworkers with home cooked meals snacks and desserts" : 5
+        }
+       } 
     },
     "concepts" : {
-      "education" : {},
-      "cyberSecurity" : {},
-      "artificialIntelligence": {}
+      "intro" : "These are areas which interest me, where I have skills or am trying to develop skills in. I want to learn more about these topics, and I am seeking a position related to these concepts, in order to start the track towards becoming a subject matter expert.",
+      "contents" : [
+        "Education",
+        "Artificial Intelligence",
+        "Deep learning",
+        "Machine Learning",
+        "Cyber Security",
+        "Information Forensics"
+      ]
     }
   },
   "experience" : { 
@@ -248,20 +265,110 @@
   "about" : {
     "excersise" : {
       "preMovement" : {
-        
+        "twist-lunge" : 6,
+        "hip-bridge" : 6,
+        "wrist-pushup" : 12,
+        "frog-squat" : 25,
+        "Worlds greatest stretch" : 5,
+        "inchworm" : 8,
+        "knee-hug" : 12,
+        "high knee run" : 12,
+        "quad-pull":12,
+        "butt kick run":12,
+        "knee-cradel":12,
+        "straight leg march":12,
+        "quad extension" : 12,
+        "heel-toe walk" : 32
       },
-      "movement" : {},
-      "postMovement" : {}
+      "movement" : {
+        "monday" : "3 mile run",
+        "tuesday" : "6 mile ruck march",
+        "wednesday" : "rest + post movement excersises",
+        "thursday" : "swim laps or sprint -> run",
+        "Friday" : "3 mile run",
+        "Saturday" : "12 mile ruck run/march",
+        "sunday" : "rest and recovery + post movement excersises (2x)" 
+      },
+      "postMovement" : {
+        "AIS" : {
+          "description" : "AIS- utalize excersis band for all except Rotator Cuff, Quadruped Thoracic Spine and AIS Middle Back stretch. All are 10 reps each",
+          "content" : [
+            "calf",
+            "hamstring",
+            "IT band",
+            "Groin",
+            "Quadriceps",
+            "Triceps",
+            "Rotator Cuff",
+            "Quadrupeded Thoracic Spine",
+            "Middle Back"
+          ] 
+        },
+        "roller" : {
+          "description" : "20-30 rolls each side",
+          "content" : [
+            "calf",
+            "hamstring",
+            "IT band",
+            "quadriceps",
+            "groin",
+            "glute",
+            "middle and upper back",
+            "lats",
+            "hip extendor rotator",
+            "hip flexor",
+            "hip adductor"
+          ]
+        }
+      }
     },
     "creativity" : {
-      "music" : {},
-      "art" : {},
-      "cooking" : {}
+      "music" : {
+        "drums" : 5,
+        "guitar" : 2,
+        "bass":4,
+        "keyboard":4,
+        "didgeridoo" : 3,
+        "ehru":1,
+        "tabla":3,
+        "recording":5,
+        "mixing":3,
+        "song writing":2,
+        "texture gathering" : 4
+      },
+      "art" : {
+        "drawing": 3,
+        "concepts" : 4,
+        "spray paint" :1,
+        "markers" : 3,
+        "photography":5
+      },
+      "cooking" : {
+        "smoked brisket" : 5,
+        "spare ribs" : 4,
+        "fried Okra" : 4,
+        "signiture crispy rice" : 5,
+        "garlic noodles":4,
+        "bread baking":3,
+        "pastry" :4
+      }
     },
     "sustainability" : {
-      "gardening" : {},
-      "recyecling" : {},
-      "composting" : {}
+      "gardening" : {
+        "basil" : 15,
+        "scallions" : 8,
+        "cactus" : 2,
+        "succulent" : 3
+      },
+      "recyecling" : {
+        "paper" : 4,
+        "plastic" : 3,
+        "glass" : 5
+      },
+      "composting" : {
+        "old guy" : 2,
+        "young man" : 4
+      }
     }
   }
 }  
