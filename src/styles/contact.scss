@@ -1,0 +1,5 @@
+/*would seem that this is not working- overrided at a global level?*/
+.contact{
+  display : 'grid';
+  grid-template-areas: 1fr 1fr / 1fr 1fr;
+}
