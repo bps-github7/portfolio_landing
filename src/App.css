@@ -1,4 +1,4 @@
-
+/* should this file ALSO have media queries? */
 .app-skills .view-box div {
   display: inline-block;
   width: 300px;
@@ -34,13 +34,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

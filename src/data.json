@@ -1,12 +1,12 @@
 {
   "skills" : {
-    "intro" : "Experienced programmer with a high level of general competence in Software Engineering methodologies and practice.",
+    "intro" : "Experienced junior programmer with a high level of general competence in Software Engineering methodologies and practice.",
     "development" : {
       "programming" : {
         "general" : {
           "java" : 3,
           "C" : 2,
-          "C++" : 1,
+          "C++" : 2,
           "C#" : 3
         },
         "scripting" : {
@@ -108,7 +108,7 @@
           "completes full share of work" : 4,
           "familiar with git collab features" : 3,
           "Attend and contribute to all team meetings" : 4,
-          "probes any weaknesses discovers solutions all partners are happy with" : 5
+          "probes any weaknesses discovers solutions that all partners are happy with" : 5
         },
         "communication" : {
           "written" : 3,
@@ -241,8 +241,7 @@
           "Follow all Coronavirus safety procedures",
           "Confirm the age and identity of customers purchasing tobacco or alcohol",
           "Communicate with customers about problems in transit",
-          "Redirect non-delivery related customer concerns to appropriate party",
-          "Worked weekday nightshifts, responsible for completing all deliveries past from 2am-6am"
+          "Redirect non-delivery related customer concerns to appropriate party"
         ]
      }
    }
