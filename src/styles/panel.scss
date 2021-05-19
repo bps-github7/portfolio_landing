@@ -4,6 +4,15 @@ Date: 5/10/2021
 About: Styles for interactive menus throughout the site
 such as those seen on 'about' and 'skills' components
 */
+.info-panel {
+  justify-self: center;
+  align-self: center;
+
+  border: 2px groove black;
+  // width: 75%;
+  
+}
+
 .open-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -13,33 +22,6 @@ such as those seen on 'about' and 'skills' components
   
   border: 2px solid black;
 }
-
-/* 
- Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-  }
-
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-
- }
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
-
- }
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-  
- }
-
-
 
 .dd-trigger {
   background-color: rgb(0, 236, 204);
@@ -57,5 +39,95 @@ such as those seen on 'about' and 'skills' components
 
   
 
+/* 
+ Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  .open-row {
+    // grid-template: 1fr / 1fr 1fr 1fr;
+
+  }   
+  }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+ 
+  
+  .info-panel {
+  //   border: 20px groove yellow;
+  //   width: 60%;
+  // }
+  }
+  .row-dd {
+
+  }
+
+  .closed-row {
+    /* the info-panel row-dd when the user has not selected this subcategory */
+    
+        
+    h4 {
+
+    }
+
+    button {
+
+    }
+
+  }
+
+  .concepts {
+    /* technically a type of open-row, the one with the slider inside  */
+
+    h3 {
+      
+    }
+    p {
+
+    }
+    slider {
+
+    }
+    button {
+
+    }
+  } 
+
+  .open-row {
 
 
+    info-col {
+      h4 {
+
+      }
+
+      ul {
+       .col-dd {
+          h3 {
+
+          }
+
+          ul {
+            li {
+              
+            }
+          }
+       } 
+      }
+    }  
+  }
+ 
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+ }

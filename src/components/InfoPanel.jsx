@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Slider from './Slider';
 
+
 const InfoPanel = (props) => {
   return (
-    <div>
+    <div className="info-panel">
+      { props.title ? <h2>{props.title}</h2> : null }
       {
           Object.keys(props.info)
           .map((area) =>  
@@ -30,14 +32,14 @@ a row with a label and button to examine. presing button unfolds a nested list.
   // this is going to be a bit messy 
   if (props.title === "intro") {
     return (
-      <div className="app-row-dropdown">
+      <div className="row-dd">
         { props.contents }
       </div>
     )
   }
   else {
     return (
-      <div className="app-row-dropdown">
+      <div className="row-dd">
         {
           open ?
           // <span>Open</span> : <span>Closed <button onClick={this.toggleOpen}>open?</button></span>
@@ -67,7 +69,7 @@ const OpenRow = (props) => {
   if (props.title === "concepts") {
     return (
       <div className="open-row-concepts">
-        <h3>Intro:</h3>
+        <h3>Concepts:</h3>
         <p>{ props.contents.intro }</p>
         <Slider/>
         
@@ -108,6 +110,7 @@ const ColumnDropdown = (props) => {
       <ul class="dd-col">
         { Object.keys(props.contents).map((title, i) => 
             (
+              // this is the end of the data hierarchy 
               <li key={i}>{title}</li>
             )
           ) 
