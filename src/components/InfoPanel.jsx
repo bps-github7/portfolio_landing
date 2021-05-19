@@ -75,7 +75,6 @@ const OpenRow = (props) => {
       </div>
     )
   }
-  
   return (
     <div className="open-row"> 
       { Object.keys(props.contents).map((title, i) => (
@@ -88,7 +87,7 @@ const OpenRow = (props) => {
 
 const InfoColumn = (props) => {
   return (
-    <div className="app-column-dropdown">
+    <div className="info-col">
       <h4>{ props.title}</h4>
       <ul>
         { 
@@ -104,9 +103,9 @@ const InfoColumn = (props) => {
 
 const ColumnDropdown = (props) => {
   return (
-    <div>
-      <h3 className="dd-trigger">{props.title}</h3>
-      <ul className="dd-col">
+    <div className="col-dd">
+      <h3 class="dd-trigger">{props.title}</h3>
+      <ul class="dd-col">
         { Object.keys(props.contents).map((title, i) => 
             (
               <li key={i}>{title}</li>
