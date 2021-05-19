@@ -4,7 +4,7 @@ import Slider from './Slider';
 
 const InfoPanel = (props) => {
   return (
-    <div className="info-panel">
+    <div class="info-panel">
       { props.title ? <h2>{props.title}</h2> : null }
       {
           Object.keys(props.info)
