@@ -4,6 +4,40 @@ Date: 5/10/2021
 About: Styles for interactive menus throughout the site
 such as those seen on 'about' and 'skills' components
 */
+
+/* Route > * {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  Route > * { 
+    flex-direction: row;
+  }
+}
+ */
+
+
+
+ /* interesting that the body only takes up Maaybe 45% of screen below nav. think you need to start from scratch
+ with styling and redesign the whole site, reimplement the navbar responsively and do the rest of the site
+ knowing what you know now about layout, design and RWD! I propose a branch */
+
+body > * {
+  background-color: red;
+}
+
+@media (min-width: 40em) {
+  body > * { 
+    background-color: green;
+  }
+}
+
+
+
+
+
+
 .info-panel {
 //   justify-content: center;
 //   align-content: center;
