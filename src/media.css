@@ -1,0 +1,33 @@
+/* Here if you need a reference on how to set up common breakpoints
+according to our new css teacher Kevin Powell, via Zell (*>?)
+it is better to use em for max or min width for media queries...
+
+Q: which is more common?
+A: 
+*/
+
+
+/*Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+   
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+ }
