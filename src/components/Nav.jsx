@@ -1,4 +1,48 @@
-import { Component } from 'react';
+import React  from 'react';
+import { Link } from 'react-router-dom';
+
+
+const Nav = () => {
+    
+  
+
+  return (
+    <header>
+      {/* thats my name! */}
+      <h1 class="logo">Ben Sehnert</h1>
+      {/* possible to make nav mobile responsive w/o js */}
+      <input type="checkbox" class="nav-toggle" id="nav-toggle"/>
+      <nav>
+        <ul>
+          {/* Must be a more fun react centric waay to do this- pass in props and loop over them?  */}
+          <NavItem title="skills" component="Skills"/>
+          <NavItem title="projects" component="Projects"/>
+          <NavItem title="experience" component="Experience"/>
+          <NavItem title="about" component="About"/>
+          <NavItem title="contact" component="Contact"/>
+          {/* should we just have a single props for compopnent and l.c title if needed? yes  */}
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+  );
+}
+
+export default Nav;
+
+const NavItem = (props) => {
+
+  return(
+    <li>
+      <Link to={props.component}>{ props.title }</Link>
+    </li>
+  )
+}
+
+
+/* import { Component } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as CogIcon } from './icons/cog.svg';
@@ -187,7 +231,6 @@ function NavBar(props) {
 }
 
 const NavItem = (props) => {
-  /* Why did u need to make 3 seperate components? maybe unnesseceary! */
   return (
       <li className="nav-item">
           <Link to={props.url} className="icon-button">
@@ -211,4 +254,4 @@ const DropDownNavItem = (props) => {
 
       </li>
   );
-}
+} */

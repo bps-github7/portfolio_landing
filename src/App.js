@@ -14,21 +14,24 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Nav/> */}
-        <Switch>
-          <Route exact path='/home' component={Home}/>
-          <Route exact path='/contact'>
-            <Contact contact={data.contact}/>
-          </Route>
-          <Route exact path='/skills'>
-            <InfoPanel title="skills" info={data.skills}/>
-          </Route>
-          <Route exact path='/about'>
-            <InfoPanel title="about" info={data.about}/>  
-          </Route>
-          <Route exact path='/projects' component={Projects}/>
-          <Route exact path='/experience' component={Experience}/>
-        </Switch>
+        <Nav/>
+        <div class="content">
+          <Switch>
+            <Route exact path='/home' component={Home}/>
+            <Route exact path='/contact'>
+              <Contact contact={data.contact}/>
+            </Route>
+            <Route exact path='/skills'>
+              <InfoPanel title="skills" info={data.skills}/>
+            </Route>
+            <Route exact path='/about'>
+              <InfoPanel title="about" info={data.about}/>  
+            </Route>
+            <Route exact path='/projects' component={Projects}/>
+            <Route exact path='/experience' component={Experience}/>
+          </Switch>
+        </div>
+        
       </Router>
     </div>
   );

@@ -1,0 +1,31 @@
+@import './styles/nav.scss';
+
+// base styles
+
+:root {
+  --background: rgba(0, 214, 170, .95);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222;
+  color: aliceblue;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.content {
+  padding-top: 100px;
+  height: 200vh;
+  background-image: url(//unsplash.it/1000/1000);
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
