@@ -1,0 +1,51 @@
+/* For styling the two way info panels seen in about and skills sections
+note that we can probably do all the nesc showing and hiding of info (thru button click and hover events)
+with pure react and no css. That makes the info panel a reusable component! */
+
+//pure css solution
+.info-panel {
+  //   justify-content: center;
+  //   align-content: center;
+  //   border: 2px groove orange;
+  //   // width: 75%;
+    align-items: center;
+    justify-items: center;
+        
+  }
+  
+  .open-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .info-col {
+    h2 {
+      text-transform: capitalize;
+    }
+  }
+
+  .closed-row {
+    
+    border: 2px solid black;
+  }
+  
+  .dd-trigger {
+    font-weight: 900;
+    text-transform: capitalize;
+    background-color: rgb(59, 59, 59);
+    border: 2px solid rgb(102, 94, 30);
+    padding: 1rem;
+  }
+  
+  .dd-trigger+.dd-col {
+    display: none;
+  }
+  
+  
+
+// TODO: something to debug: column goes away when we arent hovering on
+// the ul or heading, making this UI very jumpy and unwelcoming
+
+  .dd-trigger:hover+.dd-col, .dd-trigger+.dd-col:hover  {
+    display: inline-block; 
+  }
