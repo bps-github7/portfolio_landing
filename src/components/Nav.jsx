@@ -15,11 +15,11 @@ const Nav = () => {
       <nav>
         <ul>
           {/* Must be a more fun react centric waay to do this- pass in props and loop over them?  */}
-          <NavItem title="skills" component="Skills"/>
-          <NavItem title="projects" component="Projects"/>
-          <NavItem title="experience" component="Experience"/>
-          <NavItem title="about" component="About"/>
-          <NavItem title="contact" component="Contact"/>
+          <NavItem title="skills"/>
+          <NavItem title="projects"/>
+          <NavItem title="experience"/>
+          <NavItem title="about"/>
+          <NavItem title="contact"/>
           {/* should we just have a single props for compopnent and l.c title if needed? yes  */}
         </ul>
       </nav>
@@ -36,7 +36,7 @@ const NavItem = (props) => {
 
   return(
     <li>
-      <Link to={props.component}>{ props.title }</Link>
+      <Link to={props.title}>{ props.title }</Link>
     </li>
   )
 }

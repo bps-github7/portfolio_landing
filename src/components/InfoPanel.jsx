@@ -45,14 +45,14 @@ a row with a label and button to examine. presing button unfolds a nested list.
 	}
 	else {
 		return (
-			<div className="row-dd">
+			<section className="row-dd">
 				{
 					open ?
 					// <span>Open</span> : <span>Closed <button onClick={this.toggleOpen}>open?</button></span>
 					<OpenRow title={props.title} contents={props.contents} toggleOpen={toggleOpen}/>:         
-					<ClosedRow title={props.title} toggleOpen={toggleOpen}/>
+					<ClosedRow title={props.title} contents={props.contents} toggleOpen={toggleOpen}/>
 				}
-			</div>
+			</section>
 			
 			);
 		}
@@ -60,42 +60,45 @@ a row with a label and button to examine. presing button unfolds a nested list.
 
 const ClosedRow = (props) => {
 	return(
-		<div className="closed-row">
-			<h2>
-				{ props.title }
-			</h2>
-			 
-			<button onClick={props.toggleOpen}>Examine</button>
-		</div>
+		<section className="closed-row">
+			<h2>{ props.title }</h2>
+      {/* render a paragraph for intro text if this section has any */}
+      { props.contents.intro ? <p>{props.contents.intro}</p> : null }
+			<button class="btn-examine" onClick={props.toggleOpen}>Examine</button>
+		</section>
 	)
 }
 
 const OpenRow = (props) => {
 
-	if (props.title === "concepts") {
+  // TODO: this isnt a good soluition because user can toggle back and fourth from open to closed window, but intro stays deleted once the window is opened once.
+	delete props.contents.intro;
+  // notice that the sub heading goes away when you open a row 
+  if (props.title === "concepts") {
 		return (
-			<div className="concepts-open-row">
+			<section className="concepts-open-row">
 				<h2>Concepts:</h2>
 				<p>{ props.contents.intro }</p>
 				<Slider/>
 				
 				<button onClick={props.toggleOpen}>Hide</button> 
-			</div>
+			</section>
 		)
+    
 	}
 	return (
-		<div className="open-row"> 
+		<section className="open-row"> 
 			{ Object.keys(props.contents).map((title, i) => (
-				<InfoColumn key={i} title={title} contents={props.contents[title]}/>
+        <InfoColumn key={i} title={title} contents={props.contents[title]}/>
 			)) }
 			<button onClick={props.toggleOpen}>Hide</button> 
-		</div>
+		</section>
 	)
 }
 
 const InfoColumn = (props) => {
 	return (
-		<div className="info-col">
+		<section className="info-col">
 			<h2>{ props.title}</h2>
 			<ul>
 				{ 
@@ -105,13 +108,13 @@ const InfoColumn = (props) => {
 					) 
 				}
 			</ul>
-		</div>
+		</section>
 	);
 }
 
 const ColumnDropdown = (props) => {
 	return (
-		<div className="col-dd">
+		<section className="col-dd">
 			<h3 class="dd-trigger">{props.title}</h3>
 			<ul class="dd-col">
 				{ Object.keys(props.contents).map((title, i) => 
@@ -123,6 +126,6 @@ const ColumnDropdown = (props) => {
 				}       
 			</ul>
 
-		</div>
+		</section>
 		);
 }

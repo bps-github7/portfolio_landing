@@ -2,6 +2,7 @@
   "skills" : {
     "intro" : "Experienced junior programmer with a high level of general competence in Software Engineering methodologies and practice.",
     "development" : {
+      "intro" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
       "programming" : {
         "general" : {
           "java" : 3,
@@ -84,6 +85,7 @@
       }
     },
     "general" : {
+      "intro" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
       "Problem Solving" : {
         "competencies" : {
           "Data structures" : 3,
