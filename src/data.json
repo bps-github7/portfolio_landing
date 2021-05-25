@@ -2,7 +2,9 @@
   "skills" : {
     "intro" : "Experienced junior programmer with a high level of general competence in Software Engineering methodologies and practice.",
     "development" : {
-      "intro" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
+      "subheading" : "Generalist programmer with high level of competency in scripting and web development and design",
+      "paragraph" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
+      "content" : {
       "programming" : {
         "general" : {
           "java" : 3,
@@ -83,71 +85,75 @@
           "Oracle RDBMS" : 3 
         }
       }
+    }
     },
     "general" : {
-      "intro" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
-      "Problem Solving" : {
-        "competencies" : {
-          "Data structures" : 3,
-          "algorithms" : 4,
-          "Growth mindset" : 5,
-          "creative approach" : 4
+      "heading" : "lorem ipsum dolar sit amet",
+      "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
+      "content" : {
+        "Problem Solving" : {
+          "competencies" : {
+            "Data structures" : 3,
+            "algorithms" : 4,
+            "Growth mindset" : 5,
+            "creative approach" : 4
+          },
+          "research" : {
+            "Social Sciences" : 3,
+            "CS education" : 4,
+            "Clean room engineering" : 3
+          },
+          "reporting" : {
+            "Spreadsheets" : 3,
+            "written reports" : 4,
+            "oral/ direct reports" : 3,
+            "presentations" : 4 
+          }
+        }, 
+        "interpersonal skills" : {
+          "teamwork" : {
+            "completes full share of work" : 4,
+            "familiar with git collab features" : 3,
+            "Attend and contribute to all team meetings" : 4,
+            "probes any weaknesses discovers solutions that all partners are happy with" : 5
+          },
+          "communication" : {
+            "written" : 3,
+            "oral" : 4,
+            "phone": 3,
+            "text message" : 3,
+            "email" : 4,
+            "experimental means" : 3,
+            "smoke signals":3
+          },
+          "leadership" : {
+            "2 years as Senior patrol leader of troop 177 wyndmoor" : 4,
+            "3 years as Assistant senior patrol leader": 3,
+            "planned and executed 2 stage Eagle scout project":5,
+            "official leader of 2 succesful () group projects in softwaree engineering classes, grad school" : 4,
+            "read various books on the matter, including leadership philosophy, software project management, developing strong people skills":4
+          }
         },
-        "research" : {
-          "Social Sciences" : 3,
-          "CS education" : 4,
-          "Clean room engineering" : 3
-        },
-        "reporting" : {
-          "Spreadsheets" : 3,
-          "written reports" : 4,
-          "oral/ direct reports" : 3,
-          "presentations" : 4 
+        "Personal qualities" : {
+          "standards" : {
+            "responsibility" : 5,
+            "honor" : 4,
+            "trustworthyness" : 5
+          },
+          "work ethic" : {
+            "determination" : 4,
+            "flow state" : 3,
+            "multi tasking" : 4,
+            "work life balance" : 3
+          },
+          "miscellaneous" : {
+            "arabic language" : 3,
+            "spanish language" : 3,
+            "Eagle Scout" : 5,
+            "Good cook who will satiate hungry coworkers with home cooked meals snacks and desserts" : 5
+          }
         }
-      }, 
-      "interpersonal skills" : {
-        "teamwork" : {
-          "completes full share of work" : 4,
-          "familiar with git collab features" : 3,
-          "Attend and contribute to all team meetings" : 4,
-          "probes any weaknesses discovers solutions that all partners are happy with" : 5
-        },
-        "communication" : {
-          "written" : 3,
-          "oral" : 4,
-          "phone": 3,
-          "text message" : 3,
-          "email" : 4,
-          "experimental means" : 3,
-          "smoke signals":3
-        },
-        "leadership" : {
-          "2 years as Senior patrol leader of troop 177 wyndmoor" : 4,
-          "3 years as Assistant senior patrol leader": 3,
-          "planned and executed 2 stage Eagle scout project":5,
-          "official leader of 2 succesful () group projects in softwaree engineering classes, grad school" : 4,
-          "read various books on the matter, including leadership philosophy, software project management, developing strong people skills":4
-        }
-       },
-      "Personal qualities" : {
-        "standards" : {
-          "responsibility" : 5,
-          "honor" : 4,
-          "trustworthyness" : 5
-        },
-        "work ethic" : {
-          "determination" : 4,
-          "flow state" : 3,
-          "multi tasking" : 4,
-          "work life balance" : 3
-        },
-        "miscellaneous" : {
-          "arabic language" : 3,
-          "spanish language" : 3,
-          "Eagle Scout" : 5,
-          "Good cook who will satiate hungry coworkers with home cooked meals snacks and desserts" : 5
-        }
-       } 
+      } 
     },
     "concepts" : {
       "intro" : "These are areas which interest me, where I have skills or am trying to develop skills in. I want to learn more about these topics, and I am seeking a position related to these concepts, in order to start the track towards becoming a subject matter expert.",
