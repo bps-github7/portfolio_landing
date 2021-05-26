@@ -29,22 +29,21 @@ Top layer of the data hirearchy UI for skills & about pages.
 a row with a label and button to examine. presing button unfolds a nested list. 
 	*/
 
+
 	const [ open, setOpen ] = useState(false)
 	
 	const toggleOpen = () => {
 		setOpen(!open);
 	}
+  
 
 		return (
 			<section className="row-dd">
+        <ClosedRow title={props.title} details={props.contents.details} isOpen={open} toggleOpen={toggleOpen}/>
 				{
-
-          // TODO: This section needs work, because things are left open when we switch between about and skills
-          // and also, sustainability can end up in skills and vice versa
           open ?
-					// <span>Open</span> : <span>Closed <button onClick={this.toggleOpen}>open?</button></span>
-					<OpenRow title={props.title} contents={props.contents.content} toggleOpen={toggleOpen}/>:         
-					<ClosedRow title={props.title} details={props.contents.details} toggleOpen={toggleOpen}/>
+					<OpenRow title={props.title} contents={props.contents.content}/>:         
+          null
 				}
 			</section>
 			
@@ -57,7 +56,13 @@ const ClosedRow = (props) => {
     return(
       <section className="closed-row closed-row-concepts">
         <h2>{props.title}</h2>
-        <button class="btn-examine" onClick={props.toggleOpen}>Examine</button>
+        <button class="btn-examine" onClick={props.toggleOpen}>
+          {
+            props.isOpen ? 
+            "hide" :
+            "examine"
+          }
+        </button>
       </section>
     )
   }
@@ -67,7 +72,13 @@ const ClosedRow = (props) => {
       <h3>{ props.details.subheading }</h3>
        {/* Render a body, if there is one  */}
       { props.details.body ? <p>{props.details.body}</p> : null}
-			<button class="btn-examine" onClick={props.toggleOpen}>Examine</button>
+			<button class="btn-examine" onClick={props.toggleOpen}>
+        {
+          props.isOpen ? 
+          "hide" :
+          "examine"
+        }
+      </button>
 		</section>
 	)
 }
@@ -77,11 +88,9 @@ const OpenRow = (props) => {
   if (props.title === "concepts" || props.title === "sustainability") {
 		return (
 			<section className="concepts-open-row">
-				<h2>{ props.title }:</h2>
 				{/* <p>{ props.contents.intro }</p> */}
 				<Slider content={props.contents}/>
 				{/* <p>{ props.contents }</p> */}
-				<button onClick={props.toggleOpen}>Hide</button> 
 			</section>
 		)
     
@@ -91,7 +100,6 @@ const OpenRow = (props) => {
 			{ Object.keys(props.contents).map((title, i) => (
         <InfoColumn key={i} title={title} contents={props.contents[title]}/>
 			)) }
-			<button class="btn-hide" onClick={props.toggleOpen}>Hide</button> 
 		</section>
 	)
 }

@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, useLocation, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
@@ -8,9 +8,15 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import InfoPanel from './components/InfoPanel';
 import data from './data.json';
-
+import React from 'react';
 
 function App() {
+  // const location = useLocation();
+
+  // React.useEffect(() => {
+  //   console.log('Location changed');
+  // }, [location]);
+
   return (
     <div className="App">
       <Router>
@@ -22,10 +28,10 @@ function App() {
               <Contact contact={data.contact}/>
             </Route>
             <Route exact path='/skills'>
-              <InfoPanel title="skills" info={data.skills}/>
+              <Skills info={data.skills}/>
             </Route>
             <Route exact path='/about'>
-              <InfoPanel title="about" info={data.about}/>  
+              <About info={data.about}/>  
             </Route>
             <Route exact path='/projects' component={Projects}/>
             <Route exact path='/experience' component={Experience}/>
@@ -37,6 +43,17 @@ function App() {
   );
 }
 
+//cheap trick to see if we can outsmart a pesky bug
+const Skills = ({info}) => {
+  return (
+    <InfoPanel title="Skills" info={info}/>
+  );
+}
 
+const About = ({info}) => {
+  return(
+    <InfoPanel title="About" info={info}/>
+  )
+}
 
 export default App;
