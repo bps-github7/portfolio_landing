@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import data from '../data.json';
 
 export default class Slider extends Component {
   constructor(props) {
     super(props);
-    //this is very non-reusable!
+    //this is very non-reusable! but an acceptable solution for now
     this.state = {
-      concepts : data.skills.concepts.content.contents,
+      concepts : this.props.content,
       index : 0
     }
   }
   handleNext = () => {
-    if (this.state.index === this.state.concepts.length)
+    if (this.state.index === this.state.concepts.length - 1)
       this.setState({index : 0})
     else
       this.setState({index : this.state.index + 1})

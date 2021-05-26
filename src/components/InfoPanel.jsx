@@ -39,7 +39,8 @@ a row with a label and button to examine. presing button unfolds a nested list.
 			<section className="row-dd">
 				{
 
-          // TODO: I want to still be able to see the paragraph and sub heading when examining a skill
+          // TODO: This section needs work, because things are left open when we switch between about and skills
+          // and also, sustainability can end up in skills and vice versa
           open ?
 					// <span>Open</span> : <span>Closed <button onClick={this.toggleOpen}>open?</button></span>
 					<OpenRow title={props.title} contents={props.contents.content} toggleOpen={toggleOpen}/>:         
@@ -73,13 +74,13 @@ const ClosedRow = (props) => {
 
 const OpenRow = (props) => {
 
-  if (props.title === "concepts") {
+  if (props.title === "concepts" || props.title === "sustainability") {
 		return (
 			<section className="concepts-open-row">
-				<h2>Concepts:</h2>
+				<h2>{ props.title }:</h2>
 				{/* <p>{ props.contents.intro }</p> */}
-				<Slider/>
-				
+				<Slider content={props.contents}/>
+				{/* <p>{ props.contents }</p> */}
 				<button onClick={props.toggleOpen}>Hide</button> 
 			</section>
 		)
@@ -90,7 +91,7 @@ const OpenRow = (props) => {
 			{ Object.keys(props.contents).map((title, i) => (
         <InfoColumn key={i} title={title} contents={props.contents[title]}/>
 			)) }
-			<button onClick={props.toggleOpen}>Hide</button> 
+			<button class="btn-hide" onClick={props.toggleOpen}>Hide</button> 
 		</section>
 	)
 }
@@ -119,7 +120,8 @@ const ColumnDropdown = (props) => {
 				{ Object.keys(props.contents).map((title, i) => 
 						(
 							// this is the end of the data hierarchy 
-							<li key={i}>{title}</li>
+              // <li key={i}>{title}</li>
+              <ItemView id={i} item={title} value={props.contents[title]}/>
 						)
 					) 
 				}       
@@ -127,4 +129,24 @@ const ColumnDropdown = (props) => {
 
 		</section>
 		);
+}
+
+const ItemView = (props) => {
+  if (typeof(props.value) === "string") {
+    return(
+      <li key={props.id}> 
+        <strong>{ props.item }: </strong>
+        { props.value }
+      </li>
+    )
+  }
+  else if (typeof(props.value) === "number") {
+    return (
+      <li key={props.id}>
+        <strong>{ props.item }: </strong>
+        {/* Figured a hack for the printing numeric values, make them a string! */}
+        <input disabled type="range" max={5} value={props.value}/>     
+      </li>
+    )
+  }
 }

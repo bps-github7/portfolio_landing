@@ -160,8 +160,7 @@
       "details" : {
         "subheading" : "skill areas which I am currently researching and would like to become a domain expert in through the course of my career."
       },
-      "content" : {
-        "contents" : [
+      "content": [
           "Education",
           "Artificial Intelligence",
           "Deep learning",
@@ -169,7 +168,6 @@
           "Cyber Security",
           "Information Forensics"
         ]        
-      }
     }
   },
   "experience" : { 
@@ -282,60 +280,63 @@
       },
       "content" : {
         "preMovement" : {
-          "twist-lunge" : 6,
-          "hip-bridge" : 6,
-          "wrist-pushup" : 12,
-          "frog-squat" : 25,
-          "Worlds greatest stretch" : 5,
-          "inchworm" : 8,
-          "knee-hug" : 12,
-          "high knee run" : 12,
-          "quad-pull":12,
-          "butt kick run":12,
-          "knee-cradel":12,
-          "straight leg march":12,
-          "quad extension" : 12,
-          "heel-toe walk" : 32
+          "static" : {
+            "hip bridge" : "6",
+            "wrist pushup" : "12",
+            "bird dog" : "5",
+            "frog squat" : "25",
+            "Worlds greatest stretch" : "5",
+            "inchworm" : "8"
+          },
+          "dynamic" : {
+            "twist-lunges" : "6",
+            "walking high knee" : "12",
+            "high knee run" : "12",
+            "walking quad pull" : "12",
+            "butt kick run" : "12",
+            "cradel" : "12",
+            "straight leg march" : "12",
+            "backwards hamstring" : "12",
+            "heel toe walk" : "32"
+          }
         },
         "movement" : {
-          "monday" : "3 mile run",
-          "tuesday" : "6 mile ruck march",
-          "wednesday" : "rest + post movement excersises",
-          "thursday" : "swim laps or sprint -> run",
-          "Friday" : "3 mile run",
-          "Saturday" : "12 mile ruck run/march",
-          "sunday" : "rest and recovery + post movement excersises (2x)" 
+          "active days" : {
+            "monday" : "3 mile run (60% max effort) + calisthenics",
+            "tuesday" : "6 mile ruck run + calisthenics",
+            "thursday" : "3 mile run + swim laps or sprints + calisthenics",
+            "friday" : " 4 mile run + sprints + calisthenics",
+            "saturday" :  "12 mile ruck march/run + calisthenics"
+          },
+          "rest days" : {
+            "wednesday" : "pre movement and post movement",
+            "sunday" : "post movement (double up AIS excersises)"
+          }
         },
         "postMovement" : {
           "AIS" : {
-            "description" : "AIS- utalize excersis band for all except Rotator Cuff, Quadruped Thoracic Spine and AIS Middle Back stretch. All are 10 reps each",
-            "content" : [
-              "calf",
-              "hamstring",
-              "IT band",
-              "Groin",
-              "Quadriceps",
-              "Triceps",
-              "Rotator Cuff",
-              "Quadrupeded Thoracic Spine",
-              "Middle Back"
-            ] 
+            "calf" : "pull, relax x10",
+            "hamstring" : "pull, relax x10",
+            "IT band" : "pull, relax x10",
+            "groin" : "pull, relax x10",
+            "quadriceps" : "pull, relax x10",
+            "triceps": "down, relax x10",
+            "rotator cuff" : "down, relax x10",
+            "Quadruped thoracic spine" : "down, relax x10",
+            "middle back" : "up, back x10" 
           },
           "roller" : {
-            "description" : "20-30 rolls each side",
-            "content" : [
-              "calf",
-              "hamstring",
-              "IT band",
-              "quadriceps",
-              "groin",
-              "glute",
-              "middle and upper back",
-              "lats",
-              "hip extendor rotator",
-              "hip flexor",
-              "hip adductor"
-            ]
+            "calf" : "20-30",
+            "hamstring" : "20-30",
+            "IT band" : "20-30",
+            "quadriceps" : "20-30",
+            "groin" : "20-30",
+            "glute" : "20-30",
+            "middle and upper back" : "20-30",
+            "lats" : "20-30",
+            "hip extender rotator" : "20-30",
+            "hip flexor" : "20-30",
+            "hip adductor" : "20-30" 
           }
       }
     }
@@ -347,33 +348,35 @@
       },
       "content" : {
         "music" : {
-          "drums" : 5,
-          "guitar" : 2,
-          "bass":4,
-          "keyboard":4,
-          "didgeridoo" : 3,
-          "ehru":1,
-          "tabla":3,
-          "recording":5,
-          "mixing":3,
-          "song writing":2,
-          "texture gathering" : 4
+          "drums" : {
+           "since" : "2012",
+           "proficiency" : 4 
+          },
+          "bass" : {
+            "since" : "2011",
+            "proficiency" : 4 
+           },
+          "keyboard" : {
+            "since" : "2010",
+            "proficiency" : 4 
+           },
+          "everything else" : {
+            "guitar" : 3,
+            "tabla":4,
+            "ehru" : 2
+          }
         },
         "art" : {
           "drawing": 3,
           "concepts" : 4,
-          "spray paint" :1,
-          "markers" : 3,
+          "graffiti + textures": 4,
           "photography":5
         },
         "cooking" : {
-          "smoked brisket" : 5,
-          "spare ribs" : 4,
-          "fried Okra" : 4,
-          "signiture crispy rice" : 5,
-          "garlic noodles":4,
-          "bread baking":3,
-          "pastry" :4
+          "bread" : 4,
+          "pastry" : 5,
+          "vegtables" :3,
+          "smoked meats" : 4
         }
       } 
     },
@@ -382,23 +385,13 @@
         "subheading" :"Initiatives I take to give back to the ecosystems I am a part of, on a local scale.",
         "body" :"I think that it is important to realize and consider human society as a single member of an ecosystem. We have withdrawn ourselves from the natural cycle by suppressing predators and disease, harvesting crops and building shelter. Throughout this process, we have forgotten that we are dependent on the land and a part of the global ecosystem. While I think greater measures need to be taken in terms of collective action, in order to preserve our continued existence, below are the individual things I do to try and mitigate my own ecological footprint:"
       },
-      "contents" : {
-        "gardening" : {
-          "basil" : 15,
-          "scallions" : 8,
-          "cactus" : 2,
-          "succulent" : 3
-        },
-        "recyecling" : {
-          "paper" : 4,
-          "plastic" : 3,
-          "glass" : 5
-        },
-        "composting" : {
-          "old guy" : 2,
-          "young man" : 4
-        }
-      }      
+      "content" : [
+        "gardening",
+        "recycling",
+        "composting",
+        "vollunteering"
+      ] 
+      
     }
   }
 }  
