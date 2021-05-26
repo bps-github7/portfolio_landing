@@ -63,8 +63,9 @@ const ClosedRow = (props) => {
   return(
 		<section className="closed-row">
 			<h2>{ props.title }</h2>
-      <h3>{ props.details.subheading }</h3> 
-      <p>{props.details.body}</p>
+      <h3>{ props.details.subheading }</h3>
+       {/* Render a body, if there is one  */}
+      { props.details.body ? <p>{props.details.body}</p> : null}
 			<button class="btn-examine" onClick={props.toggleOpen}>Examine</button>
 		</section>
 	)

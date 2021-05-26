@@ -2,8 +2,7 @@
   "skills" : {
     "development" : {
       "details" : {
-        "subheading" : "Generalist programmer with high level of competency in scripting and web development and design",
-        "body" : "Over the past year, I have focused primarily in learning front end web technologies including Angular and React, in order to develop my personal projects into highly interactive, real time data fed user experiences. I also have dabbled in back end technologies in order to develop RESTful APIs. I tend to always have an area within programming which I am paticularly focused on learning. Previously, I was focused on mastering/ re teaching myself vim, in order to speed up my development time and focus more on using the mouse less. More recently, I realized much of my frustrations with front end development come from aesethic issues, so I have focused on re learning css from the ground up, while also focusing on design principles, layout and utalizing design tools such as figma in order to better plan websites I am creating."
+        "subheading" : "Generalist programmer with high level of competency in scripting and web development and design"
       },
       "content" : {
       "programming" : {
@@ -90,8 +89,7 @@
     },
     "general" : {
       "details" : {
-        "subheading" : "lorem ipsum dolar sit amet",
-        "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
+        "subheading" : "over seven years of cumulative experience in various industries, providing a strong foundation in a diverse set of professional competencies."
       },
       "content" : {
         "Problem Solving" : {
@@ -160,8 +158,7 @@
     },
     "concepts" : {
       "details" : {
-        "subheading" : "lorem ipsum dolar sit amet",
-        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
+        "subheading" : "skill areas which I am currently researching and would like to become a domain expert in through the course of my career."
       },
       "content" : {
         "contents" : [
@@ -278,10 +275,10 @@
     "employed" : true
   },
   "about" : {
-    "excersise" : {
+    "fitness" : {
       "details" : {
-        "subheading" : "lorem ipsum",
-        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
+        "subheading" : "an area of my life which I am dedicated to and try to be knowledgeable in.",
+        "body" : "Below is a week long sample of a (non-beginner friendly) workout which I have been participating in and developing. It is adapted from a military fitness plan intended on preparing Marines special forces candidates for the selection phase of becoming a special forces operator. (MARSOC)"
       },
       "content" : {
         "preMovement" : {
@@ -345,8 +342,8 @@
     },
     "creativity" : {
       "details" : {
-        "subheading" :"lorem ipsum dolar sit amet",
-        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
+        "subheading" :"My main outlet in life when I am not working or taking care of myself.",
+        "body" : "I have a handful of areas within creativity which I am highly dedicated towards, as well as a few smaller topics which I am currently focused in. Some choose to criticize me for being too spread out/ not focused. While I do sometimes consider this a drawback,  I often think that if you do something every day, you will become proficient. Below are the areas within creativity which I do every day. "
       },
       "content" : {
         "music" : {
@@ -382,8 +379,8 @@
     },
     "sustainability" : {
       "details" : {
-        "subheading" :"lorem ipsum dolar sit amet",
-        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
+        "subheading" :"Initiatives I take to give back to the ecosystems I am a part of, on a local scale.",
+        "body" :"I think that it is important to realize and consider human society as a single member of an ecosystem. We have withdrawn ourselves from the natural cycle by suppressing predators and disease, harvesting crops and building shelter. Throughout this process, we have forgotten that we are dependent on the land and a part of the global ecosystem. While I think greater measures need to be taken in terms of collective action, in order to preserve our continued existence, below are the individual things I do to try and mitigate my own ecological footprint:"
       },
       "contents" : {
         "gardening" : {
