@@ -4,8 +4,9 @@ import data from '../data.json';
 export default class Slider extends Component {
   constructor(props) {
     super(props);
+    //this is very non-reusable!
     this.state = {
-      concepts : data.skills.concepts.contents,
+      concepts : data.skills.concepts.content.contents,
       index : 0
     }
   }

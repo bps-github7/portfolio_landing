@@ -34,36 +34,37 @@ a row with a label and button to examine. presing button unfolds a nested list.
 	const toggleOpen = () => {
 		setOpen(!open);
 	}
-	
-	// this is going to be a bit messy 
-	if (props.title === "intro") {
-		return (
-			<div className="intro-row">
-				{ props.contents }
-			</div>
-		)
-	}
-	else {
+
 		return (
 			<section className="row-dd">
 				{
-					open ?
+
+          // TODO: I want to still be able to see the paragraph and sub heading when examining a skill
+          open ?
 					// <span>Open</span> : <span>Closed <button onClick={this.toggleOpen}>open?</button></span>
-					<OpenRow title={props.title} contents={props.contents} toggleOpen={toggleOpen}/>:         
-					<ClosedRow title={props.title} contents={props.contents} toggleOpen={toggleOpen}/>
+					<OpenRow title={props.title} contents={props.contents.content} toggleOpen={toggleOpen}/>:         
+					<ClosedRow title={props.title} details={props.contents.details} toggleOpen={toggleOpen}/>
 				}
 			</section>
 			
 			);
-		}
  }
 
 const ClosedRow = (props) => {
-	return(
+	// add some resilency incase no details are passed in.
+  if (!props.details) {
+    return(
+      <section className="closed-row closed-row-concepts">
+        <h2>{props.title}</h2>
+        <button class="btn-examine" onClick={props.toggleOpen}>Examine</button>
+      </section>
+    )
+  }
+  return(
 		<section className="closed-row">
 			<h2>{ props.title }</h2>
-      {/* render a paragraph for intro text if this section has any */}
-      { props.contents.intro ? <p>{props.contents.intro}</p> : null }
+      <h3>{ props.details.subheading }</h3> 
+      <p>{props.details.body}</p>
 			<button class="btn-examine" onClick={props.toggleOpen}>Examine</button>
 		</section>
 	)
@@ -71,14 +72,11 @@ const ClosedRow = (props) => {
 
 const OpenRow = (props) => {
 
-  // TODO: this isnt a good soluition because user can toggle back and fourth from open to closed window, but intro stays deleted once the window is opened once.
-	delete props.contents.intro;
-  // notice that the sub heading goes away when you open a row 
   if (props.title === "concepts") {
 		return (
 			<section className="concepts-open-row">
 				<h2>Concepts:</h2>
-				<p>{ props.contents.intro }</p>
+				{/* <p>{ props.contents.intro }</p> */}
 				<Slider/>
 				
 				<button onClick={props.toggleOpen}>Hide</button> 

@@ -1,9 +1,10 @@
 {
   "skills" : {
-    "intro" : "Experienced junior programmer with a high level of general competence in Software Engineering methodologies and practice.",
     "development" : {
-      "subheading" : "Generalist programmer with high level of competency in scripting and web development and design",
-      "paragraph" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
+      "details" : {
+        "subheading" : "Generalist programmer with high level of competency in scripting and web development and design",
+        "body" : "Over the past year, I have focused primarily in learning front end web technologies including Angular and React, in order to develop my personal projects into highly interactive, real time data fed user experiences. I also have dabbled in back end technologies in order to develop RESTful APIs. I tend to always have an area within programming which I am paticularly focused on learning. Previously, I was focused on mastering/ re teaching myself vim, in order to speed up my development time and focus more on using the mouse less. More recently, I realized much of my frustrations with front end development come from aesethic issues, so I have focused on re learning css from the ground up, while also focusing on design principles, layout and utalizing design tools such as figma in order to better plan websites I am creating."
+      },
       "content" : {
       "programming" : {
         "general" : {
@@ -88,8 +89,10 @@
     }
     },
     "general" : {
-      "heading" : "lorem ipsum dolar sit amet",
-      "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?",
+      "details" : {
+        "subheading" : "lorem ipsum dolar sit amet",
+        "body" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
+      },
       "content" : {
         "Problem Solving" : {
           "competencies" : {
@@ -156,15 +159,20 @@
       } 
     },
     "concepts" : {
-      "intro" : "These are areas which interest me, where I have skills or am trying to develop skills in. I want to learn more about these topics, and I am seeking a position related to these concepts, in order to start the track towards becoming a subject matter expert.",
-      "contents" : [
-        "Education",
-        "Artificial Intelligence",
-        "Deep learning",
-        "Machine Learning",
-        "Cyber Security",
-        "Information Forensics"
-      ]
+      "details" : {
+        "subheading" : "lorem ipsum dolar sit amet",
+        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
+      },
+      "content" : {
+        "contents" : [
+          "Education",
+          "Artificial Intelligence",
+          "Deep learning",
+          "Machine Learning",
+          "Cyber Security",
+          "Information Forensics"
+        ]        
+      }
     }
   },
   "experience" : { 
@@ -271,111 +279,129 @@
   },
   "about" : {
     "excersise" : {
-      "preMovement" : {
-        "twist-lunge" : 6,
-        "hip-bridge" : 6,
-        "wrist-pushup" : 12,
-        "frog-squat" : 25,
-        "Worlds greatest stretch" : 5,
-        "inchworm" : 8,
-        "knee-hug" : 12,
-        "high knee run" : 12,
-        "quad-pull":12,
-        "butt kick run":12,
-        "knee-cradel":12,
-        "straight leg march":12,
-        "quad extension" : 12,
-        "heel-toe walk" : 32
+      "details" : {
+        "subheading" : "lorem ipsum",
+        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
       },
-      "movement" : {
-        "monday" : "3 mile run",
-        "tuesday" : "6 mile ruck march",
-        "wednesday" : "rest + post movement excersises",
-        "thursday" : "swim laps or sprint -> run",
-        "Friday" : "3 mile run",
-        "Saturday" : "12 mile ruck run/march",
-        "sunday" : "rest and recovery + post movement excersises (2x)" 
-      },
-      "postMovement" : {
-        "AIS" : {
-          "description" : "AIS- utalize excersis band for all except Rotator Cuff, Quadruped Thoracic Spine and AIS Middle Back stretch. All are 10 reps each",
-          "content" : [
-            "calf",
-            "hamstring",
-            "IT band",
-            "Groin",
-            "Quadriceps",
-            "Triceps",
-            "Rotator Cuff",
-            "Quadrupeded Thoracic Spine",
-            "Middle Back"
-          ] 
+      "content" : {
+        "preMovement" : {
+          "twist-lunge" : 6,
+          "hip-bridge" : 6,
+          "wrist-pushup" : 12,
+          "frog-squat" : 25,
+          "Worlds greatest stretch" : 5,
+          "inchworm" : 8,
+          "knee-hug" : 12,
+          "high knee run" : 12,
+          "quad-pull":12,
+          "butt kick run":12,
+          "knee-cradel":12,
+          "straight leg march":12,
+          "quad extension" : 12,
+          "heel-toe walk" : 32
         },
-        "roller" : {
-          "description" : "20-30 rolls each side",
-          "content" : [
-            "calf",
-            "hamstring",
-            "IT band",
-            "quadriceps",
-            "groin",
-            "glute",
-            "middle and upper back",
-            "lats",
-            "hip extendor rotator",
-            "hip flexor",
-            "hip adductor"
-          ]
-        }
+        "movement" : {
+          "monday" : "3 mile run",
+          "tuesday" : "6 mile ruck march",
+          "wednesday" : "rest + post movement excersises",
+          "thursday" : "swim laps or sprint -> run",
+          "Friday" : "3 mile run",
+          "Saturday" : "12 mile ruck run/march",
+          "sunday" : "rest and recovery + post movement excersises (2x)" 
+        },
+        "postMovement" : {
+          "AIS" : {
+            "description" : "AIS- utalize excersis band for all except Rotator Cuff, Quadruped Thoracic Spine and AIS Middle Back stretch. All are 10 reps each",
+            "content" : [
+              "calf",
+              "hamstring",
+              "IT band",
+              "Groin",
+              "Quadriceps",
+              "Triceps",
+              "Rotator Cuff",
+              "Quadrupeded Thoracic Spine",
+              "Middle Back"
+            ] 
+          },
+          "roller" : {
+            "description" : "20-30 rolls each side",
+            "content" : [
+              "calf",
+              "hamstring",
+              "IT band",
+              "quadriceps",
+              "groin",
+              "glute",
+              "middle and upper back",
+              "lats",
+              "hip extendor rotator",
+              "hip flexor",
+              "hip adductor"
+            ]
+          }
       }
+    }
     },
     "creativity" : {
-      "music" : {
-        "drums" : 5,
-        "guitar" : 2,
-        "bass":4,
-        "keyboard":4,
-        "didgeridoo" : 3,
-        "ehru":1,
-        "tabla":3,
-        "recording":5,
-        "mixing":3,
-        "song writing":2,
-        "texture gathering" : 4
+      "details" : {
+        "subheading" :"lorem ipsum dolar sit amet",
+        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
       },
-      "art" : {
-        "drawing": 3,
-        "concepts" : 4,
-        "spray paint" :1,
-        "markers" : 3,
-        "photography":5
-      },
-      "cooking" : {
-        "smoked brisket" : 5,
-        "spare ribs" : 4,
-        "fried Okra" : 4,
-        "signiture crispy rice" : 5,
-        "garlic noodles":4,
-        "bread baking":3,
-        "pastry" :4
-      }
+      "content" : {
+        "music" : {
+          "drums" : 5,
+          "guitar" : 2,
+          "bass":4,
+          "keyboard":4,
+          "didgeridoo" : 3,
+          "ehru":1,
+          "tabla":3,
+          "recording":5,
+          "mixing":3,
+          "song writing":2,
+          "texture gathering" : 4
+        },
+        "art" : {
+          "drawing": 3,
+          "concepts" : 4,
+          "spray paint" :1,
+          "markers" : 3,
+          "photography":5
+        },
+        "cooking" : {
+          "smoked brisket" : 5,
+          "spare ribs" : 4,
+          "fried Okra" : 4,
+          "signiture crispy rice" : 5,
+          "garlic noodles":4,
+          "bread baking":3,
+          "pastry" :4
+        }
+      } 
     },
     "sustainability" : {
-      "gardening" : {
-        "basil" : 15,
-        "scallions" : 8,
-        "cactus" : 2,
-        "succulent" : 3
+      "details" : {
+        "subheading" :"lorem ipsum dolar sit amet",
+        "body" :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit quia aliquid, illo eveniet labore fuga molestias enim eius ratione ullam, porro consequuntur. Praesentium, necessitatibus excepturi. Rem sed ducimus, laborum minus perspiciatis ea debitis tenetur alias eum ut asperiores, accusamus pariatur natus sit recusandae cupiditate excepturi. Facere laudantium at dolores?"
       },
-      "recyecling" : {
-        "paper" : 4,
-        "plastic" : 3,
-        "glass" : 5
-      },
-      "composting" : {
-        "old guy" : 2,
-        "young man" : 4
-      }
+      "contents" : {
+        "gardening" : {
+          "basil" : 15,
+          "scallions" : 8,
+          "cactus" : 2,
+          "succulent" : 3
+        },
+        "recyecling" : {
+          "paper" : 4,
+          "plastic" : 3,
+          "glass" : 5
+        },
+        "composting" : {
+          "old guy" : 2,
+          "young man" : 4
+        }
+      }      
     }
   }
 }  

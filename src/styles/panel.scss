@@ -1,16 +1,16 @@
 /* For styling the two way info panels seen in about and skills sections
 note that we can probably do all the nesc showing and hiding of info (thru button click and hover events)
 with pure react and no css. That makes the info panel a reusable component! */
-
+.info-panel {
+  h1 {
+    font-weight: 900;
+    font-size: 4rem;
+  }
+  
+}
 //pure css solution
 .info-panel {
-  //   justify-content: center;
-  //   align-content: center;
-  //   border: 2px groove orange;
-  //   // width: 75%;
-    align-items: center;
-    justify-items: center;
-        
+  
   }
   
   .open-row {
@@ -27,13 +27,18 @@ with pure react and no css. That makes the info panel a reusable component! */
   section.closed-row {
     //for the section itself
     padding: 2rem 0;
-    // background-color: white;
-
-
+    // should be using rem instead of pixel here for responsiveness
     h2 {
-      font-size: 30px;
-      margin-top: 0;
+      // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-weight: 400;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 0;
+      font-weight: 200;
     }
 
     p {
