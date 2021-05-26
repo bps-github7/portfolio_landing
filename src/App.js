@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, useLocation, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
@@ -8,15 +8,8 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import InfoPanel from './components/InfoPanel';
 import data from './data.json';
-import React from 'react';
 
 function App() {
-  // const location = useLocation();
-
-  // React.useEffect(() => {
-  //   console.log('Location changed');
-  // }, [location]);
-
   return (
     <div className="App">
       <Router>
