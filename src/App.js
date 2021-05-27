@@ -8,8 +8,19 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import InfoPanel from './components/InfoPanel';
 import data from './data.json';
+import { useState, useEffect } from 'react';
+
 
 function App() {
+    // P. O. C for acceessing github repos URL- doesnt want to work when we package it into a custom hook.
+    // useEffect(() => {
+    //   fetch('https://api.github.com/users/bps-github7/repos')
+    //     .then(res => res.json())
+    //     .then(data => {
+    //       console.log(data);
+    //     })
+    // }, [])
+
   return (
     <div className="App">
       <Router>
