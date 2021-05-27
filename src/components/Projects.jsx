@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import data from '../data.json';
+// import data from '../data.json';
 
 export default class Projects extends Component {
   constructor(props) {
@@ -8,7 +8,8 @@ export default class Projects extends Component {
   }
   render() { 
     /*
-    TODO: use github api to fetch this data and display it. to do otherwise (like below) s
+    TODO: use github api to fetch this data and display it. to do otherwise (like below) 
+    is childrensplay
     */
 
     return (
