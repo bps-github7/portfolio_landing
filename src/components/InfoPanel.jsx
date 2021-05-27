@@ -153,7 +153,7 @@ const ItemView = (props) => {
       <li key={props.id}>
         <strong>{ props.item }: </strong>
         {/* Figured a hack for the printing numeric values, make them a string! */}
-        <input disabled type="range" max={5} value={props.value}/>     
+        <input class="slider" disabled type="range" max={5} value={props.value}/>     
       </li>
     )
   }

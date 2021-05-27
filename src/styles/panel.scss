@@ -27,6 +27,7 @@ with pure react and no css. That makes the info panel a reusable component! */
     }
   }    
 }
+/* Custom css for non-mobile- laptop, tablet, large pc */
 @media screen and (min-width: 601px) {
   .row-dd {
     .open-row {
@@ -39,6 +40,7 @@ with pure react and no css. That makes the info panel a reusable component! */
       margin-top:3em;      
     }
   }
+
 }
 
 .row-dd {
@@ -47,45 +49,6 @@ with pure react and no css. That makes the info panel a reusable component! */
     h2 {
       text-transform: capitalize;
     }
-  }
-  
-  section.closed-row,
-  .App-slider {
-    padding: 2rem 0;
-    h2 {
-      // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-weight: 400;
-      font-size: 3rem;
-      margin: 0;
-    }
-  
-    h3 {
-      font-size: 1.3rem;
-      margin: 0;
-      font-weight: 200;
-    }
-  
-    p {
-      line-height: 1.8;
-    }
-  
-  
-    .btn {
-      background-color: rgb(36, 149,146);
-      border: 2px solid white;
-      text-decoration: none;
-      padding: 1em 2em;
-      display: inline-block;
-      box-shadow: 0px 4px 3px -2px rgba(248, 248, 248, 0.75);
-      transition: all ease-in-out 250ms;
-  
-    }
-  
-    .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0px 8px 10px -1px rgba(255, 240, 240, 0.75); 
-    }
-  
   }
   
 }
@@ -100,16 +63,26 @@ with pure react and no css. That makes the info panel a reusable component! */
     border: 2px solid rgb(102, 94, 30);
     padding: 1rem;
   }
-  
-  .dd-trigger+.dd-col {
-    display: none;
+
+  .dd-col {
+    margin-top: 2rem;
   }
+
+  input[type=range] {
+  }
+  
+
+  /* Removing this css-only solution to enable mobile use of dropdowns.
+  users will now click and unclick to show dropdown content */
+//   .dd-trigger+.dd-col {
+//     display: none;
+//   }
   
   
 
-// TODO: something to debug: column goes away when we arent hovering on
-// the ul or heading, making this UI very jumpy and unwelcoming
+// // TODO: something to debug: column goes away when we arent hovering on
+// // the ul or heading, making this UI very jumpy and unwelcoming
 
-  .dd-trigger:hover+.dd-col, .dd-trigger+.dd-col:hover  {
-    display: inline-block; 
-  }
+//   .dd-trigger:hover+.dd-col, .dd-trigger+.dd-col:hover  {
+//     display: inline-block; 
+//   }

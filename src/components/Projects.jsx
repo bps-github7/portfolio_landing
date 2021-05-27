@@ -7,6 +7,10 @@ export default class Projects extends Component {
     this.state = {  }
   }
   render() { 
+    /*
+    TODO: use github api to fetch this data and display it. to do otherwise (like below) is ChIlDsPlAy and very non DRY
+    */
+
     return (
       <section className="projects">
       {
@@ -34,7 +38,7 @@ export default class Projects extends Component {
                     <p>
                       {data.projects[category][title].description}
                     </p>
-                    <a href={data.projects[category][title].src}>Source code link</a>
+                    <a href={data.projects[category][title].src}>view source code</a>
                   </section>
                 ))}
 
