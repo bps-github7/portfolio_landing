@@ -56,7 +56,7 @@ const ClosedRow = (props) => {
     return(
       <section className="closed-row closed-row-concepts">
         <h2>{props.title}</h2>
-        <button class="btn-examine" onClick={props.toggleOpen}>
+        <button class="btn" onClick={props.toggleOpen}>
           {
             props.isOpen ? 
             "hide" :
@@ -72,7 +72,7 @@ const ClosedRow = (props) => {
       <h3>{ props.details.subheading }</h3>
        {/* Render a body, if there is one  */}
       { props.details.body ? <p>{props.details.body}</p> : null}
-			<button class="btn-examine" onClick={props.toggleOpen}>
+			<button class="btn" onClick={props.toggleOpen}>
         {
           props.isOpen ? 
           "hide" :

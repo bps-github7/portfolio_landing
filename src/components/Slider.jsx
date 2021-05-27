@@ -27,8 +27,8 @@ export default class Slider extends Component {
       <div className="App-slider">
 
         <p><strong>{ this.props.content[this.state.index] }</strong></p>
-        <button onClick={this.handleNext}>next</button>
-        <button onClick={this.handlePrevious}>previous</button>
+        <button class="btn" onClick={this.handleNext}>next</button>
+        <button class="btn" onClick={this.handlePrevious}>previous</button>
       </div>  
     );
   }

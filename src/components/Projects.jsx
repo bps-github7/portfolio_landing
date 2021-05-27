@@ -13,24 +13,28 @@ export default class Projects extends Component {
         // this loop gives us the types of categories of projects ```data.projects.{key}```
         Object.keys(data.projects)
         .map(
-          (first, i) => (
+          (category, i) => (
             <section key={i}>
-              <h1>{first}</h1>
+              <h2>{category}</h2>
               {/*  Make a button that shows/ hides the projects for a certain category*/}
-              
+               
               {
                 // this loop accesses the projects in a category ```data.projects.front-end.{key}```
-                Object.keys(data.projects[first])
-                .map((second, i) => 
+                Object.keys(data.projects[category])
+                .map((title, i) => 
                 (
                   <section>
-                    <h4>
-                      {second}
-                    </h4>
+                    {  
+                      data.projects[category][title].link ? 
+                      <a href={data.projects[category][title].link}>
+                        <h4>{title}</h4>
+                      </a>:
+                      <h4>{title}</h4>
+                    }
                     <p>
-                      {data.projects[first][second].description}
+                      {data.projects[category][title].description}
                     </p>
-                    <a href={data.projects[first][second].src}>Source code link</a>
+                    <a href={data.projects[category][title].src}>Source code link</a>
                   </section>
                 ))}
 

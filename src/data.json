@@ -4,36 +4,42 @@
       "Class Generator" : {
         "description" : "Handy Command line utility script for producing python class files. ",
         "link" : "", 
-        "src" : "https://github.com/bps-github7/Class_Generator"
+        "src" : "https://github.com/bps-github7/Class_Generator",
+        "done" : false
       },
       "Chess Engine" : {
         "description" : "Program for generating valid moves for chess pieces given a board configuration. includes unittesting, code coverage report and static analysis reports ",
         "link" : "", 
-        "src" : "https://github.com/bps-github7/SE576-ChessMoveCalculator"
+        "src" : "https://github.com/bps-github7/SE576-ChessMoveCalculator",
+        "done" : false
       }
     },
     "front-end" : {
       "IVDB" : {
         "description" : "The Internet Video Game Database (IVDB) is an online information center for learning about, rating and discussing new video games. ",
         "link" : "", 
-        "src" : "https://github.com/bps-github7/IVDB"
+        "src" : "https://github.com/bps-github7/IVDB",
+        "done" : false
       },
       "Oral History Blog" : {
         "description" : "A photo-documentation site made to review and remeber the life, work and projects of my late Father Paul D. Sehnert.",
         "link" : "", 
-        "src" : "https://github.com/bps-github7/oral-history"
+        "src" : "https://github.com/bps-github7/oral-history",
+        "done" : false
       }
     },
     "back-end/full-stack" : {
       "ExpenseTracker" : {
         "description" : "Brief implementation of a Java Spring REST api. A database for tracking expenses.",
         "link" : "", 
-        "src" : "https://github.com/bps-github7/JavaSpring"
+        "src" : "https://github.com/bps-github7/JavaSpring",
+        "done" : true
       },
       "CommanderDb" : {
         "description" : "Brief Implementation of a .net REST api. A database for storing command line commands. ",
         "link" : "", 
-        "src" : "https://github.com/bps-github7/.net"
+        "src" : "https://github.com/bps-github7/.net",
+        "done":true
       }
     }
   },
