@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
+
+/* TODO: a responsiveness/ media query issue 
+I dont have the time to resolve right now
+
+need to figure out the view port dimensions
+for a desktop browser window taking up half the screen
+when this happens, the margin between nav
+items needs to decrease, otherwise the last nav item
+is pushed off the screen.
+
+
+*/
+
 /* base styles*/
 header {
   background: var(--background);
