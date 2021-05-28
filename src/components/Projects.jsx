@@ -21,6 +21,7 @@ class Projects extends Component {
   render() { 
     return ( 
       <section class="projects">
+        <h1>Projects</h1>
         {
           this.state.loading || !this.state.repos ?
           <span>Loading...</span> :

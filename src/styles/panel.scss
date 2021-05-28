@@ -4,12 +4,12 @@ with pure react and no css. That makes the info panel a reusable component! */
 
 
 //the whole component
-.info-panel {
-  h1 {
-    font-weight: 900;
-    font-size: 4rem;
-  }  
-}
+
+h1 {
+  font-weight: 900;
+  font-size: 4rem;
+}  
+
 
 // custom css for mobile
 @media screen and (max-width: 600px) {

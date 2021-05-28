@@ -112,15 +112,38 @@ toggle, right after that class */
 }
 
 /* half screen desktop view */
-@media screen and (min-width: 500px) {
-  nav ul li a {
-    color : pink;
-  }
-}
+// @media only and (max-width: 600px) {
+//   nav {
+//     background: black;
+//   }
+// }
 
 
 /* this is for desktop view */
+// @media only screen and (max-width: 600px) {
+//   body {
+//     background: red;
+//   }       
+//    }
+  
+/* 50% desktop  */
+@media only screen and (min-width: 600px) {
+  nav {
+    width: 500px;
+  }
 
+  nav ul {
+    max-width: 450px;
+  }
+  
+  nav li {
+    margin : 0px;
+    padding: 0px;
+    a {
+      padding: 0px;
+    }
+  }
+}
 
 @media screen and (min-width: 800px) {
   .nav-toggle-label {

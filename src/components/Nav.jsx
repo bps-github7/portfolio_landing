@@ -10,9 +10,9 @@ const Nav = () => {
     <header>
       {/* thats my name! */}
       <Link to="/home">
-        <h1 class="logo">
+        <h3 class="logo">
           Ben Sehnert
-        </h1>
+        </h3>
       
       </Link>
       

@@ -8,8 +8,8 @@ export default class Experience extends Component {
   }
   render() { 
     return (
-      //  TODO please implement an info panel component so that you can get rid of all this horrible redundancy
       <div className="app-contact">
+        <h1>Experience</h1>
         { Object.keys(this.state.experience).map((position, i) => <ExperienceTile position={this.state.experience[position]}/>) }
       </div>
     );
