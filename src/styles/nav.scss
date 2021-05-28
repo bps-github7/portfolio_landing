@@ -111,8 +111,17 @@ toggle, right after that class */
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+/* half screen desktop view */
+@media screen and (min-width: 500px) {
+  nav ul li a {
+    color : pink;
+  }
+}
 
-/* You come up with your own breakpoints for your design! */
+
+/* this is for desktop view */
+
+
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;

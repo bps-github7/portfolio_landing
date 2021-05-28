@@ -9,7 +9,13 @@ const Nav = () => {
   return (
     <header>
       {/* thats my name! */}
-      <h1 class="logo">Ben Sehnert</h1>
+      <Link to="/home">
+        <h1 class="logo">
+          Ben Sehnert
+        </h1>
+      
+      </Link>
+      
       {/* possible to make nav mobile responsive w/o js */}
       <input type="checkbox" class="nav-toggle" id="nav-toggle"/>
       <nav>
@@ -33,7 +39,6 @@ const Nav = () => {
 export default Nav;
 
 const NavItem = (props) => {
-
   return(
     <li>
       <Link to={props.title}>{ props.title }</Link>

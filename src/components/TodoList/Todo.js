@@ -1,6 +1,6 @@
 import React from "react";
 
-export default props => (
+const Todo = (props) => (
   <div style={{ display: "flex", justifyContent: "center" }}>
     <div
       style={{
@@ -13,3 +13,5 @@ export default props => (
     <button onClick={props.onDelete}>x</button>
   </div>
 );
+
+export default Todo;
