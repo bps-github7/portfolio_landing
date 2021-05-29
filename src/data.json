@@ -258,19 +258,19 @@
    }
   },
   "contact" : {
-    "cell" : "215-837-2319",
-    "email" : "bps53@protonmail.com",
-    "msg" : 
+    "Cell Phone" : "215-837-2319",
+    "Email" : "bps53@protonmail.com",
+    "Private Message" : 
     {
       "linkedin" : "https://www.linkedin.com/in/ben-sehnert/",
       "github" : "https://github.com/bps-github7",
       "slack" : "Ben P Sehnert"
     },
-    "bestWay" : "email me",
-    "bestTime" : "Monday-Friday, during normal business hours",
-    "concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
-    "vacationing" : false,
-    "employed" : true
+    "Best Way to Contact me" : "email me",
+    "Best Time to Contact me" : "Monday-Friday, during normal business hours",
+    "Concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
+    "Am I on Vacation" : false,
+    "Seeking Employment" : true
   },
   "about" : {
     "fitness" : {
