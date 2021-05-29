@@ -60,7 +60,8 @@ const Home = () => {
     <section>
         {/* <img src="https://avatars.githubusercontent.com/u/51515466?v=4" style={{height: 500, width: 500}}/> */}
         <img src={GetAvatar} style={{height: 500, width: 500}}/>
-        
+        <TodoList/>
+        <ImageSlider/>        
         <h3>Aspring Software Developer Located in West Philadelphia/University City</h3>
         {/* <p>Click the button below to explore the site</p> */}
     </section>
@@ -111,10 +112,6 @@ const Contact = ({contact}) => {
     )
   }
   
-  
-  
-  
-  
   return(
     <section>
       <h1>Contact Me</h1>
@@ -126,57 +123,6 @@ const Contact = ({contact}) => {
       }
     </section>
   )
-  
-  // const contact = props.contact;
-  // const msg = Object.entries(contact.msg)
-  // return (
-  //   // TODO: loop over the keys and values instead of doing this hardcoded like below.
-  //     <div className="contact">
-  //       <h1>Contact me
-  //       </h1>
-  //       <div>
-  //         <h3>Cell phone:</h3>
-  //         { contact.cell }
-  //       </div>
-        
-  //       <div class="top-right">
-  //         <h3>Email:</h3>
-  //         { contact.email }          
-  //       </div>
-        
-  //       <div className="bottom-left">
-  //         <h3>Private Message:</h3>
-  //         <ul>
-  //           { msg.map(([key,value]) => <li><strong>{key} :</strong>{value}</li> ) } 
-  //         </ul>
-  //       </div>
-
-  //       <div>
-  //         <h3>Best way to contact me: </h3>
-  //         { contact.bestWay }
-  //       </div>
-
-  //       <div>
-  //         <h3>Best time to contact me: </h3>
-  //         { contact.bestTime }
-  //       </div>
-
-  //       <div>
-  //         <h3>Concerns: </h3>
-  //         { contact.concerns }
-  //       </div>
-
-  //       <div>
-  //         <h3>Am I on Vacaction?</h3>
-  //         { contact.vacationing ? <span class="vacationing">Yes</span>:<span>No</span> }
-  //       </div>
-        
-  //       <div>
-  //         <h3>Am i Looking for a job?</h3>
-  //         { contact.employed ? <span class="vacationing">Yes</span>:<span>No</span> }
-  //       </div>
-  //     </div>
-  // );
 }
 
 export default App;
