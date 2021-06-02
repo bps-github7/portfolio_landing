@@ -84,7 +84,6 @@ const ClosedRow = (props) => {
 }
 
 const OpenRow = (props) => {
-
   if (props.title === "concepts" || props.title === "sustainability") {
 		return (
 			<section className="concepts-open-row">
@@ -100,14 +99,16 @@ const OpenRow = (props) => {
 			{ Object.keys(props.contents).map((title, i) => (
         <InfoColumn key={i} title={title} contents={props.contents[title]}/>
 			)) }
-		</section>
+      {/* Having this is a nicity, not something we should be spending loads of time on */}
+      {/* <button onClick={() => {}}>Close all columns</button> */}
+    </section>
 	)
 }
 
 const InfoColumn = (props) => {
 	return (
 		<section className="info-col">
-			<h2>{ props.title}</h2>
+			<h2 class="info-col-header">{ props.title}</h2>
 			<ul>
 				{ 
 					Object.keys(props.contents).map((item, i) => (
@@ -121,20 +122,30 @@ const InfoColumn = (props) => {
 }
 
 const ColumnDropdown = (props) => {
-	return (
+	const [open, setOpen] = useState(false);
+  
+  return (
 		<section className="col-dd">
-			<h3 class="dd-trigger">{props.title}</h3>
-			<ul class="dd-col">
-				{ Object.keys(props.contents).map((title, i) => 
-						(
-							// this is the end of the data hierarchy 
-              // <li key={i}>{title}</li>
-              <ItemView id={i} item={title} value={props.contents[title]}/>
-						)
-					) 
-				}       
-			</ul>
-
+			<h3 class="dd-trigger"
+        onClick={() => {setOpen(!open)}}
+      >
+        {props.title}
+      </h3> 
+      {
+        open ?
+        <ul class="dd-col">
+          { Object.keys(props.contents).map((title, i) => 
+              (
+                // this is the end of the data hierarchy 
+                // <li key={i}>{title}</li>
+                <ItemView id={i} item={title} value={props.contents[title]}/>
+              )
+            ) 
+          }
+        </ul>
+        :
+        null
+      }
 		</section>
 		);
 }
@@ -158,8 +169,13 @@ const ItemView = (props) => {
         
         {/* wrote our own custom slider to avoid browser support complications */}
         <div 
+          onClick={() => {
+            alert(`${props.item} : ${props.value}`)
+          }}
+          class="slider body"
           style={{ width:"100%", height:"3rem", border: "4px groove grey" }}>
           <div
+            class="slider value"
             style={{
               width: `${(props.value * 20)}%`,
               height: "100%",
@@ -167,7 +183,6 @@ const ItemView = (props) => {
               opacity: ".3"
             }}
           >
-
           </div>
         </div>        
 

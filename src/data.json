@@ -35,7 +35,7 @@
           "NoSQL" : 3
         }
       }, 
-      "Software Developement" : {
+      "process" : {
         "design" : {
           "Unified Modeling Language": 4,
           "Design patterns": 3,
@@ -59,7 +59,7 @@
       }, 
       "tooling" : {
         "workspaces" : {
-          "VsCode":5,
+          "VsCode":3,
           "Vim":4,
           "Putty/SSh (Remote cmd line)":3,
           "Eclipse":2,
@@ -113,10 +113,10 @@
         }, 
         "interpersonal skills" : {
           "teamwork" : {
-            "completes full share of work" : 4,
-            "familiar with git collab features" : 3,
-            "Attend and contribute to all team meetings" : 4,
-            "probes any weaknesses discovers solutions that all partners are happy with" : 5
+            "team player" : 4,
+            "familiar with modern collaborative softwares (teams, slack, git, ...etc) " : 3,
+            "Attends and actively contributes in team meetings and discussion" : 4,
+            "hard working drive towards group success and decisions all members are satisfied with" : 5
           },
           "communication" : {
             "written" : 3,
@@ -128,16 +128,16 @@
           "leadership" : {
             "(years served as) Senior patrol leader of troop 177 wyndmoor" : 1,
             "(years served as) Assistant senior patrol leader": 2,
-            "planned and executed 2 stage Eagle scout project":5,
-            "official leader of 2 succesful () group projects in softwaree engineering classes, grad school" : 4,
-            "read various books on the matter, including leadership philosophy, software project management, developing strong people skills":4
+            "Planned and executed a two stage Eagle scout project":5,
+            "official leader of two succesful group projects in softwaree engineering classes" : 4,
+            "Well read on the literature of leadership, including philosophy, project management, developing strong people and persuasive skills":4
           }
         },
         "Personal qualities" : {
           "standards" : {
             "responsibility" : 5,
-            "honor" : 4,
-            "trustworthyness" : 5
+            "accountability" : 4,
+            "trustworthiness" : 5
           },
           "work ethic" : {
             "determination" : 4,
@@ -145,11 +145,11 @@
             "multi tasking" : 4,
             "work life balance" : 3
           },
-          "miscellaneous" : {
-            "arabic language" : 3,
-            "spanish language" : 3,
+          "misc" : {
+            "Arabic language" : 3,
+            "Spanish language" : 3,
             "Eagle Scout" : 5,
-            "Good cook who will satiate hungry coworkers with home cooked meals snacks and desserts" : 5
+            "Good cook who will satiate hungry coworkers with home cooked meals, snacks, and dessert" : 5
           }
         }
       } 
