@@ -53,7 +53,9 @@ h1 {
   
 }
   
-
+  .item {
+    padding-top: 1rem;
+  }
   
   
   .dd-trigger {
@@ -67,22 +69,3 @@ h1 {
   .dd-col {
     margin-top: 2rem;
   }
-
-  input[type=range] {
-  }
-  
-
-  /* Removing this css-only solution to enable mobile use of dropdowns.
-  users will now click and unclick to show dropdown content */
-//   .dd-trigger+.dd-col {
-//     display: none;
-//   }
-  
-  
-
-// // TODO: something to debug: column goes away when we arent hovering on
-// // the ul or heading, making this UI very jumpy and unwelcoming
-
-//   .dd-trigger:hover+.dd-col, .dd-trigger+.dd-col:hover  {
-//     display: inline-block; 
-//   }

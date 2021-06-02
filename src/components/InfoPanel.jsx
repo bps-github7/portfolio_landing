@@ -142,7 +142,7 @@ const ColumnDropdown = (props) => {
 const ItemView = (props) => {
   if (typeof(props.value) === "string") {
     return(
-      <li key={props.id}> 
+      <li class="item plain-text" key={props.id}> 
         <strong>{ props.item }: </strong>
         { props.value }
       </li>
@@ -150,10 +150,27 @@ const ItemView = (props) => {
   }
   else if (typeof(props.value) === "number") {
     return (
-      <li key={props.id}>
-        <strong>{ props.item }: </strong>
-        {/* Figured a hack for the printing numeric values, make them a string! */}
+      <li class="item slider" key={props.id}>
+        {/* <strong>{ props.item }: </strong>
         <input class="slider" disabled type="range" max={5} value={props.value}/>     
+        <span class="alt-text">{props.value}</span> */}
+        <strong>{ props.item }: </strong>
+        
+        {/* wrote our own custom slider to avoid browser support complications */}
+        <div 
+          style={{ width:"100%", height:"3rem", border: "4px groove grey" }}>
+          <div
+            style={{
+              width: `${(props.value * 20)}%`,
+              height: "100%",
+              background: "#36ffd0",
+              opacity: ".3"
+            }}
+          >
+
+          </div>
+        </div>        
+
       </li>
     )
   }

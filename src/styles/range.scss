@@ -119,3 +119,11 @@ input[type=range]::-ms-fill-upper {
 input[type=range]:focus::-ms-fill-upper {
   background: #01cca2;
 }
+
+.alt-text {
+  display: none
+}
+
+input[range]:hover > .alt-text {
+  display: inline;
+}

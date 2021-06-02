@@ -123,13 +123,11 @@
             "oral" : 4,
             "phone": 3,
             "text message" : 3,
-            "email" : 4,
-            "experimental means" : 3,
-            "smoke signals":3
+            "email" : 4
           },
           "leadership" : {
-            "2 years as Senior patrol leader of troop 177 wyndmoor" : 4,
-            "3 years as Assistant senior patrol leader": 3,
+            "(years served as) Senior patrol leader of troop 177 wyndmoor" : 1,
+            "(years served as) Assistant senior patrol leader": 2,
             "planned and executed 2 stage Eagle scout project":5,
             "official leader of 2 succesful () group projects in softwaree engineering classes, grad school" : 4,
             "read various books on the matter, including leadership philosophy, software project management, developing strong people skills":4
@@ -266,11 +264,10 @@
       "github" : "https://github.com/bps-github7",
       "slack" : "Ben P Sehnert"
     },
-    "Best Way to Contact me" : "email me",
-    "Best Time to Contact me" : "Monday-Friday, during normal business hours",
-    "Concerns" : "currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
+    "Preferred and optimum way to contact me (how)" : "email me, or call my cell phone. I am at my desk coding or doing professional development during normal business hours (weekdays 9-5pm)",
+    "Concerns" : "I am currently using robo call to screen scam calls, I worry this may cause some calls to be dropped unintentionally. See the above section for the best/ most effective way to contact me",
     "Am I on Vacation" : false,
-    "Seeking Employment" : true
+    "Am I Seeking Employment" : true
   },
   "about" : {
     "fitness" : {
