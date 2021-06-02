@@ -360,7 +360,10 @@
           "everything else" : {
             "guitar" : 3,
             "tabla":4,
-            "ehru" : 2
+            "ehru" : 2,
+            "recording" : 4,
+            "general music production" : 3,
+            "mixing" : 2
           }
         },
         "art" : {

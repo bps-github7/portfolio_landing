@@ -84,6 +84,10 @@ const ClosedRow = (props) => {
 }
 
 const OpenRow = (props) => {
+/* TODO: we should have different components displayed depending on the order of the json
+for example, images have greater nesting. if we can detect that, we can choose to render
+a different component which can display the image. the cuirrent apporoach is a bit wopnky yeah?
+ */
   if (props.title === "concepts" || props.title === "sustainability") {
 		return (
 			<section className="concepts-open-row">
