@@ -22,7 +22,7 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
         >
             <motion.img 
                 initial={{ y: "-100vh"}}
-                animate={{ y:0 }}
+                animate={{ y:235 }}
                 transition={{ delay: 0.2 }}
                 src={selectedImage}/>
         </motion.div>

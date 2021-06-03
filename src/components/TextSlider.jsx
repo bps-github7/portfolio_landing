@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Slider extends Component {
+export default class TextSlider extends Component {
   constructor(props) {
     super(props);
     //this is very non-reusable! but an acceptable solution for now
@@ -8,18 +8,16 @@ export default class Slider extends Component {
       index : 0
     }
   }
-  handleNext = () => {
-    if (this.state.index === this.props.content.length - 1)
-      this.setState({index : 0})
-    else
-      this.setState({index : this.state.index + 1})
+  handleNext = () => { 
+    (this.state.index === this.props.content.length - 1) ?
+    this.setState({index : 0}):
+    this.setState({index : this.state.index + 1})
   }
-  handlePrevious = () => {
-    if (this.state.index === 0)
-      this.setState({index: this.props.content.length - 1})
-    else
-      this.setState({index : this.state.index - 1})
 
+  handlePrevious = () => {
+    (this.state.index === 0)?
+    this.setState({index : this.props.content.length - 1}):
+    this.setState({index : this.state.index -1})
   }
 
   render() { 

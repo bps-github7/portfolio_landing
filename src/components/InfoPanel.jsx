@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slider from './Slider';
+import TextSlider from './TextSlider';
 
 
 const InfoPanel = (props) => {
@@ -92,7 +92,7 @@ a different component which can display the image. the cuirrent apporoach is a b
 		return (
 			<section className="concepts-open-row">
 				{/* <p>{ props.contents.intro }</p> */}
-				<Slider content={props.contents}/>
+				<TextSlider content={props.contents}/>
 				{/* <p>{ props.contents }</p> */}
 			</section>
 		)

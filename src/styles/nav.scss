@@ -125,7 +125,10 @@ toggle, right after that class */
 //     background: red;
 //   }       
 //    }
-  
+ 
+/* TODO: we see the dropdown nav appearing then scrolling away
+after we pass <= 600px */ 
+
 /* 50% desktop  */
 @media only screen and (min-width: 600px) {
   nav {

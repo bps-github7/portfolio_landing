@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import InfoPanel from './components/InfoPanel';
+import Panel from './components/Panel';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import data from './data.json';
@@ -46,7 +47,7 @@ const Skills = ({info}) => {
 
 const About = ({info}) => {
   return(
-    <InfoPanel title="About" info={info}/>
+    <Panel title="About" info={info}/>
   );
 }
 

@@ -241,16 +241,17 @@
    },
    "GoPuff" : {
      "company" : "GoPuff",
-     "employed" : "4/2020 - present (per diem)",
+     "employed" : "4/2020 - present (self-scheduling)",
      "location" : "Sommerton, Manayank",
      "supervisor" : "Kaitlyn Campuzano",
      "duties" : {
        "Delivery Driver" : [
           "Deliver Customer Orders",
           "Follow all Coronavirus safety procedures",
-          "Confirm the age and identity of customers purchasing tobacco or alcohol",
+          "Confirm the age and identity of customers purchasing tobacco or alcohol, in compliance with RAMP protocols",
           "Communicate with customers about problems in transit",
-          "Redirect non-delivery related customer concerns to appropriate party"
+          "Redirect non-delivery related customer concerns to appropriate party",
+          "Often the sole nightshift driver, responsible for completion of all deliveries past a specific time"
         ]
      }
    }
