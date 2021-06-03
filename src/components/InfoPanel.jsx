@@ -10,7 +10,7 @@ const InfoPanel = (props) => {
 
   */
 	return (
-		<div class="info-panel">
+		<section class="info-panel">
 			{ props.title ? <h1>{props.title}</h1> : null }
 			{
 					Object.keys(props.info)
@@ -18,7 +18,7 @@ const InfoPanel = (props) => {
 						<RowDropdown title={area} contents={props.info[area]}/>
 					)
 				}
-		</div>
+		</section>
 	);
 }
 export default InfoPanel;
@@ -110,7 +110,23 @@ a different component which can display the image. the cuirrent apporoach is a b
 }
 
 const InfoColumn = (props) => {
-	return (
+	if (props.title === "cooking" || props.title === "art") {
+    return (
+      <section className="info-col">
+        <h2 class="info-col-header">{ props.title}</h2>
+        <ul>
+          { 
+            Object.keys(props.contents).map((item, i) => (
+                <ImgDropdown title={item} contents={props.contents[item]} />
+              ) 
+            ) 
+          }
+        </ul>
+      </section>
+    ) 
+  }
+  
+  return (
 		<section className="info-col">
 			<h2 class="info-col-header">{ props.title}</h2>
 			<ul>
@@ -123,6 +139,53 @@ const InfoColumn = (props) => {
 			</ul>
 		</section>
 	);
+}
+
+const ImgDropdown = (props) => {
+  const [open, setOpen] = useState(false);
+  
+  return (
+		<section className="col-dd">
+			<h3 class="dd-trigger"
+        onClick={() => {setOpen(!open)}}
+      >
+        {props.title}
+      </h3> 
+      {
+        open ?
+        <ul class="dd-col">
+          { Object.keys(props.contents).map((title, i) => 
+              (
+                // this is the end of the data hierarchy 
+                // <li key={i}>{title}</li>
+                <ImageView title={title} contents={props.contents[title]} />
+              )
+            ) 
+          }
+        </ul>
+        :
+        null
+      }
+		</section>
+  )
+}
+
+const ImageView = (props) => {
+  if (props.contents) {
+    return(
+      <div>
+{/* TODO: not sure how to incorperate the modal into this as the example is much more simple
+    basically, you either render the image grid (present here as: imageCol) or the modal.
+    we would need to get the selectedImage state all the way to the topp, which would make this a mess.
+    think it over...
+*/}
+        <strong>{props.title}</strong><br />
+        <img src={props.contents} style={{height: 100, width: 100}} alt="" />
+      </div>
+    )
+  }
+  return (null) 
+  
 }
 
 const ColumnDropdown = (props) => {

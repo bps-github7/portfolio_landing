@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import ImageSlider from './ImageSlider';
-import TodoList from './TodoList/TodoList';
-
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
   constructor(props) {
@@ -23,18 +21,39 @@ class Home extends Component {
   render() { 
     return (
       <section>
+
+        <h1>Who am I?</h1>
         {  
           this.state.loading || !this.state.avatarUrl ?
           <span>Loading...</span>:
-          <img alt="a digital portrait of me face" src={this.state.avatarUrl} style={{height: 500, width: 500}}/>
+          <img alt="a digital portrait of me face" src={this.state.avatarUrl}/> 
 
         }
-        <TodoList/>
-        <ImageSlider/>       
-        <h3>Aspring Software Developer Located in West Philadelphia/University City</h3>
+        <h3>Ben Sehnert</h3>
+        <p>
+          <em>An aspiring Software Developer, local to Philadelphia. </em>
+          I graduated with my Masters of Science in Information Systems last june. 
+          I'm looking for work in Web development, Help-desk, general system developement, UI/Ux design, QA engineering and more,
+          in sectors not limited to Education, sustainability, non profit, government and regenerative agricultural. <br /><br />
+          If you think I would be a good match for an open position, your company, or can connect me to someone who can help me in my job search:  <br />
+          <strong>
+            please do not hesitate to <Link to="/contact">get in touch!</Link> <br /><br />
+          </strong>
+        </p>
+
+        <h5>Getting aroung:</h5>
+        <p>
+          learn more about <Link to="/skills">my technical and job related skills</Link><br />
+          learn more about <Link to="/projects"> my projects</Link> <br />
+          learn more about <Link to="/experience">my previous work experience</Link> <br />
+          learn more about <Link to="/about">me </Link>
+        </p>          
       </section>
     );
   }
+
+
+
 }
  
 export default Home;

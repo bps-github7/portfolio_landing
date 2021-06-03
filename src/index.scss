@@ -28,9 +28,9 @@ body {
 }
 
 .content {
-  padding-top: 100px;
-  height: 200vh;
-  background-image: url(//unsplash.it/1000/1000);
+  padding-top: 1rem;
+  // height: 200vh;
+  // background-image: url(//unsplash.it/1001/1000);
   background-color: #333;
   background-blend-mode: multiply;
   background-size: cover;
@@ -38,8 +38,13 @@ body {
   place-items: start center;
 }
 
+
 section {
+
+  justify-self: center;
+  max-width: 50rem;
   padding: 2rem 0;
+
   h2 {
     // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
@@ -75,3 +80,18 @@ section {
   }
   
 }
+
+@media screen and (max-width: 600px) {
+  section {
+    max-width: 26rem;
+
+    img  {
+      padding-left: 2rem;
+    padding-bottom: 5rem;
+      height: 20rem;
+      width: 20rem;
+    }
+  }
+}
+
+

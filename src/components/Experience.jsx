@@ -8,8 +8,14 @@ export default class Experience extends Component {
   }
   render() { 
     return (
-      <div className="app-contact">
-        <h1>Experience</h1>
+      /* Leaving this as a div (when the rest of the site is semantic html5 tags like section) 
+      because that is the path of least resistance- the styling we have for div is currently much
+      better than section for displaying a text dense layout like the experience page requies
+      (multiple columns and rows) So we provided this inline style to make the heading style match
+      that used with the rest of the site section>headings.
+      */
+      <div className="contact">
+        <h1 style={{ paddingTop : "1rem" }}>Experience</h1>
         { Object.keys(this.state.experience).map((position, i) => <ExperienceTile position={this.state.experience[position]}/>) }
       </div>
     );

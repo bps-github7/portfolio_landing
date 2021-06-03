@@ -7,12 +7,15 @@ import InfoPanel from './components/InfoPanel';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import data from './data.json';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
       <Router>
+
         <Nav/>
+        <ScrollToTop/>
         <div class="content">
           <Switch>
             <Route exact path='/home' component={Home}/>

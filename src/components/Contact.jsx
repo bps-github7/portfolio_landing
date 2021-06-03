@@ -22,14 +22,13 @@ const Contact = ({contact}) => {
     }
     else if (typeof(contact[info]) === 'boolean') {
       return(
-        // wanna target this so it can appear like info and the boolean appear on the same line- like a todo and checkbox.
         <section style={{display: "inline"}}>
-          <h2>{info}:</h2>
+          <strong>{info}:</strong>
           { 
             contact[info] ?
-            <span style={{color: "green"}}>Yes</span> :
-            <span style={{color: "red"}}>No</span>
-          }
+            <span style={{color: "green"}}> Yes</span> :
+            <span style={{color: "red"}}> No</span>
+          } <br />
         </section>
       )
     }
