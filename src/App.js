@@ -47,7 +47,7 @@ const Skills = ({info}) => {
 
 const About = ({info}) => {
   return(
-    <Panel title="About" info={info}/>
+    <Panel title="About" contents={info}/>
   );
 }
 

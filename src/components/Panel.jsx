@@ -12,6 +12,11 @@ const Panel = (props) => {
     "https://i.pinimg.com/236x/86/d6/46/86d646ce2f92efd7890843ef5af9e700.jpg",
   ];
 
+  const example = {
+    "adulations (draft)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02207.JPG?alt=media&token=92099926-0163-4e61-9d15-d7f71211bdb6",
+    "abracadabra (V rough draft)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02192.JPG?alt=media&token=4ae8045b-bceb-44ad-b024-b771eb35af3f" 
+  }
+
   /* The P.O.C works well, so its time to make a layout...
 
 
@@ -29,7 +34,8 @@ const Panel = (props) => {
   return (
     <section className="panel">
       <h1>{props.title}</h1>
-      <ImageViewer imgs={imgs} selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>
+
+      <ImageViewer imgs={example} selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>
       { selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
     </section>
   );
@@ -48,13 +54,18 @@ const ImageViewer = ({imgs, selectedImage, setSelectedImage}) => {
 const ImagePicker = ({images, setSelectedImage}) => {
   return(
     <section class="default">
-      { images.map((item) => (
-          <section onClick={() => setSelectedImage(item)}>
-            <img src={item} alt="" />
-          </section>)
-        )
+      { Object.keys(images).map(
+        (item) => 
+        (
+          <section onClick={() => setSelectedImage(images[item])}>
+            <img class="default-view" src={images[item]} alt="" />
+            { item ?
+              <p>{item}</p> : null 
+            }
+          </section>
+        ))
       }
-    </section>
+      </section>
   )
 }
 
