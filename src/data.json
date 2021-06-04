@@ -337,7 +337,7 @@
             "hip adductor" : "20-30" 
           }
       }
-    }
+      }
     },
     "creativity" : {
       "details" : {
@@ -369,37 +369,23 @@
         },
         "art" : {
           "drawing": {
-            "untitled" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02208.JPG?alt=media&token=70e8dd35-8bd6-4547-ac84-535c405c85ab"
-          },
-          "concepts" : {
+            "untitled" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02208.JPG?alt=media&token=70e8dd35-8bd6-4547-ac84-535c405c85ab",
             "adulations (draft)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02207.JPG?alt=media&token=92099926-0163-4e61-9d15-d7f71211bdb6",
-            "abracadabra (V rough draft)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02192.JPG?alt=media&token=4ae8045b-bceb-44ad-b024-b771eb35af3f" 
-          },
-          "graffiti + textures": {
+            "abracadabra (V rough draft)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02192.JPG?alt=media&token=4ae8045b-bceb-44ad-b024-b771eb35af3f",
             "hard body pinecone son" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02200.JPG?alt=media&token=41d10727-2c97-4c36-b0df-cf8893123b97",
             "morph (stickers)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02199.JPG?alt=media&token=73fde486-5093-4aa4-8fa3-01f000e31a8c"
           },
           "photography": {
-            "red moss || fungi" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/redmoss%20or%20fungus.JPG?alt=media&token=38ce54d5-c55e-4d6d-b549-5204041cd484",
+            "moss + fungus among us" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/redmoss%20or%20fungus.JPG?alt=media&token=38ce54d5-c55e-4d6d-b549-5204041cd484",
             "road2florida" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/road2florida.JPG?alt=media&token=b236fd3b-8335-42da-8849-c0db840b7fb3",
             "abandonWatermill" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/fwatetr.JPG?alt=media&token=7858a4a9-970e-438f-9c97-db0486731786"
           }
         },
         "cooking" : {
-          "bread" : {
-            "flat-bread dough" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02189.JPG?alt=media&token=a039419b-703e-4482-b533-bde3387f55cb"
-          },
-          "rice and noodles" : {
-             "signiture crunchy rice" : "",
+            "flat-bread dough" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02189.JPG?alt=media&token=a039419b-703e-4482-b533-bde3387f55cb",
             "garlic noodles" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/dish.JPG?alt=media&token=c474af11-08ee-4a9f-b0eb-3eaddef43a59",
-            "pesto pasta" : ""
-          },
-          "vegtables" : {
-            "spicy fried cabbage" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/friedcabbage.JPG?alt=media&token=a18874cb-932d-4c9e-9c1b-2819cf35be14"
-          },
-          "meats" :{
+            "spicy fried cabbage" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/friedcabbage.JPG?alt=media&token=a18874cb-932d-4c9e-9c1b-2819cf35be14",
             "chicken-cutlet" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/cutlet.JPG?alt=media&token=cb4d1f41-b4b9-4ba8-871e-9c3038b409b7"
-          } 
         }
       } 
     },

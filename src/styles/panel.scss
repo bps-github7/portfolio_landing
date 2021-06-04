@@ -76,6 +76,15 @@ img.default-view {
       margin-top:1rem;      
     }
   }    
+
+/* modal styles */
+.backdrop{
+  display: none;
+}
+
+
+
+
 }
 /* Custom css for non-mobile- laptop, tablet, large pc */
 @media screen and (min-width: 601px) {

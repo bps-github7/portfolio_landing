@@ -45,9 +45,6 @@ const ExperienceTile = (props) => {
         </div>
       { 
         Object.keys(position.duties).length === 1 
-        // ? <div>Wil render a single thing!</div>
-        // : <div>Will render a multi thing!</div>
-
         ? <SingleListRender duties={position.duties}/> 
         : <MultiListRender duties={position.duties}/> 
       }
@@ -79,9 +76,6 @@ const SingleListRender = (props) => {
 const MultiListRender = (props) => {
   /* for displaying duties when I wor ked 
   multiple positions with one company
-  Right now were just gonna make it support 2 positions.
-  This is trickier than I first imagined. update if u have
-  worked for a company in the future with more than 2 positions
   */
   var items = [];
   for (let item in props.duties)

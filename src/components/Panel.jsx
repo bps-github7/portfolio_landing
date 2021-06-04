@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 import ImageSlider from './ImageSlider';
+import RowDropdown from './RowDropdown';
+import data from '../data.json';
 
 const Panel = (props) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -9,14 +11,9 @@ const Panel = (props) => {
     "sustainability",
     "music",
     "art",
-    "photography"
+    "photography",
+    "cooking"
   ]
-
-  const example = {
-    "adulations (draft)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02207.JPG?alt=media&token=92099926-0163-4e61-9d15-d7f71211bdb6",
-    "abracadabra (V rough draft)" : "https://firebasestorage.googleapis.com/v0/b/portfolio-landing-4c07a.appspot.com/o/DSC02192.JPG?alt=media&token=4ae8045b-bceb-44ad-b024-b771eb35af3f" 
-  }
-
 
   const [choice, setChoice] = useState(null);
 
@@ -38,7 +35,7 @@ const Panel = (props) => {
           ))
         }        
       </select>
-      <InfoDisplay info={choice} />
+      <InfoDisplay title={choice} info={props.info} setSelectedImage={setSelectedImage}/>
 
       {/* <ImageViewer imgs={example} selectedImage={selectedImage} setSelectedImage={setSelectedImage}/> */}
       { selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
@@ -46,45 +43,43 @@ const Panel = (props) => {
   );
 }
 
-const InfoDisplay = ({info}) => {
-  if (info === "fitness") {
+const InfoDisplay = ({title, info, setSelectedImage}) => {
+  if (title === "fitness") {
     return(
-      Info
+      <RowDropdown title={title} contents={info[title]}/>
     )
   }
-  else if (info === "sustainability") {
+  else if (title === "sustainability") {
     return(
       <section>
-        Sustainability
+       <RowDropdown title={title} contents={info[title]} />
       </section>
     )
   }
-  else if (info === "music") {
+  else if (title === "music") {
     return(
       <section>
-        Music
+        <h3>Music</h3>
+        <p>I am passionate about music in many forms. I enjoy listening to many genres and I am a musician myself. In addition to playing various instruments, most of which I taught myself, I also experiment in production, both recording live sessions, mixing and producing my own instrumental music</p> 
       </section>
     )
   }
-  else if (info === "art") {
+  else if (title === "art") {
     return(
-      <section>
-        art
-      </section>
+      <ImageViewer imgs={data.about.creativity.content.art.drawing} setSelectedImage={setSelectedImage} />
     )
   }
-  else if (info === "photography") {
+  else if (title === "photography") {
     return(
-      <section>
-        photography
-      </section>
+      <ImageViewer imgs={data.about.creativity.content.art.photography} setSelectedImage={setSelectedImage} />
     )
   }
-  return(
-    <section>
-      Default info
-    </section>
-  )
+  else if (title === "cooking") {
+    return(
+      <ImageViewer imgs={data.about.creativity.content.cooking} setSelectedImage={setSelectedImage} />
+    )
+  }
+  return(null)
 
 }
 

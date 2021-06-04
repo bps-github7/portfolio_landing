@@ -14,7 +14,6 @@ class Projects extends Component {
     const response = await fetch(url);
     const data = await response.json();
     this.setState({repos : data, loading: false});
-    console.log(this.state.repos)
   }
 
 
