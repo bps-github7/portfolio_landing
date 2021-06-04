@@ -26,10 +26,11 @@ const Panel = (props) => {
   return (
     <section className="panel">
       <h1>{props.title}</h1>
-      <h3>What are you interested in seeing more about?</h3>
+      <h3>Choose a topic to learn more about me:</h3>
       <select
         onChange={handleChange}
         name="about" id="about">
+        <option>-</option>
         {
           choices.map((choice, i) => 
           (
@@ -37,14 +38,54 @@ const Panel = (props) => {
           ))
         }        
       </select>
-      <section>
-        { choice }
-      </section>
+      <InfoDisplay info={choice} />
 
-      <ImageViewer imgs={example} selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>
+      {/* <ImageViewer imgs={example} selectedImage={selectedImage} setSelectedImage={setSelectedImage}/> */}
       { selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage}/>}
     </section>
   );
+}
+
+const InfoDisplay = ({info}) => {
+  if (info === "fitness") {
+    return(
+      Info
+    )
+  }
+  else if (info === "sustainability") {
+    return(
+      <section>
+        Sustainability
+      </section>
+    )
+  }
+  else if (info === "music") {
+    return(
+      <section>
+        Music
+      </section>
+    )
+  }
+  else if (info === "art") {
+    return(
+      <section>
+        art
+      </section>
+    )
+  }
+  else if (info === "photography") {
+    return(
+      <section>
+        photography
+      </section>
+    )
+  }
+  return(
+    <section>
+      Default info
+    </section>
+  )
+
 }
 
 const ImageViewer = ({imgs, selectedImage, setSelectedImage}) => {
