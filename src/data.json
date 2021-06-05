@@ -54,7 +54,7 @@
           "Waterfall/iterative":4
         },
         "deployment" : {
-         
+          "nelify" : 2
         }
       }, 
       "tooling" : {
@@ -201,7 +201,7 @@
       "duties" : 
       {
         "Delivery Driver" : [
-          "Deliver warm cookies and milk",
+          "Delivered warm cookies and milk in all weather conditions, via bike",
           "Helped break down boxes at end of the night"
         ]
       }
@@ -217,7 +217,7 @@
         "Supported lower tier leadership within the organization.",
         "Worked with learning and development team to prepare for Corps wide events.",
         "Toured sites to review implementation of intervention strategies and team cohesiveness.",
-        "Maintain weekly input of intervention data.",
+        "Maintained weekly input of intervention data.",
         "Assisted with organization and inventoried office supplies.",
         "Independently organized and lead a workshop on professional development."
        ]
@@ -225,17 +225,17 @@
    },
    "AlliedUniversal"  : {
      "company" : "Allied Universal Security Services",
-     "employed" : "",
+     "employed" : "11/17- 3/19",
      "location" : "3601 Spruce Street, Philadelphia PA",
      "supervisor" : "Fleta Howell",
      "duties" : {
       "Security Professional" : [
-        "Monitor Security Operations Center and front desk",
-        "Tour building to detect lab hazards and report alarms",
-        "Submit work orders to address building problems",
-        "Sign visitors and contractors into the building",
-        "Accept and deliver packages locally when necessary",
-        "File shift summaries and incident reports daily"
+        "Monitored Security Operations Center and front desk",
+        "Toured building to detect lab hazards and report alarms",
+        "Submitted work orders to address building problems",
+        "Signed visitors and contractors into the building",
+        "Accepted and deliver packages locally when necessary",
+        "Filed shift summaries and incident reports daily"
       ]
      }
    },
