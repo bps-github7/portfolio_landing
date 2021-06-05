@@ -33,8 +33,8 @@ class Home extends Component {
         <p>
           <em>An aspiring Software Developer, local to Philadelphia. </em>
           I graduated with my Masters of Science in Information Systems last june. 
-          I'm looking for work in Web development, Help-desk, general system developement, UI/Ux design, QA engineering and more,
-          in sectors not limited to Education, sustainability, non profit, government and regenerative agricultural. <br /><br />
+          I'm looking for work in web development, help-desk, general system developement, UI/Ux design, QA engineering and more,
+          in sectors not limited to education, non profit, government and regenerative agricultural. <br /><br />
           If you think I would be a good match for an open position, your company, or can connect me to someone who can help me in my job search:  <br />
           <strong>
             please do not hesitate to <Link to="/contact">get in touch!</Link> <br /><br />
@@ -43,10 +43,10 @@ class Home extends Component {
 
         <h5>Getting aroung:</h5>
         <p>
-          learn more about <Link to="/skills">my technical and job related skills</Link><br />
-          learn more about <Link to="/projects"> my projects</Link> <br />
-          learn more about <Link to="/experience">my previous work experience</Link> <br />
-          learn more about <Link to="/about">me </Link>
+          Learn more about <Link to="/skills">my technical and job related skills</Link><br />
+          Learn more about <Link to="/projects"> my projects</Link> <br />
+          Learn more about <Link to="/experience">my previous work experience</Link> <br />
+          Learn more about <Link to="/about">me </Link>
         </p>          
       </section>
     );
