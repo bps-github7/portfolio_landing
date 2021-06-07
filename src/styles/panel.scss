@@ -8,6 +8,7 @@ with pure react and no css. That makes the info panel a reusable component! */
 h1 {
   font-weight: 900;
   font-size: 4rem;
+  text-transform: capitalize;
 }
 
 
@@ -15,6 +16,7 @@ h1 {
   // font-weight: 1000;
   font-size: 2rem;
   margin-left: 3rem;
+  text-transform: capitalize;
 }
 
 
