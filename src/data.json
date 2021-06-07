@@ -2,33 +2,33 @@
   "skills" : {
     "development" : {
       "details" : {
-        "subheading" : "Generalist programmer with high level of competency in scripting and web development and design"
+        "subheading" : "Generalist programmer with expertise in scripting, web development and system design"
       },
       "content" : {
       "programming" : {
         "general" : {
-          "java" : 3,
-          "C" : 2,
-          "C++" : 2,
-          "C#" : 3
+          "java" : 4,
+          "C" : 3,
+          "C++" : 3,
+          "C#" : 4
         },
         "scripting" : {
-          "python" : 4,
-          "bash" : 3,
-          "awk" : 2, 
-          "ruby" : 2
+          "Python" : 4,
+          "Bash" : 3,
+          "Awk" : 3, 
+          "Ruby" : 2
         },
         "web" : {
-          "html" : 5,
-          "css" : 3,
+          "HTML5" : 5,
+          "CSS3" : 3,
           "Javascript": 4,
           "Typescript" : 5,
           "Angular" : 4,
           "React" : 3,
-          "rails" : 2,
-          "spring" : 2,
-          ".net" : 2,
-          "django" : 2
+          "Rails" : 2,
+          "Spring" : 3,
+          "ASP.net" : 3,
+          "Django" : 2
         },
         "database" : {
           "SQL" : 3,
@@ -89,34 +89,35 @@
     },
     "general" : {
       "details" : {
-        "subheading" : "over seven years of cumulative experience in various industries, providing a strong foundation in a diverse set of professional competencies."
+        "subheading" : "Over seven years of cumulative experience in various industries, providing a strong foundation in a diverse set of professional competencies."
       },
       "content" : {
         "Problem Solving" : {
           "competencies" : {
             "Data structures" : 3,
-            "algorithms" : 4,
+            "Algorithms" : 4,
             "Growth mindset" : 5,
-            "creative approach" : 4
+            "Creative Approach" : 4
           },
           "research" : {
             "Social Sciences" : 3,
-            "CS education" : 4,
-            "Clean room engineering" : 3
+            "CS Education" : 4,
+            "Clean-Room Engineering (software development practice)" : 3
           },
           "reporting" : {
             "Spreadsheets" : 3,
-            "written reports" : 4,
-            "oral/ direct reports" : 3,
-            "presentations" : 4 
+            "Written" : 4,
+            "Oral/Direct" : 3,
+            "Presentation" : 4 
           }
         }, 
         "interpersonal skills" : {
           "teamwork" : {
-            "team player" : 4,
-            "familiar with modern collaborative softwares (teams, slack, git, ...etc) " : 3,
+            "Team player" : 4,
+            "Familiar with modern collaborative softwares (teams, slack, git, ...etc) " : 3,
             "Attends and actively contributes in team meetings and discussion" : 4,
-            "hard working drive towards group success and decisions all members are satisfied with" : 5
+            "hard working drive towards group success" : 5,
+            "Only makes collective impacting desisions that all team members are happy with":4
           },
           "communication" : {
             "written" : 3,
@@ -130,13 +131,13 @@
             "(years served as) Assistant senior patrol leader": 2,
             "Planned and executed a two stage Eagle scout project":5,
             "official leader of two succesful group projects in softwaree engineering classes" : 4,
-            "Well read on the literature of leadership, including philosophy, project management, developing strong people and persuasive skills":4
+            "Well read on the literature of leadership, paticularly in the context of software development":4
           }
         },
         "Personal qualities" : {
           "standards" : {
             "responsibility" : 5,
-            "accountability" : 4,
+            "accountability" : 5,
             "trustworthiness" : 5
           },
           "work ethic" : {
@@ -149,14 +150,14 @@
             "Arabic language" : 3,
             "Spanish language" : 3,
             "Eagle Scout" : 5,
-            "Good cook who will satiate hungry coworkers with home cooked meals, snacks, and dessert" : 5
+            "Good cook who will happily feed hungry coworkers world class desserts" : 5
           }
         }
       } 
     },
     "concepts" : {
       "details" : {
-        "subheading" : "skill areas which I am currently researching and would like to become a domain expert in through the course of my career."
+        "subheading" : "Skill areas which I am currently researching and would like to become a domain expert in through the course of my career."
       },
       "content": [
           "Education",
