@@ -49,7 +49,7 @@ const RepoView = ({id, repo}) => {
   
   /* Dont render a repo view if its one of these, you can take yodeler
   when you actually get around to working on it and its in a presentable state. */
-  const remove = ['bps-github7', 'yodeler', 'portfolio_landing'];
+  const remove = ['bps-github7', 'yodeler', 'portfolio_landing', 'IVDB2'];
   if (remove.includes(repo.name)) {
     return(null)
   }
