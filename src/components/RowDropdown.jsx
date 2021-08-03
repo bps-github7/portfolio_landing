@@ -111,7 +111,7 @@ const InfoColumn = (props) => {
 			<ul>
 				{ 
 					Object.keys(props.contents).map((item, i) => (
-							<ColumnDropdown title={item} contents={props.contents[item]} />
+							<ColumnDropdown title={item} contents={props.contents[item]} key={i} />
 						) 
 					) 
 				}
