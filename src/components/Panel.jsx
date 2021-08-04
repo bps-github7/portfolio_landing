@@ -39,8 +39,8 @@ const Panel = (props) => {
 			description : "synopsis of changes to be made to this site", 
 			datePosted : "8/4/2021", 
 			body: "Over the last month, I shared a link of this portfolio landing with a more experienced developer ive connected with on LinkedIn, and asked for feedback. His suggestions are what initially turned my attention back to working on this site. Im hoping that today, I can address some of the major issues, as well as sketch out some design concepts for this new blog section, and begin laying the infrastructure for connecting it to firebase. Doing so will allow more of the site content to be supplied dynamically, overall increasing the quality of organization with the code base, which is currently less than ideal. The following bullets will outline the todo items I've set out for myself today", 
-			details : ["create wireframes or layout for different types of blog posts (https://github.com/bps-github7/portfolio_landing/issues/5)", "get the site hooked up to B.A.A.S (firebase)", "get links to resume, linked in on nav bar", "begin migrating content from json to firestore d.b"],
-			conclusion : "see github issue (https://github.com/bps-github7/portfolio_landing/issues/4)  for a complete todo list of improvements and enhancements that need to be made in the future."},
+			details : ["create wireframes or layout for different types of blog posts", "get the site hooked up to B.A.A.S (firebase)", "get links to resume, linked in on nav bar", "begin migrating content from json to firestore d.b"],
+			conclusion : "see github issue (https://github.com/bps-github7/portfolio_landing/issues/4)  for a complete todo list of improvements and enhancements that need to be made in the future. Hoping to deal with some of the TODOs and firebase connectivity later on today. The wireframing/ design decisions can be found in this issue: https://github.com/bps-github7/portfolio_landing/issues/5"},
 	]
 
 
