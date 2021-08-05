@@ -113,10 +113,16 @@ const DetailsManager = ({detail}) => {
 	} else if (detail.code) {
 		return(<CodeblockDetail codeblockDetails={detail}/>);
 	} else {
-		// // if the object has no properties, its just a string 
-		return(
-			<li> {detail} </li>
-		)
+		if (typeof(detail) === "string") {
+			return(
+				<li> {detail} </li>
+			)
+		} else {
+			return (
+				<li>Detail Manager wasnt sure what to render, so youre seeing this instead...</li>
+			)
+		}
+		
 	}
 }
 export default ProgressBlog;
