@@ -38,7 +38,6 @@ const ProgressBlog = (props) => {
 			<h3>Progress blog</h3>
 			<p>A place to report on my progress on breaking into the IT and software industry</p>
 
-			<span>Heres a thing for showing env variables hosted on nelify: { process.env.REACT_APP_EXAMPLE }</span>
 			{ 
 				docs && docs.map((blogs, i) => (
 					<BlogPost blog={blogs} key={i}/>
