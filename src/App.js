@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { testing } from './services/firebase'
 import './App.css';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
@@ -16,7 +17,8 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
 	useEffect(() => {
 		document.title = "Ben's Software Portfolio"
- }, []);
+		testing();
+	}, []);
 
   return (
     <div className="App">
@@ -24,6 +26,7 @@ function App() {
 
         <Nav/>
         <ScrollToTop/>
+				<h1>%REACT_APP_EXAMPLE</h1>
         <div class="content">
           <Switch>
             <Route exact path='/home' component={Home}/>

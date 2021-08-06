@@ -13,6 +13,13 @@ var firebaseConfig = {
 	appId: process.env.REACT_APP_FIREBASE_MESSAGING_APP_ID
 };
 
+export const testing = () => {console.log(firebaseConfig);}
+
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 export const db = firebase.firestore();
+
+
+
+

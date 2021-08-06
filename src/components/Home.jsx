@@ -26,12 +26,13 @@ class Home extends Component {
         {  
           this.state.loading || !this.state.avatarUrl ?
           <span>Loading...</span>:
+					// says 'digital portrait' because html complains if you say 'image' or 'photo' in the alt attribute
           <img alt="a digital portrait of me face" src={this.state.avatarUrl}/> 
 
         }
         <h3>Ben Sehnert</h3>
         <p>
-          <em>An aspiring Software Developer, local to Philadelphia. </em>
+          <em>A front end oriented Software Developer, local to Philadelphia. </em>
           I graduated with my Masters of Science in Information Systems last june. 
           I'm looking for work in web development, help-desk, general system developement, UI/Ux design, QA engineering and more,
           in sectors not limited to education, non profit, government and regenerative agricultural. <br /><br />
