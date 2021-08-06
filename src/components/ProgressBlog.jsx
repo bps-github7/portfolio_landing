@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import useFirestore from '../hooks/useFirestore';
 
 const ProgressBlog = (props) => {
 		//top level component for Progress reporting in the about section
 
-	const { docs } = useFirestore('progressBlog');		
+	const { docs } = useFirestore("progressBlog");
 	// now that firebase / firestore is set up, we can use a hook / effect to get these objects from the db
 	// const BlogPosts = [
 	// 	{ 
@@ -51,17 +51,16 @@ const BlogPost = ({blog}) => {
 		<h6 class="date sub-heading">{blog.datePosted}</h6>
 		<hr />
 		<p>{blog.body}</p>
-		<BlogDetails details={blog.details}/>
-		<footer>Conclusion: {blog.conclusion}</footer>
+		{ blog.details ? <BlogDetails details={blog.details}/> : null}
+		<p>Conclusion: {blog.conclusion}</p>
 	</section>)
 }
 
 const BlogDetails = ({details}) => {
-	// need to expand on this- multiple types of Blog Details, use conditional rendering
 	return(
 		<ul className="blog-details">
 			{ details.map((item, i) => (
-					<DetailsManager detail={item} />
+					<DetailsManager detail={item} key={i} />
 					// <li key={i}>{item}</li>
 				)
 			) 

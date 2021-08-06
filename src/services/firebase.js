@@ -1,9 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-// lets figure out the best practice for doing this in deployment
-// obviously dont want to commit this since its in deployment 
-
 var firebaseConfig = {
 	apiKey: process.env.REACT_APP_FIREBASE_KEY, 
 	authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,

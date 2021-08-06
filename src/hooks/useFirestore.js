@@ -16,16 +16,13 @@ const useFirestore = collection => {
     cleanup: [ unsub() ] - a function which unsubscribes 
     */
     const [ docs, setDocs ] = useState([]);
-
-    // TODO: this could be made into a more generic hook/service if the argument
-    // to orderBy was also passed in. For our purposes, the current setup works fine.    
     useEffect(() => {
         const unsub = db.collection(collection)
         .orderBy('createdAt','desc')
         .onSnapshot((snap) => {
             let documents = [];
+						console.log(snap)
             snap.forEach((doc) => {
-							console.log(doc.id)
 							documents.push({...doc.data(), id : doc.id});
             });
             setDocs(documents);

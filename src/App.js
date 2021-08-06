@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { testing } from './services/firebase'
 import './App.css';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
@@ -12,12 +11,14 @@ import Contact from './components/Contact';
 import data from './data.json';
 import ScrollToTop from './components/ScrollToTop';
 
+import { testing } from './services/firebase';
+
 
 
 function App() {
 	useEffect(() => {
 		document.title = "Ben's Software Portfolio"
-		testing();
+		testing();		
 	}, []);
 
   return (
