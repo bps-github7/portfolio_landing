@@ -11,20 +11,19 @@ import Contact from './components/Contact';
 import data from './data.json';
 import ScrollToTop from './components/ScrollToTop';
 
-import { testing } from './services/firebase';
+// import firebase, { testing } from './services/firebase';
 
 
 
 function App() {
 	useEffect(() => {
 		document.title = "Ben's Software Portfolio"
-		testing();		
+		// testing();		
 	}, []);
 
   return (
     <div className="App">
       <Router>
-
         <Nav/>
         <ScrollToTop/>
 				{/* <h1>{process.env.REACT_APP_EXAMPLE}</h1> */}
