@@ -26,7 +26,7 @@ function App() {
 
         <Nav/>
         <ScrollToTop/>
-				<h1>%REACT_APP_EXAMPLE</h1>
+				<h1>{process.env.REACT_APP_EXAMPLE}</h1>
         <div class="content">
           <Switch>
             <Route exact path='/home' component={Home}/>
