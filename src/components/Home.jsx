@@ -21,7 +21,7 @@ class Home extends Component {
   render() { 
     return (
       <section>
-			<span>Heres a thing for showing env variables hosted on nelify: %REACT_APP_EXAMPLE% </span>
+			<span>Heres a thing for showing env variables hosted on nelify:</span>
         <h1>Who am I?</h1>
         {  
           this.state.loading || !this.state.avatarUrl ?
