@@ -5,28 +5,25 @@ const ProgressBlog = (props) => {
 	const [ loading, setLoading ] = useState(false);
 	const [ docs, setDocs ] = useState([]);	
 
-	// const ref = firebase.firestore().collection("progressBlog");
-	// console.log(ref);
+	const ref = firebase.firestore().collection("progressBlog");
+	console.log(ref);
 
-	// const getDocs = () => {
-	// 	setLoading(true);
-	// 	ref.onSnapshot((querySnapshot) => {
-	// 		const items = [];
-	// 		querySnapshot.forEach((doc) => {
-	// 			items.push(doc.data());
-	// 		});
-	// 		setDocs(items);
-	// 		setLoading(false);
-	// 	});
-	// }
+	const getDocs = () => {
+		setLoading(true);
+		ref.onSnapshot((querySnapshot) => {
+			const items = [];
+			querySnapshot.forEach((doc) => {
+				items.push(doc.data());
+			});
+			setDocs(items);
+			setLoading(false);
+		});
+	}
 
-	// useEffect(() => {
-	// 	getDocs();
-	// })
+	useEffect(() => {
+		getDocs();
+	})
 
-	// const testing = () => {
-	// 	alert(process.env.REACT_APP_AWFUL_SHIT);
-	// }
 	if ( loading ) {
 		return( <h1>Loading...</h1> );
 	}
