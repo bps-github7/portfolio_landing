@@ -54,7 +54,7 @@
           "Waterfall/iterative":4
         },
         "deployment" : {
-          "nelify" : 2
+          "netlify" : 2
         }
       }, 
       "tooling" : {
