@@ -22,7 +22,7 @@ const ProgressBlog = (props) => {
 
 	useEffect(() => {
 		getDocs();
-	})
+	},[])
 
 	if ( loading ) {
 		return( <h1>Loading...</h1> );
@@ -111,6 +111,8 @@ const ImageTileDetail = ({imageDetails}) => {
 const DetailsManager = ({detail}) => {
 	// cant use switch here because there is no shared
 	// property betweeen the different types of details
+
+	//is there a better way to do this ? like angular content projection? { props }
 	if(detail.linkText) {
 		return(<LinkDetail linkDetails={detail}/>);
 	}	else if (detail.downloadUrl) {
