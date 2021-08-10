@@ -19,11 +19,11 @@ const ImageSlider = ({images, setSelectedImage}) => {
 
   return (
     <section class="small" onClick={() => setSelectedImage(img[index])}>
-      <button onClick={handlePrevious}>previous</button>
       <img 
         alt="images displayed in slider" 
         src={img[index]}/>      
-      <button onClick={handleNext}>next</button>
+      <button class="btn" onClick={handleNext}>Next</button>
+      <button class="btn" onClick={handlePrevious}>Previous</button>
     </section>
   );
 }

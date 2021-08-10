@@ -68,14 +68,14 @@ const HomeWidget = () => {
 
 	if (!opened) {
 		return(
-			<button onClick={() => (setOpened(true))}>Show Widget</button>
+			<button class="btn" onClick={() => (setOpened(true))}>Show Widget</button>
 		)
 	}
 
 	return(
 		<section class="home widget">
 			<WidgetCarousel/>						
-			<button onClick={() => (setOpened(false))}>Hide widget</button>
+			<button class="btn" onClick={() => (setOpened(false))}>Hide widget</button>
 		</section>
 	)
 
@@ -124,8 +124,8 @@ const WidgetCarousel = () => {
 				{ items[index].description }
 			</p>
 
-			<button onClick={handlePrevious}>Previous</button>
-			<button onClick={handleNext}>Next</button>
+			<button class="btn" onClick={handlePrevious}>Previous</button>
+			<button class="btn" onClick={handleNext}>Next</button>
 
 
 		</section>

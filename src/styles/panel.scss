@@ -24,6 +24,9 @@ h1 {
   display: none;
 }
 
+.blog-details li {
+	margin-top: 10px;
+}
 
 img.default-view {
  height: 50rem;
@@ -47,6 +50,10 @@ img.default-view {
   border: 3px solid white;
 }
 
+.blog-post p {
+	text-indent: 5%;
+}
+
 
 // custom css for mobile
 @media screen and (max-width: 600px) {
@@ -55,8 +62,6 @@ img.default-view {
   viewed from a mobile device in landscape mode, the modal (or content- not sure which)
   only covers about 90% of the page, leaving the 10% vertical on right not colored same
   as the background */
-
-  // showing images or image slider
   
   .default {
     display: none;
@@ -65,6 +70,10 @@ img.default-view {
   .small {
     display: block;
   }
+
+	.btn {
+		display : inline;
+	}
 
 
   //

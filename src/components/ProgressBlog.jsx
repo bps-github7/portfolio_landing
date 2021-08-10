@@ -52,9 +52,12 @@ const BlogPost = ({blog}) => {
 		<h5 class="sub-heading">{blog.description}</h5>
 		<h6 class="date sub-heading">{blog.datePosted}</h6>
 		<hr />
-		<p>{blog.body}</p>
+		<p>
+			{blog.body}
+		</p>
+		<h6> Post Details: </h6>
 		{ blog.details ? <BlogDetails details={blog.details}/> : null}
-		<p>Conclusion: {blog.conclusion}</p>
+		<p>{blog.conclusion}</p>
 	</section>)
 }
 
@@ -86,14 +89,22 @@ const LinkDetail = ({linkDetails}) => {
 }
 
 const CodeblockDetail = ({codeblockDetails}) => {
-	const { summary, code, language } = codeblockDetails;
+	const { summary, code, language, comments } = codeblockDetails;
 	return(
 		<li className="blog details codeblock">
 			{summary}
+			<br />
 			<span><strong>Language:</strong>{language}</span>
+			<br />
 			<pre>
 				{ code }	
-			</pre>		
+			</pre>
+			{ comments ?
+				<pre>
+					{ comments }
+				</pre>
+				: null
+			}
 		</li>
 	)
 }
