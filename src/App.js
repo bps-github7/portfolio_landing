@@ -11,14 +11,12 @@ import Contact from './components/Contact';
 import data from './data.json';
 import ScrollToTop from './components/ScrollToTop';
 
-// import firebase, { testing } from './services/firebase';
 
 
 
 function App() {
 	useEffect(() => {
 		document.title = "Ben's Software Portfolio"
-		// testing();		
 	}, []);
 
   return (
