@@ -62,7 +62,11 @@ img.default-view {
   viewed from a mobile device in landscape mode, the modal (or content- not sure which)
   only covers about 90% of the page, leaving the 10% vertical on right not colored same
   as the background */
-  
+ 
+	pre {
+		width: 300px;
+	}
+
   .default {
     display: none;
   }

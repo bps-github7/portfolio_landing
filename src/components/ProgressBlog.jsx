@@ -46,7 +46,7 @@ const ProgressBlog = (props) => {
 // dumb component that constructs a blog post out of the object from firestore
 const BlogPost = ({blog}) => {
 	return(
-	<section className="blog-post">
+	<section>
 		<h3 class="heading">{blog.title}</h3>
 		<h5 class="sub-heading">{blog.description}</h5>
 		<h6 class="date sub-heading">{blog.datePosted}</h6>
