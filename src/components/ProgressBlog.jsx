@@ -6,7 +6,6 @@ const ProgressBlog = (props) => {
 	const [ docs, setDocs ] = useState([]);	
 
 	const ref = firebase.firestore().collection("progressBlog");
-	console.log(ref);
 
 	const getDocs = () => {
 		setLoading(true);
@@ -31,7 +30,7 @@ const ProgressBlog = (props) => {
 
 	//top level component for Progress reporting in the about section
 	return(	
-		<section>
+		<section class="panel">
 			<h3>Progress blog</h3>
 			<p>A place to report on my progress on breaking into the IT and software industry</p>
 
