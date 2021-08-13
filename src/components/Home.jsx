@@ -73,7 +73,7 @@ const HomeWidget = () => {
 	}
 
 	return(
-		<section class="home widget">
+		<section className="home widget">
 			<WidgetCarousel/>						
 			<button class="btn" onClick={() => (setOpened(false))}>Hide widget</button>
 		</section>

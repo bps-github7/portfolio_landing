@@ -29,27 +29,23 @@ const ExperienceTile = (props) => {
   // console.log(position)
   return (
     // maybe want to conditionally render a class if job is current position
-    <div>
+    <section>
       
       <h3>{ position.company }</h3>
       {/* <h4>{ position.position }</h4> */}
-      <p>
+      <section>
        <div>
-        <strong>Employed:</strong> {position.employed}
-       </div>
-       <div>
-        <strong>Supervisor:</strong> {position.supervisor}
-       </div>
-        <div>
-          <strong>Location:</strong> {position.location}
+        <strong>Employed:</strong> {position.employed} <br />
+        <strong>Supervisor:</strong> {position.supervisor}  <br />
+				<strong>Location:</strong> {position.location} <br />
         </div>
       { 
         Object.keys(position.duties).length === 1 
         ? <SingleListRender duties={position.duties}/> 
         : <MultiListRender duties={position.duties}/> 
       }
-      </p>
-    </div>
+      </section>
+    </section>
   );
 }
 

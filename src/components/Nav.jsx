@@ -8,16 +8,30 @@ const Nav = () =>  {
 
 	const items = ["skills", "projects", "experience", "about", "contact"];
 	const isMobile = useMediaQuery({ query: `(max-width: 700px)` });
-	const [ menuOpen, setMenuOpen ] = useState(true);
+	const [ menuOpen, setMenuOpen ] = useState(null);
 
-	const toggleMenu = (e) => {
-		if (e) {e.preventDefault();}
-		/* if screen size is mobile, change menu to closed when a link is clicked */
-		if (isMobile) {
-			console.log("doing a thing! cuz its mobile sawn")
-			setMenuOpen(false)
+
+	// a start- if we can change the input state like this, it wont piss react off. but we need a way to give the input checked event to a child element to trigger this when we change url
+	const handleCheck = (e) => {
+		if (e.target.checked) {
+			console.log("checked the jawn!")
+
+			e.target.checked = false;
+		} else {
+			console.log("unchecked the jawn")
 		}
 	}
+
+	// this doesnt work, because react doesnt like input value changing from value to false.
+	const toggleMenu = (e) => {
+		if (e) {e.preventDefault();}
+		setTimeout(() =>{
+			setMenuOpen(false);
+		},400)
+		setMenuOpen(null)
+		
+	}
+
 
 	return (
 		<header>
@@ -31,7 +45,7 @@ const Nav = () =>  {
 				type="checkbox" 
 				class="nav-toggle"
 				id="nav-toggle"
-				// checked={menuOpen}
+				onChange={handleCheck}
 				/>
 			<nav>
 				<ul>
@@ -39,7 +53,6 @@ const Nav = () =>  {
 						<NavItem 
 							title={item} 
 							key={i} 
-							// onClick={toggleMenu()}
 							/>					
 					) }
 				</ul>
@@ -47,6 +60,7 @@ const Nav = () =>  {
 			<label for="nav-toggle" class="nav-toggle-label">
 				<span></span>
 			</label>
+			<button onClick={() => toggleMenu()}>Disable jawn!</button>
 		</header>   
 			)
 }
