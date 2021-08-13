@@ -16,7 +16,10 @@ const Nav = () => {
       
       </Link>
       
-      {/* possible to make nav mobile responsive w/o js */}
+      {/* TODO: this needs to close on page changes in mobile view, but will be hard since its done completely in css with little logic or attention paid to lifespan/ browser state
+				rewatch k pwell vid. its possible u missed something?
+				
+			*/}
       <input type="checkbox" class="nav-toggle" id="nav-toggle"/>
       <nav>
         <ul>

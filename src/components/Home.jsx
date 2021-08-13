@@ -33,7 +33,7 @@ class Home extends Component {
         <h3>Ben Sehnert</h3>
         <p>
           <em>A Full Stack, system oriented Software Developer, local to Philadelphia. </em>
-          I graduated with my Masters of Science in Information Systems last june. 
+          I graduated with my Masters of Science in Information Systems in June 2020.
           I'm looking for work in web development, help-desk, general system developement, UI/Ux design, QA engineering and more,
           in sectors not limited to education, non profit, government and regenerative agricultural. <br /><br />
           If you think I would be a good match for an open position, your company, or can connect me to someone who can help me in my job search:  <br />
@@ -42,9 +42,9 @@ class Home extends Component {
           </strong>
         </p>
 
-        <h5>Getting aroung:</h5>
+        <h5>Getting Around:</h5>
 				<p>
-					Examine the below widget for a quick glance at my professional competncies and other candidate info.
+					Examine the below widget for a quick glance at my professional competencies and other candidate info.
 					Use the above navigation menu to examine each topic in depth.
 				</p>
 				<HomeWidget/>
@@ -102,7 +102,7 @@ const WidgetCarousel = () => {
 		},
 		{ 
 			title : "Contact Me",
-			description : "emailing me at my dedicated professional email address is the best way to get in touch. Learn more on the Contact page. I look forward to hearing from you and learning about potential career opprotunities with your company!"
+			description : "Emailing me at my dedicated professional email address is the best way to get in touch. Learn more on the Contact page. I look forward to hearing from you and learning about potential career opprotunities with your company!"
 		}
 	]
 
