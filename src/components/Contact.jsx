@@ -4,7 +4,7 @@ const Contact = ({contact}) => {
     if (info === "Private Message") {
       // return(null);
       return(
-        <setion>
+        <section>
           <h3>Private Message:</h3>
           <ul>
             {
@@ -17,7 +17,7 @@ const Contact = ({contact}) => {
               ) )
             }
           </ul>
-        </setion>
+        </section>
       )
     }
     else if (typeof(contact[info]) === 'boolean') {

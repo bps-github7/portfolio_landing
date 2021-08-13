@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav/>
+        <Nav />
         <ScrollToTop/>
 				{/* <h1>{process.env.REACT_APP_EXAMPLE}</h1> */}
         <div class="content">
