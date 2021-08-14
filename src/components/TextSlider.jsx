@@ -25,8 +25,8 @@ export default class TextSlider extends Component {
       <div className="App-slider">
 
         <p><strong>{ this.props.content[this.state.index] }</strong></p>
-        <button class="btn" onClick={this.handleNext}>next</button>
         <button class="btn" onClick={this.handlePrevious}>previous</button>
+        <button class="btn" onClick={this.handleNext}>next</button>
       </div>  
     );
   }

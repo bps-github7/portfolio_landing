@@ -8,66 +8,63 @@ const Nav = () =>  {
 
 	const items = ["skills", "projects", "experience", "about", "contact"];
 	const isMobile = useMediaQuery({ query: `(max-width: 700px)` });
-	const [ menuOpen, setMenuOpen ] = useState(null);
+	const [ menuOpen, setMenuOpen ] = useState(false);
 
-
-	const handleCheck = (e) => {
-		setTimeout(() => {
-			setMenuOpen(false)
-		},100)
-		setMenuOpen(true)
-		// if (e.target.checked) {
-		// 	setMenuOpen(false);
-		// } else {
-		// 	setMenuOpen(true);
-		// }
+	const Navigation = () => {
+		return(
+			<ul>
+				{ 
+					items.map(
+						(item, key) => (
+							<li>
+								<Link to={item}>{item}</Link>
+							</li>
+						)
+					) 
+				}
+			</ul>
+		)
 	}
 
-	const Dropdown = ({close}) => {
-		const NavItem = (props) => {
-			return(
-				<li>
-					<Link to={props.title} onClick={close}>{ props.title }</Link>
-				</li>
-			)
+	const MobileDropdown = () => {
+		const handleChecked = (e) => {
+			if (e.target.checked) {
+				setMenuOpen(true);
+				// console.log("this happeed")
+			}
 		}
 
 		return(
 			<nav>
-				<ul>
-					{ items.map((item, i ) => 
-						<NavItem 
-							title={item} 
-							key={i} 
-							/>					
-					) }
-				</ul>
-			</nav>
+				<input 
+					type="checkbox"
+					class="nav-toggle"
+					id="nav-toggle"
+					onChange={(change) => handleChecked(change)}
+					
+					/>
+				{ menuOpen && <Navigation/> }
+			</nav>			
 		)
 	}
 
-
-	return (
+	return(
 		<header>
-			<Link to="/home">
-				<h3 class="logo">
+			<h3 class="logo">
+				<Link to="/home">
 					Ben Sehnert
-				</h3>
-			</Link>
-			<input 
-				type="checkbox" 
-				class="nav-toggle"
-				id="nav-toggle"
-				onCheck={() => setMenuOpen(!menuOpen)}
-				checked={menuOpen}
-			/>
-			{/* <button onClick={() => setMenuOpen(prev => !prev)}>toggle dropdown</button> */}
-			<Dropdown close={() => handleCheck}/>
-			<label htmlFor="nav-toggle" class="nav-toggle-label">
+				</Link>
+			</h3>
+			{ isMobile ?
+				<MobileDropdown/>	:
+				<Navigation/>					
+			}
+			<label for="nav-toggle" class="nav-toggle-label">
 				<span></span>
 			</label>
-		</header>   
-			)
+		</header>
+		
+		)
 }
 	
 
