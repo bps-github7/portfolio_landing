@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 class Projects extends Component {
   constructor(props) {
@@ -24,36 +24,83 @@ class Projects extends Component {
         {
           this.state.loading || !this.state.repos ?
           <span>Loading...</span> :
-          <ul>
-            {
-              this.state.repos
-              .map((repo, i) => (
-                <RepoView key={i} repo={repo}/>
-              )
-              )
-            }
-
-          </ul>
-          
-
-        }
-      </section>
+					<ProjectOrganizer projects={this.state.repos}/>
+				}
+				</section>
 
      );
   }
 }
-/* TODO: in the future, you might want to organize these under a subheading
-like you had in previous implementation, based on the language the repo is written in
-(this data is provided by the object returned by the api call - repo.language) */
+
+const ProjectOrganizer = ({projects}) => {
+	return (
+		<Organizer projects={projects}/>		
+		// <ul>
+		// 	{ projects.map((repo, i) => 
+		// 			<li>{repo.name}</li>
+		// 		) 
+		// 	}		
+		// </ul>
+	)
+}
+
+const Organizer = ({projects}) => {
+  
+	let categories = {
+		restApis : [],
+		webProjects : [],
+		scripting : []
+	}
+	const remove = ['bps-github7', 'yodeler', 'portfolio_landing', 'IVDB2'];
+	projects.forEach((project) => {
+		//filter out projects of lesser importance and repos that arent fleshed out
+		if (!remove.includes(project.name)) {
+			if (project.name.includes([".net","JavaSpring"])) categories['restApis'].append(project);
+			else if (project.name.includes(["IVDB", "oral-history"])) categories['webProjects'].append(project);
+			//probably could use else here but just being careful
+			else if (project.name.includes(['class_generator','zipcodes'])) categories['scripting'].append(project)
+		}
+	})
+
+	const corrections = { 'RESTful APIs' : 'restApis', 'Websites' : 'webProjects', 'scripts' : 'scripting' }
+
+	const [ selected, setSelected ] = useState(null);
+	
+	const handleChange = (event) => {
+		// console.log(event.target.value)
+		setSelected(event.target.value)
+	}
+
+	const categoryView = ({categories}) => {
+		return(
+			<ul>
+				{ categories.map((item, i) => <li>{item.name} : {item.descri}</li>) }
+			</ul>
+		)
+	}
+
+	return(
+		<section>
+			<select onChange={handleChange} name="" id="">
+				{ Object.keys(corrections).map((item, i) => 
+						<option  value={corrections[item]}>{item}</option>
+					) 
+				}
+			</select>
+			you chose {categories[selected]}
+		</section>
+	)
+	
+		
+}
+
+
 const RepoView = ({id, repo}) => {
   
-  /* Dont render a repo view if its one of these, you can take yodeler
-  when you actually get around to working on it and its in a presentable state. */
-  const remove = ['bps-github7', 'yodeler', 'portfolio_landing', 'IVDB2'];
-  if (remove.includes(repo.name)) {
-    return(null)
-  }
 
+	// const [ open, setOpen ]
+
+	
   return (
     <section key={id}>
       <h3>{ repo.name }</h3>
@@ -62,5 +109,6 @@ const RepoView = ({id, repo}) => {
     </section>
   );
 }
+
 
 export default Projects;
