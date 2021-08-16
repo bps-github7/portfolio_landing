@@ -1,74 +1,47 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState }  from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { BrowserHistory } from 'react-router'
+import { Link } from 'react-router-dom';
 
 
-const Nav = () =>  {
+const Nav = () => {
 
-	const items = ["skills", "projects", "experience", "about", "contact"];
-	const isMobile = useMediaQuery({ query: `(max-width: 700px)` });
-	const [ menuOpen, setMenuOpen ] = useState(false);
-
-	const Navigation = () => {
-		return(
-			<ul>
-				{ 
-					items.map(
-						(item, key) => (
-							<li>
-								<Link to={item}>{item}</Link>
-							</li>
-						)
-					) 
-				}
-			</ul>
-		)
-	}
-
-	const MobileDropdown = () => {
-		const handleChecked = (e) => {
-			if (e.target.checked) {
-				setMenuOpen(true);
-				// console.log("this happeed")
-			}
-		}
-
-		return(
-			<nav>
-				<input 
-					type="checkbox"
-					class="nav-toggle"
-					id="nav-toggle"
-					onChange={(change) => handleChecked(change)}
-					
-					/>
-				{ menuOpen && <Navigation/> }
-			</nav>			
-		)
-	}
-
-	return(
-		<header>
-			<h3 class="logo">
-				<Link to="/home">
-					Ben Sehnert
-				</Link>
-			</h3>
-			{ isMobile ?
-				<MobileDropdown/>	:
-				<Navigation/>					
-			}
-			<label for="nav-toggle" class="nav-toggle-label">
-				<span></span>
-			</label>
-		</header>
-		
-		)
-}
+	// A responsive navbar with two views, in mobile and 50% desktop view it turns into a toggleable dropdown.
+	// Implementation is highly css dependent (see ../styles/nav.scss). the only real JS we need is
+	// to change input.checked value dynamically, so dropdown closes on route change.
 	
+	const options = ['skills', 'projects', 'experience', 'about', 'contact' ];
 
+	const [ isChecked, setIsChecked ] = useState(false);
 
+	
+	return (
+    <header>
+      {/* thats my name! */}
+      <Link to="/home">
+        <h3 class="logo">
+          Ben Sehnert
+        </h3>      
+      </Link>
+      <input checked={isChecked} onChange={() => setIsChecked(prev => !prev)} type="checkbox" class="nav-toggle" id="nav-toggle"/>
+      <nav>
+        <ul>
+					{ options.map((item, i) => <NavItem handleClick={() => setIsChecked(false)} title={item} key={i}/>) }
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+  );
+}
 
+export default Nav;
 
-export default Nav
+const NavItem = ({ title, handleClick }) => {
+	
+	return(
+    <li onClick={handleClick}>
+      <Link to={title}>{ title }</Link>
+    </li>
+  )
+}
