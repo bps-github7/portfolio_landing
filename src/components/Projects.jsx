@@ -51,18 +51,28 @@ const Organizer = ({projects}) => {
 		webProjects : [],
 		scripting : []
 	}
-	const remove = ['bps-github7', 'yodeler', 'portfolio_landing', 'IVDB2'];
-	projects.forEach((project) => {
-		//filter out projects of lesser importance and repos that arent fleshed out
-		if (!remove.includes(project.name)) {
-			if (project.name.includes([".net","JavaSpring"])) categories['restApis'].append(project);
-			else if (project.name.includes(["IVDB", "oral-history"])) categories['webProjects'].append(project);
-			//probably could use else here but just being careful
-			else if (project.name.includes(['class_generator','zipcodes'])) categories['scripting'].append(project)
+	let intendedCategories = {
+		restApis : [".net","JavaSpring"],
+		webProjects : ["IVDB","oral-history"],
+		scripting : ["class_generator","zipcodes"]
+	}
+	const filterProjects = (project) => {
+		if (intendedCategories['restApis'].includes(project.name)) {
+			categories['restApis'].push(project);
+		} else if (intendedCategories['webProjects'].includes(project.name)) {
+			categories['webProjects'].push(project);
+		} else if (intendedCategories['scripting'].includes(project.name)) {
+			categories['scripting'].push(project);
 		}
-	})
+	}
+	console.log(projects)
+	// projects.forEach((project) => { filterProjects(project) })
+	
 
-	const corrections = { 'RESTful APIs' : 'restApis', 'Websites' : 'webProjects', 'scripts' : 'scripting' }
+
+	// const remove = ['bps-github7', 'yodeler', 'portfolio_landing', 'IVDB2'];}
+
+	const corrections = { 'RESTful APIs' : 'restApis', Websites : 'webProjects', scripts : 'scripting' }
 
 	const [ selected, setSelected ] = useState(null);
 	
@@ -71,27 +81,29 @@ const Organizer = ({projects}) => {
 		setSelected(event.target.value)
 	}
 
-	const categoryView = ({categories}) => {
-		return(
-			<ul>
-				{ categories.map((item, i) => <li>{item.name} : {item.descri}</li>) }
-			</ul>
-		)
-	}
-
 	return(
 		<section>
+			<p>Select a category from the below selection to view projects:</p>
 			<select onChange={handleChange} name="" id="">
 				{ Object.keys(corrections).map((item, i) => 
 						<option  value={corrections[item]}>{item}</option>
 					) 
 				}
 			</select>
-			you chose {categories[selected]}
+			{selected && <CategoryView category={categories[selected]}/>}
 		</section>
 	)
 	
 		
+}
+
+const CategoryView = ({category}) => {
+	console.log(category)
+	return(
+		<ul>
+			{category.map((item, i) => <RepoView repo={item}/>)}
+		</ul>
+	)
 }
 
 
