@@ -9,12 +9,12 @@ const InfoPanel = (props) => {
 
   */
 	return (
-		<section class="info-panel">
+		<section className="info-panel">
 			{ props.title ? <h1>{props.title}</h1> : null }
 			{
 					Object.keys(props.info)
-					.map((area) =>  
-						<RowDropdown title={area} contents={props.info[area]}/>
+					.map((area, i) =>  
+						<RowDropdown key={i} title={area} contents={props.info[area]}/>
 					)
 				}
 		</section>

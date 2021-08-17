@@ -5,8 +5,11 @@ const ProgressBlog = (props) => {
 	const [ loading, setLoading ] = useState(false);
 	const [ docs, setDocs ] = useState([]);	
 
-	const ref = firebase.firestore().collection("progressBlog");
 
+
+	// TODO: would like to get this fn more reusable, why cant we use it in an effect hook?
+	// currently it causes a warning about exhaustive dependencies.
+	const ref = firebase.firestore().collection('progressBlog');	
 	const getDocs = () => {
 		setLoading(true);
 		ref.onSnapshot((querySnapshot) => {
@@ -30,7 +33,7 @@ const ProgressBlog = (props) => {
 
 	//top level component for Progress reporting in the about section
 	return(	
-		<section class="panel">
+		<section>
 			<h3>Progress blog</h3>
 			<p>A place to report on my progress on breaking into the IT and software industry</p>
 
@@ -46,10 +49,10 @@ const ProgressBlog = (props) => {
 // dumb component that constructs a blog post out of the object from firestore
 const BlogPost = ({blog}) => {
 	return(
-	<section>
-		<h3 class="heading">{blog.title}</h3>
-		<h5 class="sub-heading">{blog.description}</h5>
-		<h6 class="date sub-heading">{blog.datePosted}</h6>
+	<section className="blog-post">
+		<h3 className="heading">{blog.title}</h3>
+		<h5 className="sub-heading">{blog.description}</h5>
+		<h6 className="date sub-heading">{blog.datePosted}</h6>
 		<hr />
 		<p>
 			{blog.body}
@@ -98,12 +101,13 @@ const CodeblockDetail = ({codeblockDetails}) => {
 			<pre>
 				{ code }	
 			</pre>
-			{ comments ?
+			{/* this is being really problematic. stretchesthe page past max width */}
+			{/* { comments ?
 				<pre>
 					{ comments }
 				</pre>
 				: null
-			}
+			} */}
 		</li>
 	)
 }
@@ -113,7 +117,7 @@ const ImageTileDetail = ({imageDetails}) => {
 	return(
 		<li className="blog details image">
 			<img src={downloadUrl} alt={altText} />
-			<label for="the above image">{description}</label>
+			<label htmlFor="the above image">{description}</label>
 		</li>
 	)
 }

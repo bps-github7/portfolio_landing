@@ -24,8 +24,7 @@ function App() {
       <Router>
         <Nav />
         <ScrollToTop/>
-				{/* <h1>{process.env.REACT_APP_EXAMPLE}</h1> */}
-        <div class="content">
+        <div className="content">
           <Switch>
             <Route exact path='/home' component={Home}/>
             <Route exact path='/contact'>

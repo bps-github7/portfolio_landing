@@ -118,11 +118,26 @@ toggle, right after that class */
 /* TODO: we see the dropdown nav appearing then scrolling away
 after we pass <= 600px */ 
 
-/* 50% desktop and also mobile  */
+/* 50% desktop and also mobile/ tablet  */
 @media only screen and (min-width: 600px) {
-  nav {
+
+	//for mobile/ portait and 50% desktop, only take up a fraction of screen
+	nav {
     width: 500px;
   }
+
+	/* mobile and tablet in landscape mode */
+	@media only screen and (max-width: 800px) {
+		nav {
+			
+			// make the nav dropdown spread the screen length
+			width : 100%;
+		
+		
+		}
+	}
+
+
 
   nav ul {
     max-width: 450px;

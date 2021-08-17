@@ -28,6 +28,7 @@ const PhotoGallery = ({props}) => {
 		<section>
 		<h3>Choose a topic to learn more about me:</h3>
 		<select
+			class="select"
 			onChange={handleChoiceChange}
 			name="about" id="about">
 			<option>-</option>
@@ -99,12 +100,12 @@ const ImageViewer = ({imgs, selectedImage, setSelectedImage}) => {
 
 const ImagePicker = ({images, setSelectedImage}) => {
   return(
-    <section class="default">
+    <section className="default">
       { Object.keys(images).map(
-        (item) => 
+        (item,i) => 
         (
-          <section onClick={() => setSelectedImage(images[item])}>
-            <img class="default-view" src={images[item]} alt="" />
+          <section key={i} onClick={() => setSelectedImage(images[item])}>
+            <img className="default-view" src={images[item]} alt="" />
             { item ?
               <p>{item}</p> : null 
             }

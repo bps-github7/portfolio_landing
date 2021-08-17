@@ -39,7 +39,7 @@ const ClosedRow = (props) => {
     return(
       <section className="closed-row closed-row-concepts">
         <h2>{props.title}</h2>
-        <button class="btn" onClick={props.toggleOpen}>
+        <button className="btn" onClick={props.toggleOpen}>
           {
             props.isOpen ? 
             "hide" :
@@ -55,7 +55,7 @@ const ClosedRow = (props) => {
       <h3>{ props.details.subheading }</h3>
        {/* Render a body, if there is one  */}
       { props.details.body ? <p>{props.details.body}</p> : null}
-			<button class="btn" onClick={props.toggleOpen}>
+			<button className="btn" onClick={props.toggleOpen}>
         {
           props.isOpen ? 
           "hide" :
@@ -71,7 +71,7 @@ const OpenRow = (props) => {
 		return (
 			<section className="concepts-open-row">
 				{/* <p>{ props.contents.intro }</p> */}
-				<TextSlider content={props.contents}/>
+				<TextSlider items={props.contents}/>
 				{/* <p>{ props.contents }</p> */}
 			</section>
 		)
@@ -92,11 +92,11 @@ const InfoColumn = (props) => {
 	if (props.title === "cooking" || props.title === "art") {
     return (
       <section className="info-col">
-        <h2 class="info-col-header">{ props.title}</h2>
+        <h2 className="info-col-header">{ props.title}</h2>
         <ul>
           { 
             Object.keys(props.contents).map((item, i) => (
-                <ImgDropdown title={item} contents={props.contents[item]} />
+                <ImgDropdown key={i} title={item} contents={props.contents[item]} />
               ) 
             ) 
           }
@@ -107,7 +107,7 @@ const InfoColumn = (props) => {
   
   return (
 		<section className="info-col">
-			<h2 class="info-col-header">{ props.title}</h2>
+			<h2 className="info-col-header">{ props.title}</h2>
 			<ul>
 				{ 
 					Object.keys(props.contents).map((item, i) => (
@@ -125,19 +125,19 @@ const ImgDropdown = (props) => {
   
   return (
 		<section className="col-dd">
-			<h3 class="dd-trigger"
+			<h3 className="dd-trigger"
         onClick={() => {setOpen(!open)}}
       >
         {props.title}
       </h3> 
       {
         open ?
-        <ul class="dd-col">
+        <ul className="dd-col">
           { Object.keys(props.contents).map((title, i) => 
               (
                 // this is the end of the data hierarchy 
                 // <li key={i}>{title}</li>
-                <ImageView title={title} contents={props.contents[title]} />
+                <ImageView key={i} title={title} contents={props.contents[title]} />
               )
             ) 
           }
@@ -167,18 +167,18 @@ const ColumnDropdown = (props) => {
   
   return (
 		<section className="col-dd">
-			<h3 class="dd-trigger"
+			<h3 className="dd-trigger"
         onClick={() => {setOpen(!open)}}
       >
         {props.title}
       </h3> 
       {
         open ?
-        <ul class="dd-col">
+        <ul className="dd-col">
           { Object.keys(props.contents).map((title, i) => 
               (
                 // this is the end of the data hierarchy 
-                <ItemView id={i} item={title} value={props.contents[title]}/>
+                <ItemView key={i} item={title} value={props.contents[title]}/>
               )
             ) 
           }
@@ -193,7 +193,7 @@ const ColumnDropdown = (props) => {
 const ItemView = (props) => {
   if (typeof(props.value) === "string") {
     return(
-      <li class="item plain-text" key={props.id}> 
+      <li className="item plain-text" key={props.id}> 
         <strong>{ props.item }: </strong>
         { props.value }
       </li>
@@ -201,10 +201,10 @@ const ItemView = (props) => {
   }
   else if (typeof(props.value) === "number") {
     return (
-      <li class="item slider" key={props.id}>
+      <li className="item slider" key={props.id}>
         {/* <strong>{ props.item }: </strong>
-        <input class="slider" disabled type="range" max={5} value={props.value}/>     
-        <span class="alt-text">{props.value}</span> */}
+        <input className="slider" disabled type="range" max={5} value={props.value}/>     
+        <span className="alt-text">{props.value}</span> */}
         <strong>{ props.item }: </strong>
         
         {/* wrote our own custom slider to avoid browser support complications */}
@@ -212,10 +212,10 @@ const ItemView = (props) => {
           onClick={() => {
             alert(`${props.item} : ${props.value}`)
           }}
-          class="slider body"
+          className="slider body"
           style={{ width:"100%", height:"3rem", border: "4px groove grey" }}>
           <div
-            class="slider value"
+            className="slider value"
             style={{
               width: `${(props.value * 20)}%`,
               height: "100%",

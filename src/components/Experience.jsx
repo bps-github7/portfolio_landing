@@ -16,17 +16,14 @@ export default class Experience extends Component {
       */
       <div className="contact">
         <h1 style={{ paddingTop : "1rem" }}>Experience</h1>
-        { Object.keys(this.state.experience).map((position, i) => <ExperienceTile position={this.state.experience[position]}/>) }
+        { Object.keys(this.state.experience).map((position, i) => <ExperienceTile key={i} position={this.state.experience[position]}/>) }
       </div>
     );
   }
 }
 
 const ExperienceTile = (props) => {
-  // let classes = "badge-primary";
-  // classes += this.props.experience.currentPosition  
   const position = props.position;
-  // console.log(position)
   return (
     // maybe want to conditionally render a class if job is current position
     <section>
@@ -77,8 +74,8 @@ const MultiListRender = (props) => {
   for (let item in props.duties)
     items.push({[item] :props.duties[item]});
   return(
-    <div style={{display: "grid", gridTemplateColumns: " 1fr 1fr"}}>
-      { items.map((object) => <SingleListRender duties={object}/>) }
+    <div style={{display: "grid", gridTemplateColumns : " 1fr 1fr"}}>
+      { items.map((object,i) => <SingleListRender key={i} duties={object}/>) }
     </div>
   )
 }

@@ -1,11 +1,11 @@
 const Contact = ({contact}) => {
   
-  const ContactView = ({info,key}) => {
+  const ContactView = ({info}) => {
     if (info === "Private Message") {
       // return(null);
       return(
         <section>
-          <h3>Private Message:</h3>
+          <strong>Private Message:</strong>
           <ul>
             {
               Object.keys(contact[info])
@@ -34,15 +34,15 @@ const Contact = ({contact}) => {
     }
         
     return(
-      <div key={key}>
-        <h2>{ info }:</h2>
+      <div>
+        <strong>{ info }:</strong>
         <p>{ contact[info] }</p>
       </div>
     )
   }
   
   return(
-    <section>
+    <section className="info-panel">
       <h1>Contact Me</h1>
       {
         Object.keys(contact)

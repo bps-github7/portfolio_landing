@@ -19,15 +19,12 @@ h1 {
 
 	border : 2px solid black;
 	height: 5em;
-	width: 70em;
+	width: 60em;
 	margin: 10px;
 	color: white;
-	font-size: medium;
-	font-weight: 100;
+	// font-size: medium;
+	// font-weight: 100;
 	
-}
-.select-item::selection {
-	// background-color: brown;
 }
 
 // .clickable:hover {
@@ -79,7 +76,7 @@ img.default-view {
 
 
 // custom css for mobile
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 
   /*TODO: when about page is
   viewed from a mobile device in landscape mode, the modal (or content- not sure which)
@@ -87,7 +84,7 @@ img.default-view {
   as the background */
  
 	pre {
-		width: 300px;
+		max-width: 300px;
 	}
 
   .default {
@@ -105,7 +102,7 @@ img.default-view {
 
   //
   .info-panel {
-    max-width: 20em;
+    max-width: 30em;
   }
   .row-dd {
     .open-row {
@@ -118,10 +115,19 @@ img.default-view {
     }
   }    
 
-/* modal styles */
-.backdrop{
-  display: none;
-}
+	/* modal styles */
+	.backdrop{
+		display: none;
+	}
+	
+	// mobile device in landscape orientation
+	@media only screen and (max-width: 800px) {
+		
+	
+		.select {
+			width: 25em;
+		}
+	}
 
 
 

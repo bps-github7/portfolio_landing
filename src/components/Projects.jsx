@@ -19,12 +19,12 @@ class Projects extends Component {
 
   render() { 
     return ( 
-      <section class="projects">
+      <section className="info-panel">
         <h1>Projects</h1>
         {
           this.state.loading || !this.state.repos ?
           <span>Loading...</span> :
-					<ProjectOrganizer projects={this.state.repos}/>
+					<Organizer projects={this.state.repos}/>
 				}
 				</section>
 
@@ -32,17 +32,11 @@ class Projects extends Component {
   }
 }
 
-const ProjectOrganizer = ({projects}) => {
-	return (
-		<Organizer projects={projects}/>		
-		// <ul>
-		// 	{ projects.map((repo, i) => 
-		// 			<li>{repo.name}</li>
-		// 		) 
-		// 	}		
-		// </ul>
-	)
-}
+// const ProjectOrganizer = ({projects}) => {
+// 	return (
+// 		<Organizer projects={projects}/>		
+// 	)
+// }
 
 const Organizer = ({projects}) => {
   
@@ -67,34 +61,21 @@ const Organizer = ({projects}) => {
 	}
 	projects.forEach((project) => { filterProjects(project) })
 	
-
-
-	// const remove = ['bps-github7', 'yodeler', 'portfolio_landing', 'IVDB2'];}
-
 	const corrections = { 'RESTful APIs' : 'restApis', Websites : 'webProjects', scripts : 'scripting' }
-
 	const [ selected, setSelected ] = useState(null);
-
-	let classNames = "clickable"
 	
 	const handleChange = (event) => {
-		// console.log(event.target.value)
 		setSelected(event.target.value)
 	}
-	// const handleClick = (category) => {
-	// 	// console.log(event.target.value)
-	// 	setSelected(category)
-	// 	classNames += " selected"
-	// }
 
 	
 	return(
 		<section>
-			<p>Select a category from the below selection to view projects:</p>		
-			<select class="select" onChange={handleChange} name="" id="">
+			{ !selected && <p>Select a category to view projects:</p>}		
+			<select className="select" onChange={handleChange} name="" id="">
 				<option value=""></option>
 				{ Object.keys(corrections).map((item, i) => 
-						<option class="select-item"  value={corrections[item]}>{item}</option>
+						<option className="select-item" key={i} value={corrections[item]}>{item}</option>
 					) 
 				}
 			</select>
@@ -106,10 +87,9 @@ const Organizer = ({projects}) => {
 }
 
 const CategoryView = ({category}) => {
-	console.log(category)
 	return(
 		<ul>
-			{category.map((item, i) => <RepoView repo={item}/>)}
+			{category.map((item, i) => <RepoView key={i} repo={item}/>)}
 		</ul>
 	)
 }

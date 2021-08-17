@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 
 import { Link } from 'react-router-dom';
+import TextSlider from './TextSlider';
 
 class Home extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Home extends Component {
 
   render() { 
     return (
-      <section>
+      <section className="info-panel">
         <h1>Who am I?</h1>
         {  
           this.state.loading || !this.state.avatarUrl ?
@@ -48,12 +49,6 @@ class Home extends Component {
 					Use the above navigation menu to examine each topic in depth.
 				</p>
 				<HomeWidget/>
-        {/* <ol>
-          <li>Learn more about <Link to="/skills">my technical and job related skills</Link></li>
-          <li>Learn more about <Link to="/projects"> my projects</Link></li>
-          <li>Learn more about <Link to="/experience">my previous work experience</Link></li>
-          <li>Learn more about <Link to="/about">me </Link></li>
-        </ol>           */}
       </section>
     );
   }
@@ -64,26 +59,7 @@ class Home extends Component {
 
 const HomeWidget = () => {
 	const [opened, setOpened ] = useState(false);
-
-
-	if (!opened) {
-		return(
-			<button class="btn" onClick={() => (setOpened(true))}>Show Widget</button>
-		)
-	}
-
-	return(
-		<section className="home widget">
-			<WidgetCarousel/>						
-			<button class="btn" onClick={() => (setOpened(false))}>Hide widget</button>
-		</section>
-	)
-
-}
-
-const WidgetCarousel = () => {
-	const [index, setIndex ] = useState(0);
-	const items = [
+	const widgetItems = [
 		{
 			title : "Technical Skills",
 			description : "Python, C family, Java, full stack web development with HTML, CSS, ECMAscript and a variety of front and back end web frameworks, databases and development utilities"
@@ -106,31 +82,19 @@ const WidgetCarousel = () => {
 		}
 	]
 
-	const handleNext = (e) => {
-    e.stopPropagation();
-    (index === items.length -1) ? setIndex(0) : setIndex(index + 1);
-  };
 
-  const handlePrevious = (e) => {
-    e.stopPropagation();
-    (index === 0) ? setIndex(items.length -1) : setIndex(index - 1); 
-  }
-	
+	if (!opened) {
+		return(
+			<button class="btn" onClick={() => (setOpened(true))}>Show Widget</button>
+		)
+	}
 
 	return(
-		<section>
-			<h3>{ items[index].title }</h3>
-			<p>
-				{ items[index].description }
-			</p>
-
-			<button class="btn" onClick={handlePrevious}>Previous</button>
-			<button class="btn" onClick={handleNext}>Next</button>
-
-
+		<section className="home widget">
+			<TextSlider items={widgetItems}/>						
+			<button class="btn" onClick={() => (setOpened(false))}>Hide widget</button>
 		</section>
 	)
-
 
 }
 

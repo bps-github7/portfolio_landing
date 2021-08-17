@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 /* 
     Simple image viewing screen for
-    examining a document close-up
+    examining image close-up
  */
 const Modal = ({ selectedImage, setSelectedImage }) => {
 

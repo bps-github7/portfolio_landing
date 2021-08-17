@@ -1,5 +1,4 @@
 import React, { useState }  from 'react';
-import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 
 
@@ -18,17 +17,17 @@ const Nav = () => {
     <header>
       {/* thats my name! */}
       <Link to="/home">
-        <h3 class="logo">
+        <h3 className="logo">
           Ben Sehnert
         </h3>      
       </Link>
-      <input checked={isChecked} onChange={() => setIsChecked(prev => !prev)} type="checkbox" class="nav-toggle" id="nav-toggle"/>
+      <input checked={isChecked} onChange={() => setIsChecked(prev => !prev)} type="checkbox" className="nav-toggle" id="nav-toggle"/>
       <nav>
         <ul>
 					{ options.map((item, i) => <NavItem handleClick={() => setIsChecked(false)} title={item} key={i}/>) }
         </ul>
       </nav>
-      <label for="nav-toggle" class="nav-toggle-label">
+      <label htmlFor="nav-toggle" className="nav-toggle-label">
         <span></span>
       </label>
     </header>
