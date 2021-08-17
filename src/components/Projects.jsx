@@ -54,7 +54,7 @@ const Organizer = ({projects}) => {
 	let intendedCategories = {
 		restApis : [".net","JavaSpring"],
 		webProjects : ["IVDB","oral-history"],
-		scripting : ["class_generator","zipcodes"]
+		scripting : ["Class_Generator","zipcodes"]
 	}
 	const filterProjects = (project) => {
 		if (intendedCategories['restApis'].includes(project.name)) {
@@ -65,8 +65,7 @@ const Organizer = ({projects}) => {
 			categories['scripting'].push(project);
 		}
 	}
-	console.log(projects)
-	// projects.forEach((project) => { filterProjects(project) })
+	projects.forEach((project) => { filterProjects(project) })
 	
 
 
@@ -75,18 +74,27 @@ const Organizer = ({projects}) => {
 	const corrections = { 'RESTful APIs' : 'restApis', Websites : 'webProjects', scripts : 'scripting' }
 
 	const [ selected, setSelected ] = useState(null);
+
+	let classNames = "clickable"
 	
 	const handleChange = (event) => {
 		// console.log(event.target.value)
 		setSelected(event.target.value)
 	}
+	// const handleClick = (category) => {
+	// 	// console.log(event.target.value)
+	// 	setSelected(category)
+	// 	classNames += " selected"
+	// }
 
+	
 	return(
 		<section>
-			<p>Select a category from the below selection to view projects:</p>
-			<select onChange={handleChange} name="" id="">
+			<p>Select a category from the below selection to view projects:</p>		
+			<select class="select" onChange={handleChange} name="" id="">
+				<option value=""></option>
 				{ Object.keys(corrections).map((item, i) => 
-						<option  value={corrections[item]}>{item}</option>
+						<option class="select-item"  value={corrections[item]}>{item}</option>
 					) 
 				}
 			</select>

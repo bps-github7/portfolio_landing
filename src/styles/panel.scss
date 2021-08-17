@@ -11,6 +11,29 @@ h1 {
   text-transform: capitalize;
 }
 
+// sort of reinventing the wheel here, but we want the clicked item to stay highlighted
+.select {
+	justify-content: center;
+	text-align: center;
+	background-color: rgb(89, 167, 150);
+
+	border : 2px solid black;
+	height: 5em;
+	width: 70em;
+	margin: 10px;
+	color: white;
+	font-size: medium;
+	font-weight: 100;
+	
+}
+.select-item::selection {
+	// background-color: brown;
+}
+
+// .clickable:hover {
+// 	border: black 20px;
+// }
+
 
 .info-col-header {
   // font-weight: 1000;
