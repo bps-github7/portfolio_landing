@@ -9,7 +9,7 @@ const InfoPanel = (props) => {
 
   */
 	return (
-		<section className="info-panel">
+		<section className="panel">
 			{ props.title ? <h1>{props.title}</h1> : null }
 			{
 					Object.keys(props.info)

@@ -8,6 +8,8 @@ import data from '../data.json';
 
 const PhotoGallery = ({props}) => {
 
+
+	// TODO: this violates single resp principle- GET IT OUUTIE!
 	const [selectedImage, setSelectedImage] = useState(null);
 	const [choice, setChoice] = useState(null);
 	const choices = [

@@ -19,7 +19,7 @@ class Projects extends Component {
 
   render() { 
     return ( 
-      <section className="info-panel">
+      <section className="panel">
         <h1>Projects</h1>
         {
           this.state.loading || !this.state.repos ?

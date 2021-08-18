@@ -42,7 +42,7 @@ const Contact = ({contact}) => {
   }
   
   return(
-    <section className="info-panel">
+    <section className="panel">
       <h1>Contact Me</h1>
       {
         Object.keys(contact)

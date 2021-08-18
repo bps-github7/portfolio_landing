@@ -1,0 +1,32 @@
+/* For 'row dropdown' components seen in skills + about pages */
+.row-dd {
+  .info-col {
+    h2 {
+      text-transform: capitalize;
+    }
+  }
+  
+}
+  //these class names suck! 
+  .item {
+    padding-top: 1rem;
+  }
+  
+  
+  .dd-trigger {
+    font-weight: 900;
+    text-transform: capitalize;
+    background-color: rgb(59, 59, 59);
+    border: 2px solid rgb(102, 94, 30);
+    padding: 1rem;
+  }
+
+  .dd-col {
+    margin-top: 2rem;
+  }
+
+.info-col-header {
+  font-size: 2rem;
+  margin-left: 3rem;
+  text-transform: capitalize;
+}

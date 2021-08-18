@@ -1,50 +1,91 @@
-/* For styling the two way info panels seen in about and skills sections
-note that we can probably do all the nesc showing and hiding of info (thru button click and hover events)
-with pure react and no css. That makes the info panel a reusable component! */
+/* For default styling and the two way info panels seen in about and skills sections */
+
+section.panel {
+	// display: flex;
+  justify-self: center;
+  max-width: 50rem;
+  padding: 2rem 0;
+
+	section section {
+		// line-height: 1;
+		margin-bottom: 6em;
+	}
+
+/* default stuff below- headings, paragraphs, buttons, images, list items, links */
 
 
-//the whole component
+	// styling for top of page heading in top level components- about, skills, experience, contact, projects
+	h1 {
+		font-weight: 900;
+		font-size: 4rem;
+		text-transform: capitalize;
+	}
 
-/* TODO: 10/10 need a better strategy for organizing styles-
-	1) really just need one container class for the site contents, and another 
-	inner container for indv. components
-	2) make responsive code built into its own file for everything
-	3) please comment things and make headings and body paragraphs align
-*/
+	// inner component subheadings
+  h2 {
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 200;
+  }
+  
+  p {
+    line-height: 1.8;
+  }
+  
+  .btn {
+    background-color: rgb(36, 149,146);
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: inline-block;
+    box-shadow: 0px 4px 3px -2px rgba(248, 248, 248, 0.75);
+    transition: all ease-in-out 250ms;
+  
+  }
 
-h1 {
-  font-weight: 900;
-  font-size: 4rem;
-  text-transform: capitalize;
-}
+	// adds a hover effect so button lifts up and shows shadow with mouse over
+  .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 10px -1px rgba(255, 240, 240, 0.75); 
+  }
 
-// sort of reinventing the wheel here, but we want the clicked item to stay highlighted
-.select {
-	justify-content: center;
-	text-align: center;
-	background-color: rgb(89, 167, 150);
+	.select {
+		justify-content: center;
+		text-align: center;
+		background-color: rgb(89, 167, 150);
+	
+		border : 2px solid black;
+		height: 5em;
+		width: 60em;
+		margin: 10px;
+		color: white;
+		// font-size: medium;
+		// font-weight: 100;
+		
+	}
 
-	border : 2px solid black;
-	height: 5em;
-	width: 60em;
-	margin: 10px;
-	color: white;
-	// font-size: medium;
-	// font-weight: 100;
+	// trying to center image and name on homepage
+	section.intro {
+		margin-left: 9em;
+	
+	}
 	
 }
 
-// .clickable:hover {
-// 	border: black 20px;
-// }
-
-
-.info-col-header {
-  // font-weight: 1000;
-  font-size: 2rem;
-  margin-left: 3rem;
-  text-transform: capitalize;
+// not positive this belongs here
+@media screen and (max-width: 600px) {
+  section {
+    max-width: 26rem;
+  }
 }
+
 
 
 .small {
@@ -55,130 +96,7 @@ h1 {
 	margin-top: 10px;
 }
 
-img.default-view {
- height: 50rem;
- width: 50rem;
-}
-/* modal styles */
-.backdrop{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-}
-.backdrop img{
-  display: block;
-  max-width: 60%;
-  max-height: 80%;
-  margin: 60px auto;
-  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
-  border: 3px solid white;
-}
-
-.blog-post p {
-	text-indent: 5%;
-}
-
-
-// custom css for mobile
-@media screen and (min-width: 600px) {
-
-  /*TODO: when about page is
-  viewed from a mobile device in landscape mode, the modal (or content- not sure which)
-  only covers about 90% of the page, leaving the 10% vertical on right not colored same
-  as the background */
- 
-	pre {
-		max-width: 300px;
-	}
-
-  .default {
-    display: none;
-  }
-
-  .small {
-    display: block;
-  }
-
-	.btn {
-		display : inline;
-	}
-
-
-  //
-  .info-panel {
-    max-width: 30em;
-  }
-  .row-dd {
-    .open-row {
-      display: block;
-    }
-  }
-  section.closed-row {
-    .btn {
-      margin-top:1rem;      
-    }
-  }    
-
-	/* modal styles */
-	.backdrop{
-		display: none;
-	}
-	
-	// mobile device in landscape orientation
-	@media only screen and (max-width: 800px) {
-		
-	
-		.select {
-			width: 25em;
-		}
-	}
 
 
 
 
-}
-/* Custom css for non-mobile- laptop, tablet, large pc */
-@media screen and (min-width: 601px) {
-  .row-dd {
-    .open-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  section.closed-row {
-    .btn {
-      margin-top:3em;      
-    }
-  }
-
-}
-
-.row-dd {
-  
-  .info-col {
-    h2 {
-      text-transform: capitalize;
-    }
-  }
-  
-}
-  
-  .item {
-    padding-top: 1rem;
-  }
-  
-  
-  .dd-trigger {
-    font-weight: 900;
-    text-transform: capitalize;
-    background-color: rgb(59, 59, 59);
-    border: 2px solid rgb(102, 94, 30);
-    padding: 1rem;
-  }
-
-  .dd-col {
-    margin-top: 2rem;
-  }

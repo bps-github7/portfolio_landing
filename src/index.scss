@@ -1,7 +1,21 @@
 @import './styles/nav.scss';
-// @import './styles/range.scss';
+@import './styles/range.scss';
 @import './styles/panel.scss';
+@import './styles/dropdown.scss';
+@import './styles/image.scss';
 
+// was trying to get sass moduling working but try again later, slowing us down (produvtity wise)
+// maybe you need to update sass compiler to latest version?
+// @use './styles/responsiveness';
+
+@import './styles/responsiveness/tablet.scss';
+@import './styles/responsiveness/mobile.scss';
+@import './styles/responsiveness/larger.scss';
+
+
+
+
+// TODO: 
 
 //move these to a partial file
 :root {
@@ -29,69 +43,15 @@ body {
 
 .content {
   padding-top: 1rem;
-  // height: 200vh;
-  // background-image: url(//unsplash.it/1001/1000);
+  height: 200vh;
+  display: grid;
+  place-items: start center; 
+	background-image: url(//unsplash.it/1001/1000);
+	background-repeat: y;
   background-color: #333;
   background-blend-mode: multiply;
   background-size: cover;
-  display: grid;
-  place-items: start center;
-}
 
-
-section {
-
-  justify-self: center;
-  max-width: 50rem;
-  padding: 2rem 0;
-
-  h2 {
-    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  h3 {
-    font-size: 1.3rem;
-    margin: 0;
-    font-weight: 200;
-  }
-  
-  p {
-    line-height: 1.8;
-  }
-  
-  
-  .btn {
-    background-color: rgb(36, 149,146);
-    border: 2px solid white;
-    text-decoration: none;
-    padding: 1em 2em;
-    display: inline-block;
-    box-shadow: 0px 4px 3px -2px rgba(248, 248, 248, 0.75);
-    transition: all ease-in-out 250ms;
-  
-  }
-  
-  .btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 8px 10px -1px rgba(255, 240, 240, 0.75); 
-  }
-  
-}
-
-@media screen and (max-width: 600px) {
-  section {
-    max-width: 26rem;
-
-    img  {
-      padding-left: 2rem;
-    padding-bottom: 5rem;
-      height: 20rem;
-      width: 20rem;
-    }
-  }
 }
 
 

@@ -23,15 +23,18 @@ class Home extends Component {
   render() { 
     return (
       <section className="panel">
-        <h1>Who am I?</h1>
-        {  
-          this.state.loading || !this.state.avatarUrl ?
-          <span>Loading...</span>:
-					// says 'digital portrait' because html complains if you say 'image' or 'photo' in the alt attribute
-          <img alt="a digital portrait of me face" src={this.state.avatarUrl}/> 
+				<section className="intro">
+					<h1>Who am I?</h1>
+					{  
+						this.state.loading || !this.state.avatarUrl ?
+						<span>Loading...</span>:
+						// says 'digital portrait' because html complains if you say 'image' or 'photo' in the alt attribute
+						<img alt="a digital portrait of me face" src={this.state.avatarUrl}/> 
 
-        }
-        <h3>Ben Sehnert</h3>
+					}
+					<h3>Ben Sehnert</h3>
+				</section>
+				
         <p>
           <em>A Full Stack, system oriented Software Developer, local to Philadelphia. </em>
           I graduated with my Masters of Science in Information Systems in June 2020.

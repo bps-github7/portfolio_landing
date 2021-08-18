@@ -1,0 +1,49 @@
+/* Media queries for tablet devices in both horizontal and vertical view port */
+
+/*
+	device: Ipad
+	viewport : portrait	
+*/
+@media only screen and (min-width : 768px) and (min-height: 1024px) {
+
+	// get page content from hanging on left side edge
+	section.panel{
+		padding: 2rem 5rem;
+
+		// maybe u want to address this at problem root if it continues to be a pain?
+		// because image is centered in desktop view with margin-left (bad idea), its pushed too far to right in smaller screen sizes
+
+		section.intro {
+			margin-left: 0;
+		}
+	}
+
+	
+
+	select.select {
+		max-width: 600px;
+	}
+
+}
+/* 
+	device: Ipad
+	viewport: landscape	
+*/
+@media only screen and (min-width : 1024px) and (min-height: 768px) {
+	
+}
+
+/*
+	device: Kindle fire HDX Linux
+	viewport : portrait	
+*/
+@media only screen and (min-width : 800px) and (min-height: 1280px) {
+	
+}
+/* 
+	device: Kindle Fire HDX Linux
+	viewport: landscape	
+*/
+@media only screen and (min-width : 1280px) and (min-height: 800px) {
+	
+}

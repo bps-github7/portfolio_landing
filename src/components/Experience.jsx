@@ -14,10 +14,10 @@ export default class Experience extends Component {
       (multiple columns and rows) So we provided this inline style to make the heading style match
       that used with the rest of the site section>headings.
       */
-      <div className="contact">
-        <h1 style={{ paddingTop : "1rem" }}>Experience</h1>
+      <section className="panel">
+        <h1>Experience</h1>
         { Object.keys(this.state.experience).map((position, i) => <ExperienceTile key={i} position={this.state.experience[position]}/>) }
-      </div>
+      </section>
     );
   }
 }

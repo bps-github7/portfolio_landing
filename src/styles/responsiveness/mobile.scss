@@ -1,0 +1,127 @@
+
+/* Media queries for smaller screens and mobile devices in paticular */
+
+// general rule for smaller scren sizes
+@media only screen and (max-width: 450px) and (max-height: 812px) {
+	section.panel {
+
+		
+
+		padding: 0 1rem; 
+		font-size: smaller;
+
+		section select.select {
+			max-width: 20em;
+		}
+
+
+		// hide the description in skill section because its too wordy
+		h2 ~ h3 {
+			display: none;
+		}
+
+		section.intro {
+			margin-left: 5em;
+			img {
+				max-width: 200px;
+				max-height: 200px;
+			}
+		}
+
+	}
+
+
+	section.panel h1 {
+
+		margin-top : 2em;
+		font-size: 2.5em;
+
+
+
+	}
+
+
+}
+// same thing but in portairt mode
+@media only screen and (max-width: 812px) and (max-height: 450px) {
+	section.panel {
+		padding: 0 1rem; 
+		font-size: smaller;
+
+		section select.select {
+			max-width: 20em;
+		}
+
+
+		// hide the description in skill section because its too wordy
+		h2 ~ h3 {
+			display: none;
+		}
+
+
+	}
+}
+
+
+
+
+/*
+	device: Iphone 6/7/8 Ios 11
+	viewport : portrait	
+*/
+@media only screen and (min-width : 375px) and (min-height: 667px) {
+	
+}
+/* 
+	device: Iphone 6/7/8 Ios 11
+	viewport: landscape	
+*/
+@media only screen and (min-width : 667px) and (min-height: 375px) {
+	
+}
+
+
+/*
+	device: Iphone 6/7/8 PLUS Ios 11
+	viewport : portrait	
+*/
+@media only screen and (min-width : 414px) and (min-height: 736px) {
+	
+}
+/* 
+	device: Iphone 6/7/8 Ios 11
+	viewport: landscape	
+*/
+@media only screen and (min-width : 736px) and (min-height: 414px) {
+
+}
+
+/*
+	device: galaxy S9/S9 + android 7.0
+	viewport : portrait	
+*/
+@media only screen and (min-width : 360px) and (min-height: 740px) {
+
+}
+/* 
+	device: Galaxy S9/S9 + android 7.0
+	viewport: landscape	
+*/
+@media only screen and (min-width : 740px) and (min-height: 360px) {
+
+}
+
+/*
+	device: Iphone X/XS  Ios 12
+	viewport : portrait	
+*/
+@media only screen and (min-width : 375px) and (min-height: 812px) {
+	
+}
+/* 
+	device: Iphone 6/7/8 Ios 11
+	viewport: landscape	
+*/
+@media only screen and (min-width : 812px) and (min-height: 375px) {
+	
+}
