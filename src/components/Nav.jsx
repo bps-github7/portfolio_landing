@@ -8,8 +8,8 @@ const Nav = () => {
 	// Implementation is highly css dependent (see ../styles/nav.scss). the only real JS we need is
 	// to change input.checked value dynamically, so dropdown closes on route change.
 	
-	const options = ['skills', 'projects', 'experience', 'about', 'contact' ];
-
+	// const options = ['skills', 'projects', 'experience', 'about', 'contact' ];
+	const options = ['projects','experience','contact'];
 	const [ isChecked, setIsChecked ] = useState(false);
 
 	
