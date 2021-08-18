@@ -28,7 +28,7 @@ const ExperienceTile = (props) => {
     // maybe want to conditionally render a class if job is current position
     <section>
       
-      <h3>{ position.company }</h3>
+      <h2>{ position.company }</h2>
       {/* <h4>{ position.position }</h4> */}
       <section>
        <div>

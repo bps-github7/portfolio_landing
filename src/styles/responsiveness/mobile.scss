@@ -14,9 +14,12 @@
 			max-width: 20em;
 		}
 
+		h2 { font-size: large; font-weight: 200; }
 
+		h3 { font-size: medium; font-weight: 150; }
 		// hide the description in skill section because its too wordy
 		h2 ~ h3 {
+			// margin-top: 2em;
 			display: none;
 		}
 
