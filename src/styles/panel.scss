@@ -5,6 +5,13 @@ with pure react and no css. That makes the info panel a reusable component! */
 
 //the whole component
 
+/* TODO: 10/10 need a better strategy for organizing styles-
+	1) really just need one container class for the site contents, and another 
+	inner container for indv. components
+	2) make responsive code built into its own file for everything
+	3) please comment things and make headings and body paragraphs align
+*/
+
 h1 {
   font-weight: 900;
   font-size: 4rem;

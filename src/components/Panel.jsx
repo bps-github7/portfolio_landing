@@ -14,7 +14,7 @@ const Panel = (props) => {
 
 
   return (
-    <section className="info-panel">
+    <section className="panel">
       <h1>{props.title}</h1>
 			{/* below form is for selecting whether we want to view about me or about progress */}
 			<form>

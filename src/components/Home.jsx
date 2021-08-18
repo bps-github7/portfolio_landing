@@ -22,7 +22,7 @@ class Home extends Component {
 
   render() { 
     return (
-      <section className="info-panel">
+      <section className="panel">
         <h1>Who am I?</h1>
         {  
           this.state.loading || !this.state.avatarUrl ?
