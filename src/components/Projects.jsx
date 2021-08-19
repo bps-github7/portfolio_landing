@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import LoadingSpinner from './LoadingSpinner';
 
 class Projects extends Component {
   constructor(props) {
@@ -17,21 +18,25 @@ class Projects extends Component {
 		// prevents loading from flashing for a milisecond, in cases where the async data was loaded once already.
 		setTimeout(() => {
 			this.setState({repos : data, loading: false});
-		},400)
+		},2200)
+		// },10000)
 
   }
 
 
   render() { 
-    return ( 
+
+		const {loading} = this.state;
+
+		return ( 
       <section className="panel">
         <h1>Projects</h1>
         {
           this.state.loading || !this.state.repos ?
-          <span>Loading...</span> :
+					<LoadingSpinner loading={loading}/>:
 					<Organizer projects={this.state.repos}/>
 				}
-				</section>
+			</section>
 
      );
   }

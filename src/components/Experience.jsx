@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import firebase from '../services/firebase';
-
+import LoadingSpinner from './LoadingSpinner';
 
 
 export default class Experience extends Component {
@@ -27,7 +27,7 @@ export default class Experience extends Component {
 					loading : false,
 					docs : items,
 				})
-			},400)
+			},2200)
 			
 		});
 	}
@@ -41,17 +41,10 @@ export default class Experience extends Component {
   render() {
 		const {docs, loading, selected} = this.state
 
-		// if (this.state.loading) {
-		// 	return(
-		// 		section
-		// 		<span>Loading...</span>
-		// 	)
-		// }
-		
     return (
       <section className="panel">
         <h1>Experience</h1>
-				{ loading ? <span>Loading...</span> :
+				{ loading ? <LoadingSpinner loading={loading}/> :
 				<section className="experience">
 					<ExperienceBrowser docs={docs} setSelected={this.handleSetSelected}/>
 					{ selected ? <ExperienceTile position={selected}/>:<p>Select a option from below to learn more about my work experience</p>}

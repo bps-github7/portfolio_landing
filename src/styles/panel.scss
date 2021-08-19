@@ -3,8 +3,9 @@
 section.panel {
 	// display: flex;
   justify-self: center;
-  max-width: 50rem;
-  padding: 2rem 0;
+  width: 50rem;
+	// max-width: 50rem;
+	padding: 2rem 0;
 
 	section section {
 		// line-height: 1;
@@ -64,7 +65,7 @@ section.panel {
 	
 		border : 2px solid black;
 		height: 5em;
-		width: 60em;
+		width: 50em;
 		margin: 10px;
 		color: white;
 		// font-size: medium;
@@ -93,6 +94,6 @@ section.panel {
 // not positive this belongs here
 @media screen and (max-width: 600px) {
   section {
-    max-width: 26rem;
+    max-width: 21rem;
   }
 }
