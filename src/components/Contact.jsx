@@ -7,7 +7,8 @@ const Contact = ({contact}) => {
         <section>
           <strong>Private Message:</strong>
           <ul>
-            {
+						<li>Possble to use linkedin, github and slack api to do this? show social media icons for each, then redirect to auth and then open msg to me</li>
+            {/* {
               Object.keys(contact[info])
               .map((item, i) => (
                 <li key={i}>
@@ -15,7 +16,7 @@ const Contact = ({contact}) => {
                   {contact[info][item]}
                 </li>
               ) )
-            }
+            } */}
           </ul>
         </section>
       )

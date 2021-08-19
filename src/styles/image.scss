@@ -1,8 +1,9 @@
 /* anything pertaining to images- modal, imageslider, image picker, photogallery */
 img.default-view {
-	height: 50rem;
-	width: 50rem;
- }
+	height: 28rem;
+	width: 28rem;
+	margin: 0;
+}
  /* modal styles */
  .backdrop{
 	 position: fixed;
@@ -31,8 +32,8 @@ img.default-view {
 		display: block;
 	}
 	img  {
-		padding-left: 2rem;
-		padding-bottom: 5rem;
+		// padding-left: 2rem;
+		// padding-bottom: 5rem;
 		height: 20rem;
 		width: 20rem;
 	} 

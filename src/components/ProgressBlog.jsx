@@ -17,8 +17,10 @@ const ProgressBlog = (props) => {
 			querySnapshot.forEach((doc) => {
 				items.push(doc.data());
 			});
-			setDocs(items);
-			setLoading(false);
+			setTimeout(() => {
+				setLoading(false);
+				setDocs(items);
+			}, 700)
 		});
 	}
 

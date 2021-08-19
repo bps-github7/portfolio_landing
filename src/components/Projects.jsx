@@ -13,7 +13,12 @@ class Projects extends Component {
     const url = 'https://api.github.com/users/bps-github7/repos';
     const response = await fetch(url);
     const data = await response.json();
-    this.setState({repos : data, loading: false});
+		
+		// prevents loading from flashing for a milisecond, in cases where the async data was loaded once already.
+		setTimeout(() => {
+			this.setState({repos : data, loading: false});
+		},400)
+
   }
 
 

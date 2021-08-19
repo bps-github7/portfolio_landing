@@ -1,57 +1,119 @@
 import { Component } from 'react';
-import data from '../data.json';
+import firebase from '../services/firebase';
+
+
 
 export default class Experience extends Component {
   constructor(props) {
     super(props);
-    this.state = { experience : data.experience }; 
+    this.state = {
+			loading : false,
+			docs : [],
+			selected : null
+		}; 
   }
-  render() { 
+
+	componentDidMount() {
+		const ref = firebase.firestore().collection("workExperience");
+		this.setState({ loading : true});
+		ref.onSnapshot((querySnapshot) => {
+			const items = [];
+			querySnapshot.forEach((doc) => {
+				items.push(doc.data());
+			});
+			// TODO: what if api call isnt done by the time 400ms runs out? should be doing this in an async fn 
+			setTimeout(() => {
+				this.setState({
+					loading : false,
+					docs : items,
+				})
+			},400)
+			
+		});
+	}
+
+	handleSetSelected = (doc) => {
+		this.setState({
+			selected : doc
+		})
+	}
+
+  render() {
+		const {docs, loading, selected} = this.state
+
+		// if (this.state.loading) {
+		// 	return(
+		// 		section
+		// 		<span>Loading...</span>
+		// 	)
+		// }
+		
     return (
-      /* Leaving this as a div (when the rest of the site is semantic html5 tags like section) 
-      because that is the path of least resistance- the styling we have for div is currently much
-      better than section for displaying a text dense layout like the experience page requies
-      (multiple columns and rows) So we provided this inline style to make the heading style match
-      that used with the rest of the site section>headings.
-      */
       <section className="panel">
         <h1>Experience</h1>
-        { Object.keys(this.state.experience).map((position, i) => <ExperienceTile key={i} position={this.state.experience[position]}/>) }
+				{ loading ? <span>Loading...</span> :
+				<section className="experience">
+					<ExperienceBrowser docs={docs} setSelected={this.handleSetSelected}/>
+					{ selected ? <ExperienceTile position={selected}/>:<p>Select a option from below to learn more about my work experience</p>}
+				</section>
+				}
       </section>
     );
   }
 }
 
-const ExperienceTile = (props) => {
-  const position = props.position;
+const ExperienceBrowser = ({docs, setSelected}) => {
+	// const [ selected,setSelected ] = useState({})
+
+	return(
+		<ul>
+			{ docs.map((job, i) => (
+						<li key={i}>
+							<button class="btn" onClick={() => setSelected(docs[i])}>
+								{job.company}
+							</button>
+						</li>
+					)
+				)   
+			}
+		</ul>
+	)
+
+}
+
+const ExperienceTile = ({ position }) => {
   return (
     // maybe want to conditionally render a class if job is current position
     <section>
       
       <h2>{ position.company }</h2>
-      {/* <h4>{ position.position }</h4> */}
       <section>
        <div>
         <strong>Employed:</strong> {position.employed} <br />
         <strong>Supervisor:</strong> {position.supervisor}  <br />
 				<strong>Location:</strong> {position.location} <br />
-        </div>
-      { 
+			</div>
+			{  
+				Object.keys(position.duties).map((job, i) => (
+					<PositionListing position={job} duties={position.duties[job]}/>
+				))
+			}
+
+      {/* { 
         Object.keys(position.duties).length === 1 
         ? <SingleListRender duties={position.duties}/> 
-        : <MultiListRender duties={position.duties}/> 
-      }
+        : (position.duties.map((item, i) => <SingleListRender duties={item}/>))
+				
+      } */}
       </section>
     </section>
   );
 }
 
-const SingleListRender = (props) => {
+const PositionListing = ({position, duties}) => {
 /* for displaying a list where I worked only a single
   position with company */
 
-  const position = Object.keys(props.duties)[0]
-  const duties = props.duties[position];
   return(
     <div>
       <h3>
@@ -63,20 +125,4 @@ const SingleListRender = (props) => {
     </div>
     
   )
-
 }
-
-const MultiListRender = (props) => {
-  /* for displaying duties when I wor ked 
-  multiple positions with one company
-  */
-  var items = [];
-  for (let item in props.duties)
-    items.push({[item] :props.duties[item]});
-  return(
-    <div style={{display: "grid", gridTemplateColumns : " 1fr 1fr"}}>
-      { items.map((object,i) => <SingleListRender key={i} duties={object}/>) }
-    </div>
-  )
-}
-

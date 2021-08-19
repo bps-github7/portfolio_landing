@@ -74,11 +74,21 @@ section.panel {
 
 	// trying to center image and name on homepage
 	section.intro {
-		margin-left: 9em;
-	
+		* {
+			justify-content: center;
+
+		}
+
+	// TODO: this needs some revisions, specifically, learn more grid and flexbox and figure a more dynamic/ responsive means of doing this, its awfully unreliable. unpredicatable
+	}
+	section.experience {
+		display : grid;
+		grid-template-columns: 1fr 1fr;
 	}
 	
+
 }
+
 
 // not positive this belongs here
 @media screen and (max-width: 600px) {
@@ -86,18 +96,3 @@ section.panel {
     max-width: 26rem;
   }
 }
-
-
-
-.small {
-  display: none;
-}
-
-.blog-details li {
-	margin-top: 10px;
-}
-
-
-
-
-
