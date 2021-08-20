@@ -1,0 +1,39 @@
+/* Base styles used throughout the whole app */
+:root {
+  --background: rgba(0, 214, 170, .95);
+  ul {
+    list-style-type: none;
+		li {
+			// line-height: 1;
+			margin-top: 14px;
+		}
+	}
+
+  a {
+    color: white;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222;
+  color: aliceblue;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.content {
+  padding-top: 1rem;
+  height: 200vh;
+  display: grid;
+  place-items: start center; 
+	background-image: url(//unsplash.it/1001/1000);
+	background-repeat: y;
+  background-color: #333;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
