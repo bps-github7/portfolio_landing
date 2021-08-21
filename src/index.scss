@@ -1,18 +1,8 @@
-@import './styles/nav.scss';
-@import './styles/range.scss';
-@import './styles/panel.scss';
-@import './styles/dropdown.scss';
-@import './styles/image.scss';
-
-// was trying to get sass moduling working but try again later, slowing us down (produvtity wise)
-// maybe you need to update sass compiler to latest version?
-// @use './styles/responsiveness';
-
-@import './styles/responsiveness/tablet.scss';
-@import './styles/responsiveness/mobile.scss';
-@import './styles/responsiveness/larger.scss';
-
 @import './styles/base';
+@import './styles/nav.scss';
 
+@import './styles/resolutions';
 
-
+// @import './styles/responsiveness/tablet.scss';
+// @import './styles/responsiveness/mobile.scss';
+// @import './styles/responsiveness/larger.scss';

@@ -12,6 +12,7 @@ section.panel {
 		margin-bottom: 6em;
 	}
 
+
 /* default stuff below- headings, paragraphs, buttons, images, list items, links */
 
 
@@ -88,12 +89,4 @@ section.panel {
 	}
 	
 
-}
-
-
-// not positive this belongs here
-@media screen and (max-width: 600px) {
-  section {
-    max-width: 21rem;
-  }
 }

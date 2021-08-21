@@ -60,10 +60,10 @@ const Contact = ({contact}) => {
     }
         // TODO: hey lets refactor this next- firebase + input / prompt to get users feedback or request for me to contact them.
     return(
-      <div>
+      <section>
         <strong>{ info }:</strong>
         <p>{ contact[info] }</p>
-      </div>
+      </section>
     )
   }
   
