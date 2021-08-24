@@ -31,31 +31,31 @@
 
 // for laptops
 /* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-		.panel {
-			width: 55%;
-		}
-	}
+// @media screen 
+//   and (min-device-width: 1200px) 
+//   and (max-device-width: 1600px) 
+//   and (-webkit-min-device-pixel-ratio: 1) { 
+// 		.panel {
+// 			background-color: aqua;
+// 		}
+// 	}
 
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-		.panel {
-			width: 50%;
-		}
+// /* ----------- Retina Screens ----------- */
+// @media screen 
+//   and (min-device-width: 1200px) 
+//   and (max-device-width: 1600px) 
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (min-resolution: 192dpi) { 
+// 		.panel {
+// 			background-color: orange;
+// 		}
 
-	}
+// 	}
 
 // desktop
 @media only screen and
-	(max-device-width: 1024px) and
-	(max-device-height: 1920px) {
+	(min-width: 1024px) and
+	(min-height: 1920px) {
 		@import '../panel';
 		@import '../image';
 }

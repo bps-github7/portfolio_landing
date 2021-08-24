@@ -1,15 +1,24 @@
 /* For default styling and the two way info panels seen in about and skills sections */
 
 section.panel {
-	// display: flex;
+	display: flex;
+	flex-direction: column;
   justify-self: center;
+
+	max-height: 200vh;
+
+	// align-items: center;
   width: 50rem;
 	// max-width: 50rem;
 	padding: 2rem 0;
 
-	section section {
-		// line-height: 1;
-		margin-bottom: 6em;
+	// section section {
+	// 	// line-height: 1;
+	// 	// margin-bottom: 2em;
+	// }
+
+	section.loading-spinner {
+		margin: 50px 100px;
 	}
 
 
@@ -18,8 +27,8 @@ section.panel {
 
 	// styling for top of page heading in top level components- about, skills, experience, contact, projects
 	h1 {
-		font-weight: 900;
-		font-size: 4rem;
+		font-weight: 500;
+		font-size: 2rem;
 		text-transform: capitalize;
 	}
 
@@ -27,7 +36,7 @@ section.panel {
   h2 {
     // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
-    font-size: 3rem;
+    // font-size: 3rem;
     margin: 0;
   }
   
@@ -35,7 +44,7 @@ section.panel {
     font-size: 1.3rem;
     margin: 0;
     font-weight: 200;
-		margin-top: 2em;
+		// margin-top: 0.7em;
   }
   
   p {
@@ -69,9 +78,17 @@ section.panel {
 		width: 50em;
 		margin: 10px;
 		color: white;
-		// font-size: medium;
-		// font-weight: 100;
+		font-size: medium;
+		font-weight: 100;
 		
+	}
+
+	section section#job-info {
+		margin-bottom: 0;
+	}
+
+	section.project {
+		margin-top: 4em;
 	}
 
 	// trying to center image and name on homepage
@@ -81,11 +98,23 @@ section.panel {
 
 		}
 
-	// TODO: this needs some revisions, specifically, learn more grid and flexbox and figure a more dynamic/ responsive means of doing this, its awfully unreliable. unpredicatable
 	}
-	section.experience {
-		display : grid;
-		grid-template-columns: 1fr 1fr;
+
+	// for experience section, renders columns for desktop and tablet, row for mobile and smaller screens
+	@media only screen and (min-width: 460px) {
+		section.experience {
+			display : grid;
+			gap: 10px 10px;
+			grid-template-columns: 1fr 2fr;
+		}
+	}
+
+
+	@media only screen and (max-width: 450px) {
+		section.experience ul.buttons {
+			li {display: inline; width: 15rem}
+			max-height: 300px;
+		}
 	}
 	
 

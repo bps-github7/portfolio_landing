@@ -59,7 +59,7 @@ const ExperienceBrowser = ({docs, setSelected}) => {
 	// const [ selected,setSelected ] = useState({})
 
 	return(
-		<ul>
+		<ul class="buttons">
 			{ docs.map((job, i) => (
 						<li key={i}>
 							<button class="btn" onClick={() => setSelected(docs[i])}>
@@ -76,28 +76,20 @@ const ExperienceBrowser = ({docs, setSelected}) => {
 
 const ExperienceTile = ({ position }) => {
   return (
-    // maybe want to conditionally render a class if job is current position
     <section>
-      
       <h2>{ position.company }</h2>
       <section>
-       <div>
-        <strong>Employed:</strong> {position.employed} <br />
-        <strong>Supervisor:</strong> {position.supervisor}  <br />
-				<strong>Location:</strong> {position.location} <br />
-			</div>
-			{  
-				Object.keys(position.duties).map((job, i) => (
-					<PositionListing position={job} duties={position.duties[job]}/>
-				))
-			}
+				<section id="job-info">
+					<strong>Employed:</strong> {position.employed} <br />
+					<strong>Supervisor:</strong> {position.supervisor}  <br />
+					<strong>Location:</strong> {position.location} <br />
+				</section>
+				{  
+					Object.keys(position.duties).map((job, i) => (
+						<PositionListing position={job} duties={position.duties[job]}/>
+					))
+				}
 
-      {/* { 
-        Object.keys(position.duties).length === 1 
-        ? <SingleListRender duties={position.duties}/> 
-        : (position.duties.map((item, i) => <SingleListRender duties={item}/>))
-				
-      } */}
       </section>
     </section>
   );
@@ -108,14 +100,14 @@ const PositionListing = ({position, duties}) => {
   position with company */
 
   return(
-    <div>
+    <section>
       <h3>
         { position }
       </h3>
       <ul>
         {duties.map((item, i) => <li key={i}>{item}</li>)}
       </ul>   
-    </div>
+    </section>
     
   )
 }

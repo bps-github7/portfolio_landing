@@ -9,7 +9,7 @@
 	// get page content from hanging on left side edge
 	section.panel{
 		padding: 2rem 5rem;
-
+		width: inherit;
 		// maybe u want to address this at problem root if it continues to be a pain?
 		// because image is centered in desktop view with margin-left (bad idea), its pushed too far to right in smaller screen sizes
 

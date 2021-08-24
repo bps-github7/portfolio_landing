@@ -112,7 +112,7 @@ const RepoView = ({id, repo}) => {
 
 	
   return (
-    <section key={id}>
+    <section class="project" key={id}>
       <h3>{ repo.name }</h3>
       <p>{ repo.description }</p>
       <a href={repo.html_url}>View Source Code</a>

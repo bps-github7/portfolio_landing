@@ -1,7 +1,7 @@
 /* anything pertaining to images- modal, imageslider, image picker, photogallery */
 img.default-view {
-	height: 24rem;
-	width: 24rem;
+	height: 14rem;
+	width: 14rem;
 	margin: 0;
 }
 
@@ -9,13 +9,13 @@ img.default-view {
 
 // TODO: get rid of fixed units in the below two
 img.contact-logo {
-	height: 50px;
-	width: 200px;
+	height: 2rem;
+	width: 10rem;
 	background-color: white;
 }
 
 img.contact-logo#github {
-	height : 200px;
+	height : 6rem;
 }
  /* modal styles */
  .backdrop{
