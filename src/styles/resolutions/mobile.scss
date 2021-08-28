@@ -73,7 +73,8 @@
 		width : 80%;
 	}
 
-	section.panel {
+	section.panel, section.loading-spinner-parent {
+		width: inherit;
 		padding: 0 2rem; 
 		font-size: smaller;
 		
