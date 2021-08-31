@@ -110,6 +110,30 @@
 	}
 }
 
+/* TODO: think that it would be wise to find more general approach to responsiveness in future...
+	this settup avoids overflow in the below specified screen sizes, but there are far too many possiblities
+	to write rules for everyting: what about smart watch? what about larger monitors? wht about tv screens?
+*/
+
+/*
+	device: Iphone 8 Ios 14 (my phone)
+	viewport : portrait	
+*/
+@media only screen and (min-width : 375px) and (min-height: 664px) {
+  section.panel {
+		width: 375px;
+	}	
+}
+/* 
+	device: Iphone 6/7/8 Ios 11
+	viewport: landscape	
+*/
+@media only screen and (min-width : 664px) and (min-height: 375px) {
+	section.panel {
+		width: 664px;
+	}	
+}
+
 
 
 
