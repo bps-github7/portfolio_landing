@@ -13,15 +13,34 @@ const Contact = ({contact}) => {
 				projected = <img className="contact-logo" id="github" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png" alt="the Github Logo"/>
 			} else if (contactType === "slack") { 
 				projected = <img className="contact-logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg" alt="The Slack Logo"/>
+				
+
 			}
 
-			return(
-				<li style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-					{projected}
-					<span>{contactInfo}</span>
-				</li>
-			)
 
+			// git hub and linked in have contact info as url so we embedded those imgs in link to the url
+			if (contactType === "slack") {
+
+				return(
+					// <li style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+					<li>
+
+
+						{projected}
+						<span>{contactInfo}</span>
+					</li>
+				)
+			} else {
+
+				
+				return(
+					<li>
+						<a href={contactInfo}>
+							{projected}
+						</a>
+					</li>
+				)
+			}
 
 		}
 

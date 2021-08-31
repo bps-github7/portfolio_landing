@@ -17,9 +17,17 @@ section.panel {
 	// 	// margin-bottom: 2em;
 	// }
 
-	section.loading-spinner {
+	section.loading-spinner-parent {
 		margin: 50px 100px;
 	}
+
+	// keeps slack info from hanging to associated image
+	img.contact-logo {
+		margin-right: 7px;
+	}
+	
+
+
 
 
 /* default stuff below- headings, paragraphs, buttons, images, list items, links */
@@ -44,7 +52,7 @@ section.panel {
     font-size: 1.3rem;
     margin: 0;
     font-weight: 200;
-		// margin-top: 0.7em;
+		margin-top: 0.7em;
   }
   
   p {

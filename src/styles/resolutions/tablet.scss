@@ -4,14 +4,19 @@
 	device: Ipad
 	viewport : portrait	
 */
+
+
+
+
 @media only screen and (min-width : 768px) and (min-height: 1024px) {
 
 	// get page content from hanging on left side edge
 	section.panel{
 		padding: 2rem 5rem;
-		width: inherit;
-		// maybe u want to address this at problem root if it continues to be a pain?
-		// because image is centered in desktop view with margin-left (bad idea), its pushed too far to right in smaller screen sizes
+		
+		width: 768px;
+		height: 1024px;		
+
 
 		section.intro {
 			margin-left: 0;
@@ -30,7 +35,10 @@
 	viewport: landscape	
 */
 @media only screen and (min-width : 1024px) and (min-height: 768px) {
-	
+	section.panel {
+		width: 1024px;
+		height: 768px;
+	}
 }
 
 /*
@@ -38,12 +46,18 @@
 	viewport : portrait	
 */
 @media only screen and (min-width : 800px) and (min-height: 1280px) {
-	
+	section.panel {
+		width: 800px;
+		height: 1280px;
+	}	
 }
 /* 
 	device: Kindle Fire HDX Linux
 	viewport: landscape	
 */
 @media only screen and (min-width : 1280px) and (min-height: 800px) {
-	
+	section.panel {
+		width: 1280px;
+		height: 800px;
+	}	
 }

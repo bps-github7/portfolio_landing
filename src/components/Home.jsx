@@ -38,7 +38,7 @@ class Home extends Component {
         <p>
           <em>A Full Stack, system oriented Software Developer, local to Philadelphia. </em>
           I graduated with my Masters of Science in Information Systems in June 2020.
-          I'm looking for work in web development, help-desk, general system developement, UI/Ux design, QA engineering and more,
+          I'm looking for work in web development, help-desk, UI/Ux design, QA engineering and more,
           in sectors not limited to education, non profit, government and regenerative agricultural. <br /><br />
           If you think I would be a good match for an open position, your company, or can connect me to someone who can help me in my job search:  <br />
           <strong>
