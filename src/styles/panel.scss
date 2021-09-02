@@ -4,22 +4,13 @@ section.panel {
 	display: flex;
 	flex-direction: column;
   justify-self: center;
-
 	max-height: 200vh;
-
-	// align-items: center;
-
-	// hoping this is a simple fix for responsiveness
 	height: 100vh;
 	width: 100vw;
-
-	max-width: 50rem;
+	max-width: 44rem;
 	padding: 2rem 0;
 
-	// section section {
-	// 	// line-height: 1;
-	// 	// margin-bottom: 2em;
-	// }
+
 
 	section.loading-spinner-parent {
 		margin: 50px 100px;
@@ -30,11 +21,7 @@ section.panel {
 		margin-right: 7px;
 	}
 	
-
-
-
-
-/* default stuff below- headings, paragraphs, buttons, images, list items, links */
+	/* default stuff below- headings, paragraphs, buttons, images, list items, links */
 
 
 	// styling for top of page heading in top level components- about, skills, experience, contact, projects
@@ -112,6 +99,8 @@ section.panel {
 
 	}
 
+
+
 	// for experience section, renders columns for desktop and tablet, row for mobile and smaller screens
 	@media only screen and (min-width: 460px) {
 		section.experience {
@@ -128,6 +117,28 @@ section.panel {
 			max-height: 300px;
 		}
 	}
-	
-
 }
+
+//TODO: need a more dynamic (calculated) method for applying the below- works on my laptop, wont for desktop or the next laptop
+
+// when in desktop view snapped to 1/4 screen windows grid, keeps button on homepage from overflowing
+@media only screen and (max-width : 452px) {
+	section.panel {
+		max-width: 400px;
+
+		.select {
+			width: 400px			
+		}
+	}	
+}
+// same thing as above but for 1/2 screen window grid
+@media only screen and (min-width : 766px) {
+	section.panel {
+		max-width: 700px;
+
+		.select {
+			width: 700px			
+		}
+	}	
+}
+
