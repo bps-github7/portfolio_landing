@@ -30,12 +30,12 @@ function App() {
             <Route exact path='/contact'>
               <Contact contact={data.contact}/>
             </Route>
-            <Route exact path='/skills'>
+            {/* <Route exact path='/skills'>
               <Skills info={data.skills}/>
             </Route>
             <Route exact path='/about'>
               <About info={data.about}/>  
-            </Route>
+            </Route> */}
             <Route exact path='/projects' component={Projects}/>
             <Route exact path='/experience' component={Experience}/>
             <Route>
