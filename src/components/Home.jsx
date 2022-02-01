@@ -29,7 +29,7 @@ class Home extends Component {
 						this.state.loading || !this.state.avatarUrl ?
 						<span>Loading...</span>:
 						// says 'digital portrait' because html complains if you say 'image' or 'photo' in the alt attribute
-						<img class="default-view" alt="a digital portrait of me face" src={this.state.avatarUrl}/> 
+						<img class="default-view" alt="self portrait/ avatar" src={this.state.avatarUrl}/> 
 
 					}
 					<h3>Ben Sehnert</h3>
@@ -38,7 +38,7 @@ class Home extends Component {
         <p>
           <em>A Full Stack, system oriented Software Developer, local to Philadelphia. </em>
           I graduated with my Masters of Science in Information Systems in June 2020.
-          I'm looking for work in web development, help-desk, UI/Ux design, QA engineering and more,
+          I'm looking for work in web development, UI/Ux design, QA engineering and software engineering generaly,
           in sectors not limited to education, non profit, government and regenerative agricultural. <br /><br />
           If you think I would be a good match for an open position, your company, or can connect me to someone who can help me in my job search:  <br />
           <strong>
